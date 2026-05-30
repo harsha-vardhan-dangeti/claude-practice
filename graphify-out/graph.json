@@ -1,0 +1,78 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "sample.py",
+      "file_type": "code",
+      "source_file": "sample.py",
+      "source_location": "L1",
+      "id": "sample_py",
+      "community": 1,
+      "norm_label": "sample.py"
+    },
+    {
+      "label": "CLAUDE.md - Project Guidance Document",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "claude_claude_md",
+      "community": 0,
+      "norm_label": "claude.md - project guidance document"
+    },
+    {
+      "label": "Early-Stage Python Project",
+      "file_type": "concept",
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "claude_early_stage_python_project",
+      "community": 0,
+      "norm_label": "early-stage python project"
+    },
+    {
+      "label": "sample.py - Empty Python File",
+      "file_type": "code",
+      "source_file": "sample.py",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "claude_sample_py",
+      "community": 0,
+      "norm_label": "sample.py - empty python file"
+    }
+  ],
+  "links": [
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": "line 7",
+      "weight": 1.0,
+      "source": "claude_claude_md",
+      "target": "claude_early_stage_python_project"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "claude_claude_md",
+      "target": "claude_sample_py"
+    }
+  ],
+  "hyperedges": []
+}
