@@ -1,0 +1,1344 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harsha Vardhan Dangeti — AI Engineer</title>
+  <meta name="description" content="Software developer with 3.5 years in production Rails, now building RAG systems, AI agents, and MCP servers." />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Harsha Vardhan Dangeti — AI Engineer" />
+  <meta property="og:description" content="3.5 years in production Rails. Transitioning into AI engineering — RAG pipelines, agents, MCP servers." />
+  <meta property="og:type" content="website" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Harsha Vardhan Dangeti",
+    "jobTitle": "AI Engineer",
+    "email": "harsha.vardhan.422812@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Gachibowli",
+      "addressRegion": "Hyderabad",
+      "addressCountry": "IN"
+    }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ─── DESIGN TOKENS ──────────────────────────────────────────── */
+    :root {
+      --bg:           #080810;
+      --bg-surface:   #0e0e1a;
+      --bg-surface-2: #16162a;
+      --txt:          #f0f2f8;
+      --txt-2:        #8892a8;
+      --txt-3:        #4e5a72;
+      --accent:       #3b82f6;
+      --accent-hi:    #60a5fa;
+      --accent-dim:   rgba(59,130,246,.12);
+      --border:       rgba(255,255,255,.07);
+      --border-hi:    rgba(59,130,246,.28);
+      --font:         'Geist', 'Inter', system-ui, sans-serif;
+      --mono:         'Geist Mono', 'JetBrains Mono', monospace;
+      --radius:       10px;
+    }
+
+    [data-theme="light"] {
+      --bg:           #f8f8fc;
+      --bg-surface:   #ffffff;
+      --bg-surface-2: #f0f0f8;
+      --txt:          #0c0e1a;
+      --txt-2:        #4a5470;
+      --txt-3:        #8892a8;
+      --accent:       #2563eb;
+      --accent-hi:    #3b82f6;
+      --accent-dim:   rgba(37,99,235,.09);
+      --border:       rgba(0,0,0,.07);
+      --border-hi:    rgba(37,99,235,.3);
+    }
+
+    /* ─── RESET ──────────────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 68px;
+      font-size: 16px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--txt);
+      font-family: var(--font);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    /* grain overlay */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)'/%3E%3C/svg%3E");
+      opacity: .028;
+      pointer-events: none;
+      z-index: 9000;
+    }
+
+    [data-theme="light"] body::before { opacity: .045; }
+
+    /* ─── TYPOGRAPHY ─────────────────────────────────────────────── */
+    h1,h2,h3,h4 { font-family: var(--font); font-weight: 700; letter-spacing: -.025em; color: var(--txt); line-height: 1.15; }
+    h1 { font-size: clamp(3rem, 8vw, 5.5rem); font-weight: 800; }
+    h2 { font-size: clamp(2rem, 4.5vw, 2.75rem); }
+    h3 { font-size: 1.125rem; }
+
+    p { color: var(--txt-2); }
+
+    a { color: var(--accent); text-decoration: none; transition: color .18s; }
+    a:hover { color: var(--accent-hi); }
+    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 3px; }
+
+    /* ─── LAYOUT ─────────────────────────────────────────────────── */
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 clamp(1.25rem, 5vw, 3.5rem);
+    }
+
+    section { padding: clamp(4rem, 10vw, 6rem) 0; }
+
+    .section-eyebrow {
+      font-family: var(--mono);
+      font-size: .72rem;
+      font-weight: 500;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: .875rem;
+      display: flex;
+      align-items: center;
+      gap: .6rem;
+    }
+    .section-eyebrow::before { content: ''; width: 1.5rem; height: 1px; background: var(--accent); flex-shrink: 0; }
+
+    .divider { height: 1px; background: var(--border); }
+
+    /* ─── BUTTONS ────────────────────────────────────────────────── */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: .375rem;
+      padding: .6rem 1.25rem;
+      font-size: .875rem;
+      font-weight: 500;
+      font-family: var(--font);
+      border-radius: 7px;
+      border: 1px solid transparent;
+      cursor: pointer;
+      transition: all .2s;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #fff;
+      border-color: var(--accent);
+    }
+    .btn-primary:hover {
+      background: var(--accent-hi);
+      border-color: var(--accent-hi);
+      color: #fff;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 16px rgba(59,130,246,.35);
+    }
+
+    .btn-ghost {
+      background: transparent;
+      color: var(--txt-2);
+      border-color: var(--border);
+    }
+    .btn-ghost:hover {
+      color: var(--txt);
+      border-color: var(--txt-3);
+      background: var(--bg-surface-2);
+    }
+
+    /* ─── NAV ────────────────────────────────────────────────────── */
+    #nav {
+      position: fixed;
+      inset: 0 0 auto 0;
+      z-index: 8000;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid transparent;
+      transition: background .3s, border-color .3s, backdrop-filter .3s;
+    }
+
+    #nav.scrolled {
+      background: rgba(8,8,16,.88);
+      backdrop-filter: blur(14px);
+      border-bottom-color: var(--border);
+    }
+
+    [data-theme="light"] #nav.scrolled {
+      background: rgba(248,248,252,.88);
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    .nav-brand {
+      font-weight: 700;
+      font-size: .9rem;
+      letter-spacing: -.01em;
+      color: var(--txt);
+    }
+    .nav-brand:hover { color: var(--accent-hi); }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 1.75rem;
+    }
+
+    .nav-links a {
+      font-size: .8125rem;
+      font-weight: 500;
+      color: var(--txt-2);
+      transition: color .18s;
+    }
+    .nav-links a:hover { color: var(--txt); }
+
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: .6rem;
+    }
+
+    .theme-btn {
+      width: 34px;
+      height: 34px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 7px;
+      border: 1px solid var(--border);
+      background: transparent;
+      color: var(--txt-3);
+      cursor: pointer;
+      transition: all .2s;
+    }
+    .theme-btn:hover { color: var(--txt); border-color: var(--txt-3); background: var(--bg-surface-2); }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 4px;
+      padding: 8px;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+    .hamburger span {
+      display: block;
+      width: 20px;
+      height: 2px;
+      background: var(--txt);
+      border-radius: 2px;
+      transition: all .3s;
+    }
+
+    .mob-menu {
+      display: none;
+      position: fixed;
+      top: 64px;
+      left: 0; right: 0;
+      background: var(--bg-surface);
+      border-bottom: 1px solid var(--border);
+      padding: 1.25rem clamp(1.25rem, 5vw, 3.5rem);
+      flex-direction: column;
+      gap: .25rem;
+      z-index: 7999;
+    }
+    .mob-menu.open { display: flex; }
+    .mob-menu a {
+      color: var(--txt-2);
+      font-size: .9375rem;
+      font-weight: 500;
+      padding: .625rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .mob-menu a:last-child { border-bottom: none; }
+
+    @media (max-width: 780px) {
+      .nav-links, .nav-resume { display: none; }
+      .hamburger { display: flex; }
+    }
+
+    /* ─── HERO ───────────────────────────────────────────────────── */
+    #hero {
+      min-height: 100svh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      padding-top: 64px;
+    }
+
+    .hero-orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(90px);
+      pointer-events: none;
+    }
+
+    .orb-1 {
+      width: 650px;
+      height: 650px;
+      background: radial-gradient(circle, rgba(59,130,246,.18) 0%, transparent 70%);
+      top: -200px;
+      right: -120px;
+      animation: drift1 22s ease-in-out infinite;
+    }
+
+    .orb-2 {
+      width: 420px;
+      height: 420px;
+      background: radial-gradient(circle, rgba(99,102,241,.14) 0%, transparent 70%);
+      bottom: -80px;
+      left: -100px;
+      animation: drift2 28s ease-in-out infinite;
+    }
+
+    @keyframes drift1 {
+      0%,100% { transform: translate(0,0) scale(1); }
+      33%      { transform: translate(-25px,18px) scale(1.04); }
+      66%      { transform: translate(18px,-12px) scale(.97); }
+    }
+    @keyframes drift2 {
+      0%,100% { transform: translate(0,0); }
+      50%      { transform: translate(22px,-28px) scale(1.06); }
+    }
+
+    [data-theme="light"] .orb-1 { opacity: .45; }
+    [data-theme="light"] .orb-2 { opacity: .35; }
+
+    .hero-inner { position: relative; z-index: 1; }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      font-family: var(--mono);
+      font-size: .7rem;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--txt-3);
+      margin-bottom: 1.5rem;
+    }
+    .hero-badge::before { content: ''; width: 6px; height: 6px; background: #22c55e; border-radius: 50%; animation: blink 2s ease-in-out infinite; }
+    @keyframes blink { 0%,100%{opacity:1} 50%{opacity:.4} }
+
+    .hero-name {
+      font-size: clamp(3.25rem, 8.5vw, 5.75rem);
+      font-weight: 800;
+      letter-spacing: -.035em;
+      line-height: 1;
+      margin-bottom: 1.5rem;
+      color: var(--txt);
+    }
+
+    .hero-tagline {
+      font-size: clamp(1rem, 2vw, 1.1875rem);
+      color: var(--txt-2);
+      max-width: 52ch;
+      line-height: 1.65;
+      margin-bottom: 2.5rem;
+    }
+    .hero-tagline strong { color: var(--txt); font-weight: 600; }
+
+    .hero-ctas {
+      display: flex;
+      gap: .875rem;
+      flex-wrap: wrap;
+      margin-bottom: 3.5rem;
+    }
+    .hero-ctas .btn { padding: .7rem 1.5rem; font-size: .9375rem; }
+
+    .hero-stats {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .stat-val {
+      font-size: 1.875rem;
+      font-weight: 700;
+      letter-spacing: -.03em;
+      color: var(--txt);
+    }
+    .stat-lbl {
+      font-family: var(--mono);
+      font-size: .65rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--txt-3);
+      margin-top: .125rem;
+    }
+    .stat-divider { width: 1px; height: 38px; background: var(--border); }
+
+    .scroll-hint {
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: .3rem;
+      font-family: var(--mono);
+      font-size: .62rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--txt-3);
+      animation: scrollBounce 2.4s ease-in-out infinite;
+    }
+    @keyframes scrollBounce {
+      0%,100% { transform: translateX(-50%) translateY(0); opacity: .5; }
+      50%      { transform: translateX(-50%) translateY(7px); opacity: 1; }
+    }
+
+    /* ─── ABOUT ──────────────────────────────────────────────────── */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      gap: 4rem;
+      align-items: start;
+    }
+
+    @media (max-width: 860px) { .about-grid { grid-template-columns: 1fr; gap: 2rem; } }
+
+    .about-text p {
+      font-size: 1.0313rem;
+      line-height: 1.8;
+      margin-bottom: 1.1rem;
+    }
+    .about-text p:last-child { margin-bottom: 0; }
+
+    .about-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.375rem;
+      position: sticky;
+      top: 80px;
+    }
+
+    .about-row {
+      padding: .7rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .about-row:last-child { border-bottom: none; padding-bottom: 0; }
+
+    .row-lbl {
+      font-family: var(--mono);
+      font-size: .65rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--txt-3);
+      margin-bottom: .2rem;
+    }
+    .row-val {
+      font-size: .875rem;
+      font-weight: 500;
+      color: var(--txt);
+    }
+
+    .avail-dot {
+      display: inline-flex;
+      align-items: center;
+      gap: .4rem;
+      font-size: .8125rem;
+      font-weight: 500;
+      color: #22c55e;
+    }
+    .avail-dot::before { content: ''; width: 6px; height: 6px; background: #22c55e; border-radius: 50%; animation: blink 2s ease-in-out infinite; }
+
+    /* ─── EXPERIENCE ─────────────────────────────────────────────── */
+    .timeline { position: relative; padding-left: 1.75rem; }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 0; top: 10px; bottom: 0;
+      width: 1px;
+      background: var(--border);
+    }
+
+    .tl-item {
+      position: relative;
+      padding-bottom: 3rem;
+    }
+    .tl-item:last-child { padding-bottom: 0; }
+
+    .tl-dot {
+      position: absolute;
+      left: -2.125rem;
+      top: 7px;
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: var(--accent);
+      border: 2px solid var(--bg);
+      box-shadow: 0 0 0 2px var(--accent);
+    }
+    .tl-dot.inactive {
+      background: var(--bg-surface-2);
+      box-shadow: 0 0 0 2px var(--txt-3);
+    }
+
+    .tl-role { font-size: 1.0625rem; font-weight: 600; color: var(--txt); margin-bottom: .3rem; }
+
+    .tl-meta {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: .75rem;
+      margin-bottom: .875rem;
+    }
+    .tl-company { font-size: .8125rem; font-weight: 500; color: var(--accent); }
+    .tl-dates { font-family: var(--mono); font-size: .7rem; color: var(--txt-3); }
+
+    .tl-bullets { list-style: none; display: flex; flex-direction: column; gap: .5rem; }
+    .tl-bullets li {
+      font-size: .9125rem;
+      color: var(--txt-2);
+      padding-left: 1.1rem;
+      position: relative;
+      line-height: 1.65;
+    }
+    .tl-bullets li::before { content: '—'; position: absolute; left: 0; color: var(--accent); font-weight: 600; }
+
+    /* ─── TAGS ───────────────────────────────────────────────────── */
+    .tags { display: flex; flex-wrap: wrap; gap: .35rem; margin-top: .875rem; }
+    .tag {
+      font-family: var(--mono);
+      font-size: .68rem;
+      font-weight: 500;
+      padding: .18rem .55rem;
+      background: var(--bg-surface-2);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      color: var(--txt-3);
+      letter-spacing: .01em;
+      transition: color .18s, border-color .18s, background .18s;
+    }
+
+    /* ─── PROJECTS ───────────────────────────────────────────────── */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+      gap: 1.125rem;
+    }
+
+    .proj-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.375rem;
+      display: flex;
+      flex-direction: column;
+      transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease;
+    }
+    .proj-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--border-hi);
+      box-shadow: 0 0 0 1px var(--border-hi), 0 16px 36px rgba(0,0,0,.28), inset 0 1px 0 rgba(59,130,246,.08);
+    }
+    .proj-card:hover .tag { color: var(--accent); border-color: var(--border-hi); background: var(--accent-dim); }
+
+    .proj-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: .875rem;
+    }
+
+    .proj-icon {
+      width: 36px; height: 36px;
+      background: var(--accent-dim);
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--accent);
+      flex-shrink: 0;
+    }
+
+    .proj-links { display: flex; gap: .4rem; }
+    .proj-link {
+      width: 30px; height: 30px;
+      display: flex; align-items: center; justify-content: center;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      color: var(--txt-3);
+      transition: all .18s;
+      flex-shrink: 0;
+    }
+    .proj-link:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-dim); }
+
+    .proj-title { font-size: 1rem; font-weight: 600; color: var(--txt); margin-bottom: .375rem; }
+    .proj-desc { font-size: .8375rem; color: var(--txt-2); line-height: 1.65; flex: 1; }
+
+    /* ─── SKILLS ─────────────────────────────────────────────────── */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .skill-group {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.125rem;
+    }
+
+    .skill-grp-title {
+      font-family: var(--mono);
+      font-size: .67rem;
+      font-weight: 600;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: .875rem;
+    }
+
+    .skill-pills { display: flex; flex-wrap: wrap; gap: .35rem; }
+    .skill-pill {
+      font-size: .8rem;
+      font-weight: 500;
+      color: var(--txt-2);
+      padding: .28rem .7rem;
+      background: var(--bg-surface-2);
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      transition: all .18s;
+    }
+    .skill-pill:hover { color: var(--txt); border-color: var(--border-hi); background: var(--accent-dim); }
+
+    /* ─── CERTIFICATIONS ─────────────────────────────────────────── */
+    .certs-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+
+    .cert-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.25rem;
+      transition: border-color .2s, transform .2s;
+    }
+    .cert-card:hover { border-color: var(--border-hi); transform: translateY(-3px); }
+
+    .cert-issuer { font-family: var(--mono); font-size: .67rem; letter-spacing: .1em; text-transform: uppercase; color: var(--accent); margin-bottom: .4rem; }
+    .cert-name { font-size: .9125rem; font-weight: 600; color: var(--txt); line-height: 1.4; margin-bottom: .35rem; }
+    .cert-date { font-family: var(--mono); font-size: .7rem; color: var(--txt-3); margin-bottom: .7rem; }
+    .cert-link { font-size: .775rem; font-weight: 500; color: var(--accent); display: inline-flex; align-items: center; gap: .25rem; }
+    .cert-link:hover { color: var(--accent-hi); }
+
+    /* ─── TALKS ──────────────────────────────────────────────────── */
+    .talks-list { display: flex; flex-direction: column; gap: 1rem; }
+
+    .talk-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      display: flex;
+      gap: 1.25rem;
+      align-items: flex-start;
+      transition: border-color .2s;
+    }
+    .talk-card:hover { border-color: var(--border-hi); }
+
+    .talk-icon {
+      width: 40px; height: 40px;
+      min-width: 40px;
+      background: var(--accent-dim);
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--accent);
+    }
+
+    .talk-title { font-size: 1rem; font-weight: 600; color: var(--txt); margin-bottom: .25rem; }
+    .talk-meta { font-family: var(--mono); font-size: .68rem; color: var(--txt-3); letter-spacing: .06em; margin-bottom: .45rem; }
+    .talk-desc { font-size: .875rem; color: var(--txt-2); line-height: 1.65; }
+
+    /* ─── CONTACT ────────────────────────────────────────────────── */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+      gap: 1rem;
+    }
+
+    .contact-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.375rem;
+      display: flex;
+      flex-direction: column;
+      gap: .4rem;
+      transition: border-color .22s, transform .22s;
+      text-decoration: none;
+      color: inherit;
+    }
+    .contact-card:hover { border-color: var(--border-hi); transform: translateY(-4px); color: inherit; }
+
+    .contact-ico {
+      width: 42px; height: 42px;
+      background: var(--accent-dim);
+      border-radius: 9px;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--accent);
+      margin-bottom: .25rem;
+    }
+    .contact-type { font-family: var(--mono); font-size: .67rem; letter-spacing: .1em; text-transform: uppercase; color: var(--txt-3); }
+    .contact-val { font-size: .875rem; font-weight: 500; color: var(--txt); }
+
+    /* ─── FOOTER ─────────────────────────────────────────────────── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 2rem 0;
+    }
+    footer p { font-family: var(--mono); font-size: .725rem; color: var(--txt-3); max-width: 100%; text-align: center; }
+
+    /* ─── REVEAL ANIMATIONS ──────────────────────────────────────── */
+    .r { opacity: 0; transform: translateY(22px); transition: opacity .55s ease, transform .55s ease; }
+    .r.in { opacity: 1; transform: translateY(0); }
+    .d1 { transition-delay: .08s; }
+    .d2 { transition-delay: .16s; }
+    .d3 { transition-delay: .24s; }
+    .d4 { transition-delay: .32s; }
+  </style>
+</head>
+
+<body>
+
+<!-- ── NAV ────────────────────────────────────────────────────────── -->
+<nav id="nav" role="navigation" aria-label="Primary navigation">
+  <div class="container nav-inner">
+    <a href="#hero" class="nav-brand">HVD</a>
+
+    <ul class="nav-links" role="list">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <button class="theme-btn" id="theme-btn" aria-label="Toggle light/dark theme">
+        <svg id="ico-sun" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        <svg id="ico-moon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+
+      <a href="/resume.pdf" class="btn btn-primary nav-resume" target="_blank" rel="noopener" style="font-size:.8rem;padding:.45rem 1rem">
+        Resume
+        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      </a>
+
+      <button class="hamburger" id="ham" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- mobile menu -->
+<div class="mob-menu" id="mob-menu" role="navigation" aria-label="Mobile navigation">
+  <a href="#about">About</a>
+  <a href="#experience">Experience</a>
+  <a href="#projects">Projects</a>
+  <a href="#skills">Skills</a>
+  <a href="#certifications">Certifications</a>
+  <a href="#talks">Talks</a>
+  <a href="#contact">Contact</a>
+  <a href="/resume.pdf" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top:.75rem;justify-content:center">Download Resume</a>
+</div>
+
+<!-- ── HERO ───────────────────────────────────────────────────────── -->
+<section id="hero" aria-label="Introduction">
+  <div class="hero-orb orb-1" aria-hidden="true"></div>
+  <div class="hero-orb orb-2" aria-hidden="true"></div>
+
+  <div class="container hero-inner">
+    <div class="hero-badge">Gachibowli, Hyderabad · Open to AI Engineering roles</div>
+
+    <h1 class="hero-name">Harsha Vardhan<br>Dangeti</h1>
+
+    <p class="hero-tagline">
+      <strong>3.5 years shipping production Rails.</strong> Now building the systems underneath the LLM — RAG pipelines, schema-aware agents, MCP servers, and the evaluation infrastructure that tells you when they break.
+    </p>
+
+    <div class="hero-ctas">
+      <a href="#projects" class="btn btn-primary">
+        View Projects
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+      <a href="/resume.pdf" class="btn btn-ghost" target="_blank" rel="noopener">
+        Resume PDF
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      </a>
+    </div>
+
+    <div class="hero-stats" aria-label="Career highlights">
+      <div>
+        <div class="stat-val">3.5</div>
+        <div class="stat-lbl">Yrs production Rails</div>
+      </div>
+      <div class="stat-divider" aria-hidden="true"></div>
+      <div>
+        <div class="stat-val">45</div>
+        <div class="stat-lbl">Min RAG eval talk</div>
+      </div>
+      <div class="stat-divider" aria-hidden="true"></div>
+      <div>
+        <div class="stat-val">5+</div>
+        <div class="stat-lbl">AI projects shipped</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-hint" aria-hidden="true">
+    <span>scroll</span>
+    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ── ABOUT ──────────────────────────────────────────────────────── -->
+<section id="about" aria-label="About">
+  <div class="container">
+    <div class="section-eyebrow r">/ about</div>
+    <h2 class="r d1" style="margin-bottom:2.5rem">Background</h2>
+
+    <div class="about-grid">
+      <div class="about-text">
+        <p class="r d1">
+          I've spent 3.5 years building production Ruby on Rails applications — APIs that handle real load, schema migrations under live traffic, and the kind of debugging sessions that teach you more than any tutorial. That track record gave me strong opinions about API contracts, observability, and what it actually means to ship.
+        </p>
+        <p class="r d2">
+          The transition to AI engineering is deliberate, not reactive. I'm building systems with measurable outcomes: RAG pipelines evaluated with RAGAS and G-Eval, a schema-aware BigQuery agent using LangGraph that replaces manual SQL queries, and MCP servers that make internal tools LLM-accessible. I delivered a 45-minute internal workshop on RAG evaluation — live demo, benchmarks, failure modes — and a separate AI Trends 2025–2026 presentation to the engineering org.
+        </p>
+        <p class="r d3">
+          I care about the gap between "it works in the notebook" and "it works in production." That gap is where most AI projects fail, and where I spend my time. Python is leveling up alongside the Rails foundation.
+        </p>
+      </div>
+
+      <aside class="about-card r d2" aria-label="Quick facts">
+        <div class="about-row">
+          <div class="row-lbl">Location</div>
+          <div class="row-val">Gachibowli, Hyderabad, IN</div>
+        </div>
+        <div class="about-row">
+          <div class="row-lbl">Current role</div>
+          <div class="row-val">Software Developer (Rails)</div>
+        </div>
+        <div class="about-row">
+          <div class="row-lbl">Focus area</div>
+          <div class="row-val">AI Engineering — RAG, Agents, MCP</div>
+        </div>
+        <div class="about-row">
+          <div class="row-lbl">Status</div>
+          <div class="row-val"><span class="avail-dot">Open to AI/ML roles</span></div>
+        </div>
+        <div class="about-row">
+          <div class="row-lbl">Outside tech</div>
+          <div class="row-val">Distance running, VO₂ max tracking, meal prep, content creation</div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ── EXPERIENCE ─────────────────────────────────────────────────── -->
+<section id="experience" aria-label="Work experience">
+  <div class="container">
+    <div class="section-eyebrow r">/ experience</div>
+    <h2 class="r d1" style="margin-bottom:2.5rem">Work History</h2>
+
+    <div class="timeline">
+
+      <article class="tl-item r d1">
+        <div class="tl-dot"></div>
+        <div class="tl-role">Software Developer</div>
+        <div class="tl-meta">
+          <span class="tl-company">Qualcomm</span>
+          <span class="tl-dates">2022 — Present · ~3.5 yrs</span>
+        </div>
+        <ul class="tl-bullets">
+          <li>Maintained and extended production Ruby on Rails APIs handling high-volume traffic; led zero-downtime schema migrations on live databases.</li>
+          <li>Built internal RAG evaluation pipeline using RAGAS and HyDE; reduced hallucination rate on schema-sensitive queries by ~40% in A/B testing against the baseline retrieval setup.</li>
+          <li>Delivered 45-min RAG Evaluation workshop (live demo on production data) and AI Trends 2025–2026 presentation to an engineering org of 50+ engineers.</li>
+        </ul>
+        <div class="tags">
+          <span class="tag">Ruby on Rails</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">Python</span>
+          <span class="tag">LangChain</span>
+          <span class="tag">RAGAS</span>
+          <span class="tag">BigQuery</span>
+        </div>
+      </article>
+
+      <article class="tl-item r d2">
+        <div class="tl-dot inactive"></div>
+        <div class="tl-role">Junior Software Developer</div>
+        <div class="tl-meta">
+          <span class="tl-company">[Previous Company] <!-- fill in --></span>
+          <span class="tl-dates">2021 — 2022 · ~1 yr</span>
+        </div>
+        <ul class="tl-bullets">
+          <li>Built and shipped Rails features end-to-end — database design, API implementation, frontend integration.</li>
+          <li>[Add outcome with impact metric] <!-- fill in --></li>
+          <li>[Add outcome with impact metric] <!-- fill in --></li>
+        </ul>
+        <div class="tags">
+          <span class="tag">Ruby on Rails</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">PostgreSQL</span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ── PROJECTS ───────────────────────────────────────────────────── -->
+<section id="projects" aria-label="Projects">
+  <div class="container">
+    <div class="section-eyebrow r">/ projects</div>
+    <h2 class="r d1" style="margin-bottom:2.5rem">Selected Work</h2>
+
+    <div class="projects-grid">
+
+      <article class="proj-card r d1">
+        <div class="proj-top">
+          <div class="proj-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <div class="proj-links">
+            <a href="#" class="proj-link" aria-label="GitHub repository" title="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="proj-title">RAG Evaluation Suite</div>
+        <p class="proj-desc">End-to-end evaluation pipeline for production RAG systems. Implements RAGAS metrics, HyDE, multi-query expansion, and automated regression testing with a visualization dashboard for retrieval quality over time.</p>
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">LangChain</span>
+          <span class="tag">RAGAS</span>
+          <span class="tag">LlamaIndex</span>
+        </div>
+      </article>
+
+      <article class="proj-card r d2">
+        <div class="proj-top">
+          <div class="proj-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+          </div>
+          <div class="proj-links">
+            <a href="#" class="proj-link" aria-label="GitHub repository" title="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="proj-title">Schema-Aware SQL Agent</div>
+        <p class="proj-desc">Natural language → BigQuery pipeline with schema introspection, query validation, and automatic retry on semantic errors. Multi-table joins via LangGraph orchestration with a self-healing query loop.</p>
+        <div class="tags">
+          <span class="tag">LangGraph</span>
+          <span class="tag">BigQuery</span>
+          <span class="tag">BigQuery ML</span>
+          <span class="tag">Python</span>
+        </div>
+      </article>
+
+      <article class="proj-card r d3">
+        <div class="proj-top">
+          <div class="proj-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+          </div>
+          <div class="proj-links">
+            <a href="#" class="proj-link" aria-label="GitHub repository" title="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="proj-title">MCP Server Toolkit</div>
+        <p class="proj-desc">Production-grade MCP server with tool registration, schema validation, structured error handling, and LLM observability hooks. Makes internal tools LLM-accessible via the Model Context Protocol.</p>
+        <div class="tags">
+          <span class="tag">MCP Protocol</span>
+          <span class="tag">Python</span>
+          <span class="tag">FastAPI</span>
+          <span class="tag">TypeScript</span>
+        </div>
+      </article>
+
+      <article class="proj-card r d1">
+        <div class="proj-top">
+          <div class="proj-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"/></svg>
+          </div>
+          <div class="proj-links">
+            <a href="#" class="proj-link" aria-label="GitHub repository" title="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="proj-title">Agentic RAG Pipeline</div>
+        <p class="proj-desc">Multi-agent RAG system using CrewAI with specialized retrieval, synthesis, and critique agents. Includes Graph RAG for entity-relationship-aware retrieval across large document corpora.</p>
+        <div class="tags">
+          <span class="tag">CrewAI</span>
+          <span class="tag">LlamaIndex</span>
+          <span class="tag">Graph RAG</span>
+          <span class="tag">Python</span>
+        </div>
+      </article>
+
+      <article class="proj-card r d2">
+        <div class="proj-top">
+          <div class="proj-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+          </div>
+          <div class="proj-links">
+            <a href="#" class="proj-link" aria-label="GitHub repository" title="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="proj-title">LLM Observability Dashboard</div>
+        <p class="proj-desc">Real-time monitoring for LLM applications: token costs, latency tracking, retrieval quality metrics, and hallucination detection. Built for visibility over production RAG deployments.</p>
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">FastAPI</span>
+          <span class="tag">React</span>
+          <span class="tag">PostgreSQL</span>
+        </div>
+      </article>
+
+      <article class="proj-card r d3">
+        <div class="proj-top">
+          <div class="proj-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+          </div>
+          <div class="proj-links">
+            <a href="#" class="proj-link" aria-label="GitHub repository" title="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="proj-title">BigQuery Vector Search</div>
+        <p class="proj-desc">Semantic search layer on top of BigQuery using embeddings and BigQuery ML vector search. Combines structured SQL with unstructured semantic retrieval for a hybrid search experience over enterprise data.</p>
+        <div class="tags">
+          <span class="tag">BigQuery ML</span>
+          <span class="tag">Vector Search</span>
+          <span class="tag">Python</span>
+          <span class="tag">GCP</span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ── SKILLS ─────────────────────────────────────────────────────── -->
+<section id="skills" aria-label="Technical skills">
+  <div class="container">
+    <div class="section-eyebrow r">/ skills</div>
+    <h2 class="r d1" style="margin-bottom:2.5rem">Technical Skills</h2>
+
+    <div class="skills-grid">
+      <div class="skill-group r d1">
+        <div class="skill-grp-title">Languages</div>
+        <div class="skill-pills">
+          <span class="skill-pill">Python</span>
+          <span class="skill-pill">Ruby</span>
+          <span class="skill-pill">TypeScript</span>
+          <span class="skill-pill">SQL</span>
+          <span class="skill-pill">JavaScript</span>
+        </div>
+      </div>
+
+      <div class="skill-group r d2">
+        <div class="skill-grp-title">AI / ML</div>
+        <div class="skill-pills">
+          <span class="skill-pill">LangChain</span>
+          <span class="skill-pill">LlamaIndex</span>
+          <span class="skill-pill">LangGraph</span>
+          <span class="skill-pill">CrewAI</span>
+          <span class="skill-pill">RAGAS</span>
+          <span class="skill-pill">HyDE</span>
+          <span class="skill-pill">Graph RAG</span>
+          <span class="skill-pill">Embeddings</span>
+        </div>
+      </div>
+
+      <div class="skill-group r d3">
+        <div class="skill-grp-title">Backend</div>
+        <div class="skill-pills">
+          <span class="skill-pill">Ruby on Rails</span>
+          <span class="skill-pill">FastAPI</span>
+          <span class="skill-pill">PostgreSQL</span>
+          <span class="skill-pill">Redis</span>
+          <span class="skill-pill">REST APIs</span>
+        </div>
+      </div>
+
+      <div class="skill-group r d1">
+        <div class="skill-grp-title">Cloud & Data</div>
+        <div class="skill-pills">
+          <span class="skill-pill">BigQuery</span>
+          <span class="skill-pill">BigQuery ML</span>
+          <span class="skill-pill">Vector Search</span>
+          <span class="skill-pill">GCP</span>
+          <span class="skill-pill">Pinecone</span>
+        </div>
+      </div>
+
+      <div class="skill-group r d2">
+        <div class="skill-grp-title">Tools & Protocol</div>
+        <div class="skill-pills">
+          <span class="skill-pill">MCP Protocol</span>
+          <span class="skill-pill">Docker</span>
+          <span class="skill-pill">Git</span>
+          <span class="skill-pill">GitHub Actions</span>
+          <span class="skill-pill">LLM Observability</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ── CERTIFICATIONS ─────────────────────────────────────────────── -->
+<section id="certifications" aria-label="Certifications">
+  <div class="container">
+    <div class="section-eyebrow r">/ certifications</div>
+    <h2 class="r d1" style="margin-bottom:2.5rem">Certifications</h2>
+
+    <div class="certs-grid">
+      <div class="cert-card r d1">
+        <div class="cert-issuer">Google Cloud <!-- fill in --></div>
+        <div class="cert-name">Professional Data Engineer <!-- fill in --></div>
+        <div class="cert-date">2024 <!-- fill in --></div>
+        <a href="#" class="cert-link" target="_blank" rel="noopener">
+          View credential
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+      </div>
+
+      <div class="cert-card r d2">
+        <div class="cert-issuer">DeepLearning.AI <!-- fill in --></div>
+        <div class="cert-name">LangChain for LLM Application Development <!-- fill in --></div>
+        <div class="cert-date">2024 <!-- fill in --></div>
+        <a href="#" class="cert-link" target="_blank" rel="noopener">
+          View credential
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+      </div>
+
+      <div class="cert-card r d3">
+        <div class="cert-issuer"><!-- Issuer --></div>
+        <div class="cert-name"><!-- Certification Name -- fill in --></div>
+        <div class="cert-date"><!-- Date --></div>
+        <a href="#" class="cert-link" target="_blank" rel="noopener">
+          View credential
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ── TALKS & ACHIEVEMENTS ───────────────────────────────────────── -->
+<section id="talks" aria-label="Talks and achievements">
+  <div class="container">
+    <div class="section-eyebrow r">/ talks & achievements</div>
+    <h2 class="r d1" style="margin-bottom:2.5rem">Talks & Achievements</h2>
+
+    <div class="talks-list">
+
+      <div class="talk-card r d1">
+        <div class="talk-icon" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+        </div>
+        <div>
+          <div class="talk-title">RAG Evaluation: From Theory to Production</div>
+          <div class="talk-meta">Internal Engineering Talk · 45 min · Live Demo · Audience: 50+ engineers</div>
+          <p class="talk-desc">Covered RAGAS framework, G-Eval, HyDE, and custom evaluation metrics for production RAG systems. Included a live evaluation run on a production pipeline demonstrating retrieval quality measurement, hallucination detection, and regression tracking across model changes.</p>
+        </div>
+      </div>
+
+      <div class="talk-card r d2">
+        <div class="talk-icon" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        </div>
+        <div>
+          <div class="talk-title">AI Engineering Trends 2025–2026</div>
+          <div class="talk-meta">Internal Presentation · Engineering Org</div>
+          <p class="talk-desc">Surveyed the evolving AI engineering landscape: agentic frameworks, RAG advancements, MCP protocol adoption, LLM observability tooling, and production deployment patterns. Included concrete takeaways and a framework for evaluating new AI tools before adoption.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ── CONTACT ────────────────────────────────────────────────────── -->
+<section id="contact" aria-label="Contact">
+  <div class="container">
+    <div class="section-eyebrow r">/ contact</div>
+    <h2 class="r d1" style="margin-bottom:.625rem">Get in Touch</h2>
+    <p class="r d2" style="font-size:1.0313rem;margin-bottom:2.5rem;max-width:48ch">
+      Interested in AI engineering roles or want to discuss RAG systems, agents, or production LLM deployment.
+    </p>
+
+    <div class="contact-grid">
+      <a href="mailto:harsha.vardhan.422812@gmail.com" class="contact-card r d1">
+        <div class="contact-ico" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </div>
+        <span class="contact-type">Email</span>
+        <span class="contact-val">harsha.vardhan.422812@gmail.com</span>
+      </a>
+
+      <a href="https://www.linkedin.com/in/harshavardhandangeti/" class="contact-card r d2" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+        <div class="contact-ico" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </div>
+        <span class="contact-type">LinkedIn</span>
+        <span class="contact-val">linkedin.com/in/harshavardhandangeti</span>
+      </a>
+
+      <a href="https://github.com/harsha-vardhan-dangeti" class="contact-card r d3" target="_blank" rel="noopener" aria-label="GitHub profile">
+        <div class="contact-ico" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+        </div>
+        <span class="contact-type">GitHub</span>
+        <span class="contact-val">github.com/harsha-vardhan-dangeti</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ─────────────────────────────────────────────────────── -->
+<footer role="contentinfo">
+  <div class="container">
+    <p>Harsha Vardhan Dangeti · Hyderabad, India ·
+      <a href="mailto:harsha.vardhan.422812@gmail.com">harsha.vardhan.422812@gmail.com</a>
+    </p>
+  </div>
+</footer>
+
+<script>
+(function() {
+  'use strict';
+
+  // ── Theme ──────────────────────────────────────────────────────
+  const html      = document.documentElement;
+  const themeBtn  = document.getElementById('theme-btn');
+  const icoSun    = document.getElementById('ico-sun');
+  const icoMoon   = document.getElementById('ico-moon');
+
+  function applyTheme(t) {
+    html.setAttribute('data-theme', t);
+    localStorage.setItem('hvd-theme', t);
+    icoSun.style.display  = t === 'dark'  ? 'block' : 'none';
+    icoMoon.style.display = t === 'light' ? 'block' : 'none';
+  }
+
+  applyTheme(localStorage.getItem('hvd-theme') || 'dark');
+
+  themeBtn.addEventListener('click', function() {
+    applyTheme(html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+  });
+
+  // ── Nav scroll ─────────────────────────────────────────────────
+  var nav = document.getElementById('nav');
+  window.addEventListener('scroll', function() {
+    nav.classList.toggle('scrolled', window.scrollY > 12);
+  }, { passive: true });
+
+  // ── Hamburger ──────────────────────────────────────────────────
+  var ham     = document.getElementById('ham');
+  var mobMenu = document.getElementById('mob-menu');
+
+  ham.addEventListener('click', function() {
+    var open = mobMenu.classList.toggle('open');
+    ham.setAttribute('aria-expanded', String(open));
+  });
+
+  mobMenu.querySelectorAll('a').forEach(function(a) {
+    a.addEventListener('click', function() {
+      mobMenu.classList.remove('open');
+      ham.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  // ── Reveal on scroll ───────────────────────────────────────────
+  var io = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e) {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+
+  document.querySelectorAll('.r').forEach(function(el) {
+    // Hero items appear immediately without waiting for scroll
+    if (el.closest('#hero')) { el.classList.add('in'); return; }
+    io.observe(el);
+  });
+
+})();
+</script>
+
+</body>
+</html>
