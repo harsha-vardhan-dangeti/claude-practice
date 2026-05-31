@@ -174,6 +174,17 @@ export const certifications = [
   },
 ];
 
+export const githubStats = {
+  username: 'harsha-vardhan-dangeti',
+  // Update these whenever you want to highlight different numbers
+  highlights: [
+    { label: 'Public Repos',    value: '17',   icon: 'folder'    },
+    { label: 'Pull Requests',   value: '50+',  icon: 'pr'        },
+    { label: 'Commits (2024)',  value: '200+', icon: 'commit'    },
+    { label: 'Contributions',   value: '300+', icon: 'activity'  },
+  ],
+};
+
 export const talks = [
   {
     title: "RAG Evaluation: From Theory to Production",

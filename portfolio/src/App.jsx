@@ -11,6 +11,7 @@ import ExperiencePage  from './pages/ExperiencePage';
 import ProjectsPage    from './pages/ProjectsPage';
 import SkillsPage      from './pages/SkillsPage';
 import AchievementsPage from './pages/AchievementsPage';
+import GithubPage      from './pages/GithubPage';
 import ContactPage     from './pages/ContactPage';
 
 // Must live inside HashRouter to access useLocation
@@ -30,6 +31,7 @@ function Inner() {
           <Route path="/projects"     element={<ProjectsPage />} />
           <Route path="/skills"       element={<SkillsPage />} />
           <Route path="/achievements" element={<AchievementsPage />} />
+          <Route path="/github"       element={<GithubPage />} />
           <Route path="/contact"      element={<ContactPage />} />
         </Routes>
       </main>

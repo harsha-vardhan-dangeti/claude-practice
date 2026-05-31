@@ -10,6 +10,7 @@ const pages = [
   { path: '/projects',     label: 'Projects' },
   { path: '/skills',       label: 'Skills' },
   { path: '/achievements', label: 'Achievements' },
+  { path: '/github',       label: 'GitHub' },
   { path: '/contact',      label: 'Contact' },
 ];
 

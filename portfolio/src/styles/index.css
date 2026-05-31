@@ -944,6 +944,97 @@ section { padding: clamp(4rem, 10vw, 6rem) 0; }
   line-height: 1;
 }
 
+/* ─── GITHUB STATS ───────────────────────────────────────────── */
+.gh-highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.gh-highlight-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  transition: border-color .2s, transform .2s;
+}
+.gh-highlight-card:hover {
+  border-color: var(--border-hi);
+  transform: translateY(-3px);
+}
+
+.gh-highlight-icon { color: var(--accent); }
+
+.gh-highlight-val {
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: -.04em;
+  color: var(--txt);
+  line-height: 1;
+}
+
+.gh-highlight-lbl {
+  font-family: var(--mono);
+  font-size: .65rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--txt-3);
+}
+
+.gh-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.gh-card-wrap {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  transition: border-color .2s;
+}
+.gh-card-wrap:hover { border-color: var(--border-hi); }
+
+.gh-card-label {
+  font-family: var(--mono);
+  font-size: .65rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: .875rem;
+}
+
+.gh-stats-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+}
+
+.gh-streak-wrap {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  transition: border-color .2s;
+}
+.gh-streak-wrap:hover { border-color: var(--border-hi); }
+
+.gh-streak-img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 6px;
+}
+
 /* ─── FOOTER ─────────────────────────────────────────────────── */
 footer {
   border-top: 1px solid var(--border);

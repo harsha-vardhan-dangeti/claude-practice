@@ -19,7 +19,7 @@ describe('Nav', () => {
 
   it('renders all desktop nav links', () => {
     renderNav();
-    ['Home', 'About', 'Experience', 'Projects', 'Skills', 'Achievements', 'Contact'].forEach(label => {
+    ['Home', 'About', 'Experience', 'Projects', 'Skills', 'Achievements', 'GitHub', 'Contact'].forEach(label => {
       expect(screen.getAllByText(label).length).toBeGreaterThan(0);
     });
   });
