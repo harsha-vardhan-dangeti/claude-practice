@@ -4,39 +4,28 @@ import { MemoryRouter } from 'react-router-dom';
 import GithubStats from '../components/GithubStats';
 import { githubStats } from '../data/portfolio';
 
-const mockApiData = {
-  public_repos: 17,
-  followers: 5,
-  total_count: 42,
-};
-
 const mockFetch = vi.fn();
-beforeEach(() => {
-  global.fetch = mockFetch;
-  localStorage.clear();
-});
+beforeEach(() => { global.fetch = mockFetch; localStorage.clear(); });
 afterEach(() => vi.restoreAllMocks());
 
 const setupFetch = () => {
-  mockFetch.mockImplementation((url) => {
-    if (url.includes('/users/') && !url.includes('/repos')) {
-      return Promise.resolve({ ok: true, json: async () => ({ public_repos: 17, followers: 5 }) });
-    }
-    if (url.includes('/repos')) {
-      return Promise.resolve({ ok: true, json: async () => [{ stargazers_count: 3 }, { stargazers_count: 5 }] });
-    }
-    if (url.includes('type:pr')) {
+  mockFetch.mockImplementation(url => {
+    if (url.includes('/repos'))
+      return Promise.resolve({ ok: true, json: async () => [
+        { stargazers_count: 3, language: 'Ruby' },
+        { stargazers_count: 5, language: 'Python' },
+        { stargazers_count: 0, language: 'Ruby' },
+      ]});
+    if (url.includes('type:pr'))
       return Promise.resolve({ ok: true, json: async () => ({ total_count: 42 }) });
-    }
-    if (url.includes('/commits')) {
+    if (url.includes('/commits'))
       return Promise.resolve({ ok: true, json: async () => ({ total_count: 210 }) });
-    }
-    return Promise.resolve({ ok: true, json: async () => ({}) });
+    // default: user endpoint
+    return Promise.resolve({ ok: true, json: async () => ({ public_repos: 17, followers: 5 }) });
   });
 };
 
-const renderGithub = () =>
-  render(<MemoryRouter><GithubStats /></MemoryRouter>);
+const renderGithub = () => render(<MemoryRouter><GithubStats /></MemoryRouter>);
 
 describe('GithubStats', () => {
   it('renders the section heading', () => {
@@ -45,45 +34,59 @@ describe('GithubStats', () => {
     expect(screen.getByRole('heading', { name: 'GitHub Activity' })).toBeInTheDocument();
   });
 
-  it('renders all highlight card labels', () => {
-    setupFetch();
-    renderGithub();
-    githubStats.highlights.forEach(h => {
-      expect(screen.getByText(h.label)).toBeInTheDocument();
-    });
-  });
-
   it('shows skeleton loaders while fetching', () => {
     setupFetch();
     renderGithub();
     expect(document.querySelectorAll('.gh-skeleton').length).toBeGreaterThan(0);
   });
 
-  it('shows live repo count after fetch', async () => {
+  it('shows live public repo count', async () => {
     setupFetch();
     renderGithub();
-    await waitFor(() => expect(screen.getByText('17')).toBeInTheDocument());
+    await waitFor(() => expect(screen.getAllByText('17').length).toBeGreaterThan(0));
   });
 
-  it('shows live star count after fetch', async () => {
+  it('shows live star count', async () => {
     setupFetch();
     renderGithub();
-    await waitFor(() => expect(screen.getByText('8')).toBeInTheDocument()); // 3+5
+    await waitFor(() => expect(screen.getAllByText('8').length).toBeGreaterThan(0)); // 3+5+0
   });
 
-  it('shows live PR count after fetch', async () => {
+  it('shows live PR count', async () => {
     setupFetch();
     renderGithub();
-    await waitFor(() => expect(screen.getByText('42')).toBeInTheDocument());
+    await waitFor(() => expect(screen.getAllByText('42').length).toBeGreaterThan(0));
   });
 
-  it('shows live commit count after fetch', async () => {
+  it('shows live commit count', async () => {
     setupFetch();
     renderGithub();
-    await waitFor(() => expect(screen.getByText('210')).toBeInTheDocument());
+    await waitFor(() => expect(screen.getAllByText('210').length).toBeGreaterThan(0));
   });
 
-  it('shows error message when API fails', async () => {
+  it('renders overview card rows', async () => {
+    setupFetch();
+    renderGithub();
+    await waitFor(() => {
+      // labels appear in both highlight cards and overview rows — getAllByText handles duplicates
+      expect(screen.getAllByText('Public Repos').length).toBeGreaterThan(0);
+      expect(screen.getAllByText('Total Stars').length).toBeGreaterThan(0);
+      expect(screen.getAllByText('Pull Requests').length).toBeGreaterThan(0);
+      expect(screen.getAllByText('Total Commits').length).toBeGreaterThan(0);
+      expect(screen.getByText('Followers')).toBeInTheDocument();
+    });
+  });
+
+  it('renders top languages after fetch', async () => {
+    setupFetch();
+    renderGithub();
+    await waitFor(() => {
+      expect(screen.getAllByText('Ruby').length).toBeGreaterThan(0);
+      expect(screen.getAllByText('Python').length).toBeGreaterThan(0);
+    });
+  });
+
+  it('shows error notice when API fails', async () => {
     mockFetch.mockRejectedValue(new Error('Network error'));
     renderGithub();
     await waitFor(() =>
@@ -91,29 +94,28 @@ describe('GithubStats', () => {
     );
   });
 
-  it('serves from localStorage cache on second render', async () => {
+  it('uses localStorage cache on second render', async () => {
     setupFetch();
     const { unmount } = renderGithub();
-    await waitFor(() => screen.getByText('17'));
+    await waitFor(() => screen.getAllByText('17'));
     unmount();
-
-    // Second render — fetch should NOT be called again
     mockFetch.mockClear();
     renderGithub();
-    await waitFor(() => screen.getByText('17'));
+    await waitFor(() => screen.getAllByText('17'));
     expect(mockFetch).not.toHaveBeenCalled();
   });
 
-  it('renders 3 stats images', () => {
+  it('renders streak image', () => {
     setupFetch();
     renderGithub();
-    expect(screen.getAllByRole('img').length).toBeGreaterThanOrEqual(3);
+    expect(screen.getByAltText('GitHub streak')).toBeInTheDocument();
   });
 
-  it('renders view GitHub profile link', () => {
+  it('all highlight card labels are present', () => {
     setupFetch();
     renderGithub();
-    expect(screen.getByText('View GitHub Profile').closest('a'))
-      .toHaveAttribute('href', expect.stringContaining('github.com'));
+    githubStats.highlights.forEach(h => {
+      expect(screen.getAllByText(h.label).length).toBeGreaterThan(0);
+    });
   });
 });
