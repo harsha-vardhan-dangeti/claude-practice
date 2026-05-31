@@ -1,0 +1,8 @@
+# Obsidian workspace
+.obsidian/
+
+# Playwright MCP screenshots/snapshots
+.playwright-mcp/
+
+# Brainstorming companion mockups
+.superpowers/

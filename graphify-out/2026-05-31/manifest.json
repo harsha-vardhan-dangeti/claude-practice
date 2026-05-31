@@ -10,8 +10,8 @@
     "semantic_hash": "70a29aa99b549375f97614e3edf4ba42"
   },
   "/Users/harsha/Apps/projects/Claude/.obsidian/workspace.json": {
-    "mtime": 1780209708.2835476,
-    "ast_hash": "8b3b2e3b75f0fe87feec1ed2445ff3d4",
+    "mtime": 1780209309.2822268,
+    "ast_hash": "ac2d3d41b67a6bc062d3de95173d2885",
     "semantic_hash": ""
   },
   "/Users/harsha/Apps/projects/Claude/.obsidian/app.json": {
@@ -65,8 +65,8 @@
     "semantic_hash": ""
   },
   "/Users/harsha/Apps/projects/Claude/portfolio/src/App.jsx": {
-    "mtime": 1780209668.5113869,
-    "ast_hash": "981cd145644684d34c5e8befcbdda232",
+    "mtime": 1780206829.9469812,
+    "ast_hash": "a477cf0393bff00b8358f309e09b1d29",
     "semantic_hash": ""
   },
   "/Users/harsha/Apps/projects/Claude/portfolio/src/components/Icons.jsx": {
@@ -100,8 +100,8 @@
     "semantic_hash": ""
   },
   "/Users/harsha/Apps/projects/Claude/portfolio/src/components/Nav.jsx": {
-    "mtime": 1780209677.1096268,
-    "ast_hash": "a7019738f8c4778cb973227e0f0e7002",
+    "mtime": 1780206844.3353639,
+    "ast_hash": "bde0966af55732f509c5a1d7a043775a",
     "semantic_hash": ""
   },
   "/Users/harsha/Apps/projects/Claude/portfolio/src/components/Hero.jsx": {
@@ -135,8 +135,8 @@
     "semantic_hash": ""
   },
   "/Users/harsha/Apps/projects/Claude/portfolio/src/data/portfolio.js": {
-    "mtime": 1780209603.7260644,
-    "ast_hash": "e9492bce48196ae37d5ed43b0ad37ff0",
+    "mtime": 1780209212.9605935,
+    "ast_hash": "fdb559a8370a3c955e731885d290855e",
     "semantic_hash": ""
   },
   "/Users/harsha/Apps/projects/Claude/portfolio/index.html": {
@@ -185,8 +185,8 @@
     "semantic_hash": ""
   },
   "/Users/harsha/Apps/projects/Claude/portfolio/src/__tests__/Nav.test.jsx": {
-    "mtime": 1780209714.1932278,
-    "ast_hash": "d54c0d814807b4904ad6b6ad126b578d",
+    "mtime": 1780206936.2141113,
+    "ast_hash": "464a19ac3953c26f0d56f14da32ed655",
     "semantic_hash": ""
   },
   "/Users/harsha/Apps/projects/Claude/portfolio/src/__tests__/Hero.test.jsx": {
@@ -347,31 +347,6 @@
   "/Users/harsha/Apps/projects/Claude/.superpowers/brainstorm/53502-1780208386/content/avatar-tags-style.html": {
     "mtime": 1780208539.7094421,
     "ast_hash": "a21f6328776c3e44889a899cbe97a050",
-    "semantic_hash": ""
-  },
-  "/Users/harsha/Apps/projects/Claude/portfolio/src/components/GithubStats.jsx": {
-    "mtime": 1780209641.661468,
-    "ast_hash": "81b0100b669f9da007f645ac4a8f7e29",
-    "semantic_hash": ""
-  },
-  "/Users/harsha/Apps/projects/Claude/portfolio/src/__tests__/GithubStats.test.jsx": {
-    "mtime": 1780209706.643795,
-    "ast_hash": "912ab078fcf4931737a6531cc36345c6",
-    "semantic_hash": ""
-  },
-  "/Users/harsha/Apps/projects/Claude/portfolio/src/hooks/useGithubData.js": {
-    "mtime": 1780209610.2554536,
-    "ast_hash": "deb67e27ee00635d5f2366e15f9a3c30",
-    "semantic_hash": ""
-  },
-  "/Users/harsha/Apps/projects/Claude/portfolio/src/pages/GithubPage.jsx": {
-    "mtime": 1780209654.566683,
-    "ast_hash": "b272dd032372476b3c1020b8e1c7e11f",
-    "semantic_hash": ""
-  },
-  "/Users/harsha/Apps/projects/Claude/.playwright-mcp/page-2026-05-31T06-42-11-241Z.yml": {
-    "mtime": 1780209731.2417333,
-    "ast_hash": "e44650adf2445c0d1f55eaec554f6217",
     "semantic_hash": ""
   }
 }
