@@ -693,6 +693,12 @@ section { padding: clamp(4rem, 10vw, 6rem) 0; }
 }
 .tl-bullets li::before { content: '—'; position: absolute; left: 0; color: var(--accent); font-weight: 600; }
 
+.edu-divider {
+  height: 1px;
+  background: var(--border);
+  margin-top: 3.5rem;
+}
+
 /* ─── PROJECTS ───────────────────────────────────────────────── */
 .projects-grid {
   display: grid;

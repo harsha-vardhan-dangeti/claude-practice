@@ -130,6 +130,18 @@ export const projects = [
   },
 ];
 
+export const education = [
+  {
+    degree: "Bachelor of Technology",
+    field: "Computer Science & Engineering",
+    institution: "Your University Name",
+    location: "City, State",
+    dates: "2017 — 2021",
+    grade: "",          // e.g. "CGPA: 8.4 / 10" — leave empty to hide
+    highlights: [],     // e.g. ["Relevant coursework: ...", "Final year project: ..."]
+  },
+];
+
 export const skills = [
   {
     category: "Languages",
