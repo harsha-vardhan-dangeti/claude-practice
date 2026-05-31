@@ -4,67 +4,247 @@
   "graph": {},
   "nodes": [
     {
-      "label": "Hero.test.jsx",
+      "label": "GithubStats.test.jsx",
       "file_type": "code",
-      "source_file": "portfolio/src/__tests__/Hero.test.jsx",
+      "source_file": "portfolio/src/__tests__/GithubStats.test.jsx",
       "source_location": "L1",
-      "id": "portfolio_src_tests_hero_test_jsx",
-      "community": 7,
-      "norm_label": "hero.test.jsx"
+      "id": "portfolio_src_tests_githubstats_test_jsx",
+      "community": 14,
+      "norm_label": "githubstats.test.jsx"
     },
     {
-      "label": "renderHero()",
+      "label": "mockApiData",
       "file_type": "code",
-      "source_file": "portfolio/src/__tests__/Hero.test.jsx",
+      "source_file": "portfolio/src/__tests__/GithubStats.test.jsx",
       "source_location": "L7",
-      "id": "tests_hero_test_renderhero",
-      "community": 7,
-      "norm_label": "renderhero()"
+      "id": "tests_githubstats_test_mockapidata",
+      "community": 14,
+      "norm_label": "mockapidata"
     },
     {
-      "label": "ProfileCard.test.jsx",
+      "label": "mockFetch",
       "file_type": "code",
-      "source_file": "portfolio/src/__tests__/ProfileCard.test.jsx",
-      "source_location": "L1",
-      "id": "portfolio_src_tests_profilecard_test_jsx",
-      "community": 7,
-      "norm_label": "profilecard.test.jsx"
+      "source_file": "portfolio/src/__tests__/GithubStats.test.jsx",
+      "source_location": "L13",
+      "id": "tests_githubstats_test_mockfetch",
+      "community": 14,
+      "norm_label": "mockfetch"
     },
     {
-      "label": "Hero.jsx",
+      "label": "setupFetch()",
       "file_type": "code",
-      "source_file": "portfolio/src/components/Hero.jsx",
+      "source_file": "portfolio/src/__tests__/GithubStats.test.jsx",
+      "source_location": "L20",
+      "id": "tests_githubstats_test_setupfetch",
+      "community": 14,
+      "norm_label": "setupfetch()"
+    },
+    {
+      "label": "renderGithub()",
+      "file_type": "code",
+      "source_file": "portfolio/src/__tests__/GithubStats.test.jsx",
+      "source_location": "L38",
+      "id": "tests_githubstats_test_rendergithub",
+      "community": 14,
+      "norm_label": "rendergithub()"
+    },
+    {
+      "label": "GithubStats.jsx",
+      "file_type": "code",
+      "source_file": "portfolio/src/components/GithubStats.jsx",
       "source_location": "L1",
-      "id": "portfolio_src_components_hero_jsx",
+      "id": "portfolio_src_components_githubstats_jsx",
+      "community": 14,
+      "norm_label": "githubstats.jsx"
+    },
+    {
+      "label": "cardUrl()",
+      "file_type": "code",
+      "source_file": "portfolio/src/components/GithubStats.jsx",
+      "source_location": "L7",
+      "id": "components_githubstats_cardurl",
+      "community": 14,
+      "norm_label": "cardurl()"
+    },
+    {
+      "label": "icons",
+      "file_type": "code",
+      "source_file": "portfolio/src/components/GithubStats.jsx",
+      "source_location": "L13",
+      "id": "components_githubstats_icons",
+      "community": 14,
+      "norm_label": "icons"
+    },
+    {
+      "label": "StatValue()",
+      "file_type": "code",
+      "source_file": "portfolio/src/components/GithubStats.jsx",
+      "source_location": "L20",
+      "id": "components_githubstats_statvalue",
+      "community": 14,
+      "norm_label": "statvalue()"
+    },
+    {
+      "label": "GithubStats()",
+      "file_type": "code",
+      "source_file": "portfolio/src/components/GithubStats.jsx",
+      "source_location": "L26",
+      "id": "components_githubstats_githubstats",
+      "community": 14,
+      "norm_label": "githubstats()"
+    },
+    {
+      "label": "Icons.jsx",
+      "file_type": "code",
+      "source_file": "portfolio/src/components/Icons.jsx",
+      "source_location": "L1",
+      "id": "portfolio_src_components_icons_jsx",
       "community": 6,
-      "norm_label": "hero.jsx"
+      "norm_label": "icons.jsx"
     },
     {
-      "label": "Hero()",
+      "label": "s",
       "file_type": "code",
-      "source_file": "portfolio/src/components/Hero.jsx",
-      "source_location": "L6",
-      "id": "components_hero_hero",
-      "community": 6,
-      "norm_label": "hero()"
-    },
-    {
-      "label": "ProfileCard.jsx",
-      "file_type": "code",
-      "source_file": "portfolio/src/components/ProfileCard.jsx",
+      "source_file": "portfolio/src/components/Icons.jsx",
       "source_location": "L1",
-      "id": "portfolio_src_components_profilecard_jsx",
-      "community": 7,
-      "norm_label": "profilecard.jsx"
+      "id": "components_icons_s",
+      "community": 6,
+      "norm_label": "s"
     },
     {
-      "label": "ProfileCard()",
+      "label": "IconSun()",
       "file_type": "code",
-      "source_file": "portfolio/src/components/ProfileCard.jsx",
-      "source_location": "L4",
-      "id": "components_profilecard_profilecard",
+      "source_file": "portfolio/src/components/Icons.jsx",
+      "source_location": "L3",
+      "id": "components_icons_iconsun",
+      "community": 6,
+      "norm_label": "iconsun()"
+    },
+    {
+      "label": "IconMoon()",
+      "file_type": "code",
+      "source_file": "portfolio/src/components/Icons.jsx",
+      "source_location": "L9",
+      "id": "components_icons_iconmoon",
+      "community": 6,
+      "norm_label": "iconmoon()"
+    },
+    {
+      "label": "IconArrowRight()",
+      "file_type": "code",
+      "source_file": "portfolio/src/components/Icons.jsx",
+      "source_location": "L15",
+      "id": "components_icons_iconarrowright",
+      "community": 6,
+      "norm_label": "iconarrowright()"
+    },
+    {
+      "label": "IconDownload()",
+      "file_type": "code",
+      "source_file": "portfolio/src/components/Icons.jsx",
+      "source_location": "L21",
+      "id": "components_icons_icondownload",
+      "community": 6,
+      "norm_label": "icondownload()"
+    },
+    {
+      "label": "IconScrollDown()",
+      "file_type": "code",
+      "source_file": "portfolio/src/components/Icons.jsx",
+      "source_location": "L27",
+      "id": "components_icons_iconscrolldown",
+      "community": 6,
+      "norm_label": "iconscrolldown()"
+    },
+    {
+      "label": "IconGithub()",
+      "file_type": "code",
+      "source_file": "portfolio/src/components/Icons.jsx",
+      "source_location": "L33",
+      "id": "components_icons_icongithub",
+      "community": 6,
+      "norm_label": "icongithub()"
+    },
+    {
+      "label": "IconLinkedIn()",
+      "file_type": "code",
+      "source_file": "portfolio/src/components/Icons.jsx",
+      "source_location": "L39",
+      "id": "components_icons_iconlinkedin",
+      "community": 3,
+      "norm_label": "iconlinkedin()"
+    },
+    {
+      "label": "IconEmail()",
+      "file_type": "code",
+      "source_file": "portfolio/src/components/Icons.jsx",
+      "source_location": "L45",
+      "id": "components_icons_iconemail",
+      "community": 3,
+      "norm_label": "iconemail()"
+    },
+    {
+      "label": "IconExternal()",
+      "file_type": "code",
+      "source_file": "portfolio/src/components/Icons.jsx",
+      "source_location": "L51",
+      "id": "components_icons_iconexternal",
+      "community": 6,
+      "norm_label": "iconexternal()"
+    },
+    {
+      "label": "IconEdit()",
+      "file_type": "code",
+      "source_file": "portfolio/src/components/Icons.jsx",
+      "source_location": "L57",
+      "id": "components_icons_iconedit",
+      "community": 6,
+      "norm_label": "iconedit()"
+    },
+    {
+      "label": "IconMonitor()",
+      "file_type": "code",
+      "source_file": "portfolio/src/components/Icons.jsx",
+      "source_location": "L63",
+      "id": "components_icons_iconmonitor",
+      "community": 6,
+      "norm_label": "iconmonitor()"
+    },
+    {
+      "label": "projectIcons",
+      "file_type": "code",
+      "source_file": "portfolio/src/components/Icons.jsx",
+      "source_location": "L69",
+      "id": "components_icons_projecticons",
+      "community": 6,
+      "norm_label": "projecticons"
+    },
+    {
+      "label": "ProjectIcon()",
+      "file_type": "code",
+      "source_file": "portfolio/src/components/Icons.jsx",
+      "source_location": "L102",
+      "id": "components_icons_projecticon",
+      "community": 6,
+      "norm_label": "projecticon()"
+    },
+    {
+      "label": "IconStar()",
+      "file_type": "code",
+      "source_file": "portfolio/src/components/Icons.jsx",
+      "source_location": "L107",
+      "id": "components_icons_iconstar",
+      "community": 14,
+      "norm_label": "iconstar()"
+    },
+    {
+      "label": "TalkIcon()",
+      "file_type": "code",
+      "source_file": "portfolio/src/components/Icons.jsx",
+      "source_location": "L113",
+      "id": "components_icons_talkicon",
       "community": 7,
-      "norm_label": "profilecard()"
+      "norm_label": "talkicon()"
     },
     {
       "label": "portfolio.js",
@@ -81,7 +261,7 @@
       "source_file": "portfolio/src/data/portfolio.js",
       "source_location": "L1",
       "id": "data_portfolio_personal",
-      "community": 7,
+      "community": 3,
       "norm_label": "personal"
     },
     {
@@ -99,7 +279,7 @@
       "source_file": "portfolio/src/data/portfolio.js",
       "source_location": "L39",
       "id": "data_portfolio_about",
-      "community": 7,
+      "community": 3,
       "norm_label": "about"
     },
     {
@@ -108,7 +288,7 @@
       "source_file": "portfolio/src/data/portfolio.js",
       "source_location": "L55",
       "id": "data_portfolio_experience",
-      "community": 3,
+      "community": 7,
       "norm_label": "experience"
     },
     {
@@ -117,7 +297,7 @@
       "source_file": "portfolio/src/data/portfolio.js",
       "source_location": "L82",
       "id": "data_portfolio_projects",
-      "community": 3,
+      "community": 7,
       "norm_label": "projects"
     },
     {
@@ -135,17 +315,206 @@
       "source_file": "portfolio/src/data/portfolio.js",
       "source_location": "L156",
       "id": "data_portfolio_certifications",
-      "community": 3,
+      "community": 7,
       "norm_label": "certifications"
+    },
+    {
+      "label": "githubStats",
+      "file_type": "code",
+      "source_file": "portfolio/src/data/portfolio.js",
+      "source_location": "L177",
+      "id": "data_portfolio_githubstats",
+      "community": 14,
+      "norm_label": "githubstats"
     },
     {
       "label": "talks",
       "file_type": "code",
       "source_file": "portfolio/src/data/portfolio.js",
-      "source_location": "L177",
+      "source_location": "L188",
       "id": "data_portfolio_talks",
-      "community": 3,
+      "community": 7,
       "norm_label": "talks"
+    },
+    {
+      "label": "useGithubData.js",
+      "file_type": "code",
+      "source_file": "portfolio/src/hooks/useGithubData.js",
+      "source_location": "L1",
+      "id": "portfolio_src_hooks_usegithubdata_js",
+      "community": 14,
+      "norm_label": "usegithubdata.js"
+    },
+    {
+      "label": "fetchAll()",
+      "file_type": "code",
+      "source_file": "portfolio/src/hooks/useGithubData.js",
+      "source_location": "L6",
+      "id": "hooks_usegithubdata_fetchall",
+      "community": 14,
+      "norm_label": "fetchall()"
+    },
+    {
+      "label": "useGithubData()",
+      "file_type": "code",
+      "source_file": "portfolio/src/hooks/useGithubData.js",
+      "source_location": "L38",
+      "id": "hooks_usegithubdata_usegithubdata",
+      "community": 14,
+      "norm_label": "usegithubdata()"
+    },
+    {
+      "label": "App.jsx",
+      "file_type": "code",
+      "source_file": "portfolio/src/App.jsx",
+      "source_location": "L1",
+      "community": 9,
+      "norm_label": "app.jsx",
+      "id": "portfolio_src_app_jsx"
+    },
+    {
+      "label": "Inner()",
+      "file_type": "code",
+      "source_file": "portfolio/src/App.jsx",
+      "source_location": "L18",
+      "community": 9,
+      "norm_label": "inner()",
+      "id": "src_app_inner"
+    },
+    {
+      "label": "App()",
+      "file_type": "code",
+      "source_file": "portfolio/src/App.jsx",
+      "source_location": "L43",
+      "community": 9,
+      "norm_label": "app()",
+      "id": "src_app_app"
+    },
+    {
+      "label": "Nav.test.jsx",
+      "file_type": "code",
+      "source_file": "portfolio/src/__tests__/Nav.test.jsx",
+      "source_location": "L1",
+      "community": 3,
+      "norm_label": "nav.test.jsx",
+      "id": "portfolio_src_tests_nav_test_jsx"
+    },
+    {
+      "label": "renderNav()",
+      "file_type": "code",
+      "source_file": "portfolio/src/__tests__/Nav.test.jsx",
+      "source_location": "L7",
+      "community": 3,
+      "norm_label": "rendernav()",
+      "id": "tests_nav_test_rendernav"
+    },
+    {
+      "label": "Nav.jsx",
+      "file_type": "code",
+      "source_file": "portfolio/src/components/Nav.jsx",
+      "source_location": "L1",
+      "community": 6,
+      "norm_label": "nav.jsx",
+      "id": "portfolio_src_components_nav_jsx"
+    },
+    {
+      "label": "pages",
+      "file_type": "code",
+      "source_file": "portfolio/src/components/Nav.jsx",
+      "source_location": "L6",
+      "community": 6,
+      "norm_label": "pages",
+      "id": "components_nav_pages"
+    },
+    {
+      "label": "Nav()",
+      "file_type": "code",
+      "source_file": "portfolio/src/components/Nav.jsx",
+      "source_location": "L17",
+      "community": 6,
+      "norm_label": "nav()",
+      "id": "components_nav_nav"
+    },
+    {
+      "label": "GithubPage.jsx",
+      "file_type": "code",
+      "source_file": "portfolio/src/pages/GithubPage.jsx",
+      "source_location": "L1",
+      "community": 14,
+      "norm_label": "githubpage.jsx",
+      "id": "portfolio_src_pages_githubpage_jsx"
+    },
+    {
+      "label": "GithubPage()",
+      "file_type": "code",
+      "source_file": "portfolio/src/pages/GithubPage.jsx",
+      "source_location": "L3",
+      "community": 14,
+      "norm_label": "githubpage()",
+      "id": "pages_githubpage_githubpage"
+    },
+    {
+      "label": "Hero.test.jsx",
+      "file_type": "code",
+      "source_file": "portfolio/src/__tests__/Hero.test.jsx",
+      "source_location": "L1",
+      "community": 7,
+      "norm_label": "hero.test.jsx",
+      "id": "portfolio_src_tests_hero_test_jsx"
+    },
+    {
+      "label": "renderHero()",
+      "file_type": "code",
+      "source_file": "portfolio/src/__tests__/Hero.test.jsx",
+      "source_location": "L7",
+      "community": 7,
+      "norm_label": "renderhero()",
+      "id": "tests_hero_test_renderhero"
+    },
+    {
+      "label": "ProfileCard.test.jsx",
+      "file_type": "code",
+      "source_file": "portfolio/src/__tests__/ProfileCard.test.jsx",
+      "source_location": "L1",
+      "community": 3,
+      "norm_label": "profilecard.test.jsx",
+      "id": "portfolio_src_tests_profilecard_test_jsx"
+    },
+    {
+      "label": "Hero.jsx",
+      "file_type": "code",
+      "source_file": "portfolio/src/components/Hero.jsx",
+      "source_location": "L1",
+      "community": 6,
+      "norm_label": "hero.jsx",
+      "id": "portfolio_src_components_hero_jsx"
+    },
+    {
+      "label": "Hero()",
+      "file_type": "code",
+      "source_file": "portfolio/src/components/Hero.jsx",
+      "source_location": "L6",
+      "community": 6,
+      "norm_label": "hero()",
+      "id": "components_hero_hero"
+    },
+    {
+      "label": "ProfileCard.jsx",
+      "file_type": "code",
+      "source_file": "portfolio/src/components/ProfileCard.jsx",
+      "source_location": "L1",
+      "community": 3,
+      "norm_label": "profilecard.jsx",
+      "id": "portfolio_src_components_profilecard_jsx"
+    },
+    {
+      "label": "ProfileCard()",
+      "file_type": "code",
+      "source_file": "portfolio/src/components/ProfileCard.jsx",
+      "source_location": "L4",
+      "community": 3,
+      "norm_label": "profilecard()",
+      "id": "components_profilecard_profilecard"
     },
     {
       "label": "package.json",
@@ -445,33 +814,6 @@
       "id": "portfolio_package_devdependencies_vitest"
     },
     {
-      "label": "App.jsx",
-      "file_type": "code",
-      "source_file": "portfolio/src/App.jsx",
-      "source_location": "L1",
-      "community": 9,
-      "norm_label": "app.jsx",
-      "id": "portfolio_src_app_jsx"
-    },
-    {
-      "label": "Inner()",
-      "file_type": "code",
-      "source_file": "portfolio/src/App.jsx",
-      "source_location": "L17",
-      "community": 9,
-      "norm_label": "inner()",
-      "id": "src_app_inner"
-    },
-    {
-      "label": "App()",
-      "file_type": "code",
-      "source_file": "portfolio/src/App.jsx",
-      "source_location": "L41",
-      "community": 9,
-      "norm_label": "app()",
-      "id": "src_app_app"
-    },
-    {
       "label": "App.test.jsx",
       "file_type": "code",
       "source_file": "portfolio/src/__tests__/App.test.jsx",
@@ -490,24 +832,6 @@
       "id": "tests_app_test_renderpage"
     },
     {
-      "label": "Nav.test.jsx",
-      "file_type": "code",
-      "source_file": "portfolio/src/__tests__/Nav.test.jsx",
-      "source_location": "L1",
-      "community": 7,
-      "norm_label": "nav.test.jsx",
-      "id": "portfolio_src_tests_nav_test_jsx"
-    },
-    {
-      "label": "renderNav()",
-      "file_type": "code",
-      "source_file": "portfolio/src/__tests__/Nav.test.jsx",
-      "source_location": "L7",
-      "community": 7,
-      "norm_label": "rendernav()",
-      "id": "tests_nav_test_rendernav"
-    },
-    {
       "label": "useScrollReveal.test.jsx",
       "file_type": "code",
       "source_file": "portfolio/src/__tests__/useScrollReveal.test.jsx",
@@ -524,33 +848,6 @@
       "community": 9,
       "norm_label": "fixture()",
       "id": "tests_usescrollreveal_test_fixture"
-    },
-    {
-      "label": "Nav.jsx",
-      "file_type": "code",
-      "source_file": "portfolio/src/components/Nav.jsx",
-      "source_location": "L1",
-      "community": 6,
-      "norm_label": "nav.jsx",
-      "id": "portfolio_src_components_nav_jsx"
-    },
-    {
-      "label": "pages",
-      "file_type": "code",
-      "source_file": "portfolio/src/components/Nav.jsx",
-      "source_location": "L6",
-      "community": 6,
-      "norm_label": "pages",
-      "id": "components_nav_pages"
-    },
-    {
-      "label": "Nav()",
-      "file_type": "code",
-      "source_file": "portfolio/src/components/Nav.jsx",
-      "source_location": "L16",
-      "community": 6,
-      "norm_label": "nav()",
-      "id": "components_nav_nav"
     },
     {
       "label": "ScrollToTop.jsx",
@@ -719,7 +1016,7 @@
       "file_type": "code",
       "source_file": "portfolio/src/components/About.jsx",
       "source_location": "L1",
-      "community": 7,
+      "community": 3,
       "norm_label": "about.jsx",
       "id": "portfolio_src_components_about_jsx"
     },
@@ -728,7 +1025,7 @@
       "file_type": "code",
       "source_file": "portfolio/src/components/About.jsx",
       "source_location": "L4",
-      "community": 7,
+      "community": 3,
       "norm_label": "about()",
       "id": "components_about_about"
     },
@@ -737,7 +1034,7 @@
       "file_type": "code",
       "source_file": "portfolio/src/components/Avatar.jsx",
       "source_location": "L1",
-      "community": 7,
+      "community": 3,
       "norm_label": "avatar.jsx",
       "id": "portfolio_src_components_avatar_jsx"
     },
@@ -746,7 +1043,7 @@
       "file_type": "code",
       "source_file": "portfolio/src/components/Avatar.jsx",
       "source_location": "L3",
-      "community": 7,
+      "community": 3,
       "norm_label": "avatar()",
       "id": "components_avatar_avatar"
     },
@@ -917,7 +1214,7 @@
       "file_type": "code",
       "source_file": "portfolio/src/__tests__/About.test.jsx",
       "source_location": "L1",
-      "community": 7,
+      "community": 3,
       "norm_label": "about.test.jsx",
       "id": "portfolio_src_tests_about_test_jsx"
     },
@@ -926,7 +1223,7 @@
       "file_type": "code",
       "source_file": "portfolio/src/__tests__/Certifications.test.jsx",
       "source_location": "L1",
-      "community": 3,
+      "community": 7,
       "norm_label": "certifications.test.jsx",
       "id": "portfolio_src_tests_certifications_test_jsx"
     },
@@ -935,7 +1232,7 @@
       "file_type": "code",
       "source_file": "portfolio/src/__tests__/Contact.test.jsx",
       "source_location": "L1",
-      "community": 7,
+      "community": 3,
       "norm_label": "contact.test.jsx",
       "id": "portfolio_src_tests_contact_test_jsx"
     },
@@ -944,7 +1241,7 @@
       "file_type": "code",
       "source_file": "portfolio/src/__tests__/Experience.test.jsx",
       "source_location": "L1",
-      "community": 3,
+      "community": 7,
       "norm_label": "experience.test.jsx",
       "id": "portfolio_src_tests_experience_test_jsx"
     },
@@ -953,7 +1250,7 @@
       "file_type": "code",
       "source_file": "portfolio/src/__tests__/Footer.test.jsx",
       "source_location": "L1",
-      "community": 7,
+      "community": 3,
       "norm_label": "footer.test.jsx",
       "id": "portfolio_src_tests_footer_test_jsx"
     },
@@ -962,7 +1259,7 @@
       "file_type": "code",
       "source_file": "portfolio/src/__tests__/Projects.test.jsx",
       "source_location": "L1",
-      "community": 3,
+      "community": 7,
       "norm_label": "projects.test.jsx",
       "id": "portfolio_src_tests_projects_test_jsx"
     },
@@ -980,7 +1277,7 @@
       "file_type": "code",
       "source_file": "portfolio/src/__tests__/Talks.test.jsx",
       "source_location": "L1",
-      "community": 3,
+      "community": 7,
       "norm_label": "talks.test.jsx",
       "id": "portfolio_src_tests_talks_test_jsx"
     },
@@ -989,7 +1286,7 @@
       "file_type": "code",
       "source_file": "portfolio/src/__tests__/data.test.js",
       "source_location": "L1",
-      "community": 3,
+      "community": 7,
       "norm_label": "data.test.js",
       "id": "portfolio_src_tests_data_test_js"
     },
@@ -1115,7 +1412,7 @@
       "file_type": "code",
       "source_file": "portfolio/src/components/Certifications.jsx",
       "source_location": "L1",
-      "community": 3,
+      "community": 6,
       "norm_label": "certifications.jsx",
       "id": "portfolio_src_components_certifications_jsx"
     },
@@ -1124,7 +1421,7 @@
       "file_type": "code",
       "source_file": "portfolio/src/components/Certifications.jsx",
       "source_location": "L4",
-      "community": 3,
+      "community": 6,
       "norm_label": "certifications()",
       "id": "components_certifications_certifications"
     },
@@ -1133,7 +1430,7 @@
       "file_type": "code",
       "source_file": "portfolio/src/components/Contact.jsx",
       "source_location": "L1",
-      "community": 6,
+      "community": 3,
       "norm_label": "contact.jsx",
       "id": "portfolio_src_components_contact_jsx"
     },
@@ -1142,7 +1439,7 @@
       "file_type": "code",
       "source_file": "portfolio/src/components/Contact.jsx",
       "source_location": "L4",
-      "community": 6,
+      "community": 3,
       "norm_label": "contact()",
       "id": "components_contact_contact"
     },
@@ -1151,7 +1448,7 @@
       "file_type": "code",
       "source_file": "portfolio/src/components/Experience.jsx",
       "source_location": "L1",
-      "community": 3,
+      "community": 7,
       "norm_label": "experience.jsx",
       "id": "portfolio_src_components_experience_jsx"
     },
@@ -1160,7 +1457,7 @@
       "file_type": "code",
       "source_file": "portfolio/src/components/Experience.jsx",
       "source_location": "L3",
-      "community": 3,
+      "community": 7,
       "norm_label": "experience()",
       "id": "components_experience_experience"
     },
@@ -1169,7 +1466,7 @@
       "file_type": "code",
       "source_file": "portfolio/src/components/Footer.jsx",
       "source_location": "L1",
-      "community": 7,
+      "community": 3,
       "norm_label": "footer.jsx",
       "id": "portfolio_src_components_footer_jsx"
     },
@@ -1178,153 +1475,9 @@
       "file_type": "code",
       "source_file": "portfolio/src/components/Footer.jsx",
       "source_location": "L3",
-      "community": 7,
+      "community": 3,
       "norm_label": "footer()",
       "id": "components_footer_footer"
-    },
-    {
-      "label": "Icons.jsx",
-      "file_type": "code",
-      "source_file": "portfolio/src/components/Icons.jsx",
-      "source_location": "L1",
-      "community": 6,
-      "norm_label": "icons.jsx",
-      "id": "portfolio_src_components_icons_jsx"
-    },
-    {
-      "label": "s",
-      "file_type": "code",
-      "source_file": "portfolio/src/components/Icons.jsx",
-      "source_location": "L1",
-      "community": 6,
-      "norm_label": "s",
-      "id": "components_icons_s"
-    },
-    {
-      "label": "IconSun()",
-      "file_type": "code",
-      "source_file": "portfolio/src/components/Icons.jsx",
-      "source_location": "L3",
-      "community": 6,
-      "norm_label": "iconsun()",
-      "id": "components_icons_iconsun"
-    },
-    {
-      "label": "IconMoon()",
-      "file_type": "code",
-      "source_file": "portfolio/src/components/Icons.jsx",
-      "source_location": "L9",
-      "community": 6,
-      "norm_label": "iconmoon()",
-      "id": "components_icons_iconmoon"
-    },
-    {
-      "label": "IconArrowRight()",
-      "file_type": "code",
-      "source_file": "portfolio/src/components/Icons.jsx",
-      "source_location": "L15",
-      "community": 6,
-      "norm_label": "iconarrowright()",
-      "id": "components_icons_iconarrowright"
-    },
-    {
-      "label": "IconDownload()",
-      "file_type": "code",
-      "source_file": "portfolio/src/components/Icons.jsx",
-      "source_location": "L21",
-      "community": 6,
-      "norm_label": "icondownload()",
-      "id": "components_icons_icondownload"
-    },
-    {
-      "label": "IconScrollDown()",
-      "file_type": "code",
-      "source_file": "portfolio/src/components/Icons.jsx",
-      "source_location": "L27",
-      "community": 6,
-      "norm_label": "iconscrolldown()",
-      "id": "components_icons_iconscrolldown"
-    },
-    {
-      "label": "IconGithub()",
-      "file_type": "code",
-      "source_file": "portfolio/src/components/Icons.jsx",
-      "source_location": "L33",
-      "community": 6,
-      "norm_label": "icongithub()",
-      "id": "components_icons_icongithub"
-    },
-    {
-      "label": "IconLinkedIn()",
-      "file_type": "code",
-      "source_file": "portfolio/src/components/Icons.jsx",
-      "source_location": "L39",
-      "community": 6,
-      "norm_label": "iconlinkedin()",
-      "id": "components_icons_iconlinkedin"
-    },
-    {
-      "label": "IconEmail()",
-      "file_type": "code",
-      "source_file": "portfolio/src/components/Icons.jsx",
-      "source_location": "L45",
-      "community": 6,
-      "norm_label": "iconemail()",
-      "id": "components_icons_iconemail"
-    },
-    {
-      "label": "IconExternal()",
-      "file_type": "code",
-      "source_file": "portfolio/src/components/Icons.jsx",
-      "source_location": "L51",
-      "community": 3,
-      "norm_label": "iconexternal()",
-      "id": "components_icons_iconexternal"
-    },
-    {
-      "label": "IconEdit()",
-      "file_type": "code",
-      "source_file": "portfolio/src/components/Icons.jsx",
-      "source_location": "L57",
-      "community": 6,
-      "norm_label": "iconedit()",
-      "id": "components_icons_iconedit"
-    },
-    {
-      "label": "IconMonitor()",
-      "file_type": "code",
-      "source_file": "portfolio/src/components/Icons.jsx",
-      "source_location": "L63",
-      "community": 6,
-      "norm_label": "iconmonitor()",
-      "id": "components_icons_iconmonitor"
-    },
-    {
-      "label": "projectIcons",
-      "file_type": "code",
-      "source_file": "portfolio/src/components/Icons.jsx",
-      "source_location": "L69",
-      "community": 6,
-      "norm_label": "projecticons",
-      "id": "components_icons_projecticons"
-    },
-    {
-      "label": "ProjectIcon()",
-      "file_type": "code",
-      "source_file": "portfolio/src/components/Icons.jsx",
-      "source_location": "L102",
-      "community": 6,
-      "norm_label": "projecticon()",
-      "id": "components_icons_projecticon"
-    },
-    {
-      "label": "TalkIcon()",
-      "file_type": "code",
-      "source_file": "portfolio/src/components/Icons.jsx",
-      "source_location": "L107",
-      "community": 3,
-      "norm_label": "talkicon()",
-      "id": "components_icons_talkicon"
     },
     {
       "label": "Projects.jsx",
@@ -1367,7 +1520,7 @@
       "file_type": "code",
       "source_file": "portfolio/src/components/Talks.jsx",
       "source_location": "L1",
-      "community": 3,
+      "community": 7,
       "norm_label": "talks.jsx",
       "id": "portfolio_src_components_talks_jsx"
     },
@@ -1376,7 +1529,7 @@
       "file_type": "code",
       "source_file": "portfolio/src/components/Talks.jsx",
       "source_location": "L4",
-      "community": 3,
+      "community": 7,
       "norm_label": "talks()",
       "id": "components_talks_talks"
     },
@@ -1461,120 +1614,472 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/__tests__/Hero.test.jsx",
+      "source_file": "portfolio/src/__tests__/GithubStats.test.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_tests_githubstats_test_jsx",
+      "target": "data_portfolio_githubstats"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/__tests__/GithubStats.test.jsx",
       "source_location": "L4",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "portfolio_src_tests_hero_test_jsx",
-      "target": "data_portfolio_hero"
+      "source": "portfolio_src_tests_githubstats_test_jsx",
+      "target": "portfolio_src_components_githubstats_jsx"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/__tests__/GithubStats.test.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_tests_githubstats_test_jsx",
+      "target": "portfolio_src_data_portfolio_js"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/__tests__/GithubStats.test.jsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "portfolio_src_tests_githubstats_test_jsx",
+      "target": "tests_githubstats_test_mockapidata",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/__tests__/GithubStats.test.jsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_tests_githubstats_test_jsx",
+      "target": "tests_githubstats_test_mockfetch"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/__tests__/GithubStats.test.jsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_tests_githubstats_test_jsx",
+      "target": "tests_githubstats_test_rendergithub"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/__tests__/GithubStats.test.jsx",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "portfolio_src_tests_githubstats_test_jsx",
+      "target": "tests_githubstats_test_setupfetch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/GithubStats.jsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "portfolio_src_components_githubstats_jsx",
+      "target": "components_githubstats_cardurl",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/GithubStats.jsx",
+      "source_location": "L19",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_githubstats_jsx",
+      "target": "components_githubstats_githubstats"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/GithubStats.jsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_githubstats_jsx",
+      "target": "components_githubstats_icons"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/GithubStats.jsx",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "portfolio_src_components_githubstats_jsx",
+      "target": "components_githubstats_statvalue",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/__tests__/Hero.test.jsx",
-      "source_location": "L4",
+      "source_file": "portfolio/src/components/GithubStats.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "portfolio_src_components_githubstats_jsx",
+      "target": "components_icons_iconstar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/GithubStats.jsx",
+      "source_location": "L1",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "portfolio_src_tests_hero_test_jsx",
+      "source": "portfolio_src_components_githubstats_jsx",
+      "target": "data_portfolio_githubstats"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/GithubStats.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_githubstats_jsx",
       "target": "data_portfolio_personal"
     },
     {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/__tests__/Hero.test.jsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "source": "portfolio_src_tests_hero_test_jsx",
-      "target": "portfolio_src_components_hero_jsx",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/__tests__/Hero.test.jsx",
-      "source_location": "L5",
-      "weight": 1.0,
-      "source": "portfolio_src_tests_hero_test_jsx",
-      "target": "portfolio_src_data_portfolio_js",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/__tests__/Hero.test.jsx",
-      "source_location": "L7",
-      "weight": 1.0,
-      "source": "portfolio_src_tests_hero_test_jsx",
-      "target": "tests_hero_test_renderhero",
-      "confidence_score": 1.0
-    },
-    {
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/__tests__/ProfileCard.test.jsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "source": "portfolio_src_tests_profilecard_test_jsx",
-      "target": "data_portfolio_about",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/__tests__/ProfileCard.test.jsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "source": "portfolio_src_tests_profilecard_test_jsx",
-      "target": "data_portfolio_personal",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/__tests__/ProfileCard.test.jsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "source": "portfolio_src_tests_profilecard_test_jsx",
-      "target": "portfolio_src_components_profilecard_jsx",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/__tests__/ProfileCard.test.jsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "source": "portfolio_src_tests_profilecard_test_jsx",
-      "target": "portfolio_src_data_portfolio_js",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/App.jsx",
-      "source_location": "L4",
+      "source_file": "portfolio/src/components/GithubStats.jsx",
+      "source_location": "L2",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "portfolio_src_app_jsx",
-      "target": "portfolio_src_components_hero_jsx"
+      "source": "portfolio_src_components_githubstats_jsx",
+      "target": "hooks_usegithubdata_usegithubdata"
     },
     {
-      "relation": "contains",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/GithubStats.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "portfolio_src_components_githubstats_jsx",
+      "target": "portfolio_src_components_icons_jsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/GithubStats.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_githubstats_jsx",
+      "target": "portfolio_src_data_portfolio_js"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/GithubStats.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_githubstats_jsx",
+      "target": "portfolio_src_hooks_usegithubdata_js"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/pages/GithubPage.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_pages_githubpage_jsx",
+      "target": "portfolio_src_components_githubstats_jsx"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/GithubStats.jsx",
+      "source_location": "L58",
+      "weight": 1.0,
+      "source": "components_githubstats_githubstats",
+      "target": "components_githubstats_cardurl",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "portfolio/src/components/GithubStats.jsx",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "components_githubstats_githubstats",
+      "target": "hooks_usegithubdata_usegithubdata"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Certifications.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_certifications_jsx",
+      "target": "portfolio_src_components_icons_jsx"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Contact.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_contact_jsx",
+      "target": "portfolio_src_components_icons_jsx"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "portfolio/src/components/Hero.jsx",
-      "source_location": "L4",
+      "source_location": "L2",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "portfolio_src_components_hero_jsx",
-      "target": "components_hero_hero"
+      "target": "portfolio_src_components_icons_jsx"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Icons.jsx",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_icons_jsx",
+      "target": "components_icons_iconarrowright"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Icons.jsx",
+      "source_location": "L21",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_icons_jsx",
+      "target": "components_icons_icondownload"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Icons.jsx",
+      "source_location": "L57",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_icons_jsx",
+      "target": "components_icons_iconedit"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Icons.jsx",
+      "source_location": "L45",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_icons_jsx",
+      "target": "components_icons_iconemail"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Icons.jsx",
+      "source_location": "L51",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_icons_jsx",
+      "target": "components_icons_iconexternal"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Icons.jsx",
+      "source_location": "L33",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_icons_jsx",
+      "target": "components_icons_icongithub"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Icons.jsx",
+      "source_location": "L39",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_icons_jsx",
+      "target": "components_icons_iconlinkedin"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Icons.jsx",
+      "source_location": "L63",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_icons_jsx",
+      "target": "components_icons_iconmonitor"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Icons.jsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_icons_jsx",
+      "target": "components_icons_iconmoon"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Icons.jsx",
+      "source_location": "L27",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_icons_jsx",
+      "target": "components_icons_iconscrolldown"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Icons.jsx",
+      "source_location": "L107",
+      "weight": 1.0,
+      "source": "portfolio_src_components_icons_jsx",
+      "target": "components_icons_iconstar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Icons.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_icons_jsx",
+      "target": "components_icons_iconsun"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Icons.jsx",
+      "source_location": "L102",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_icons_jsx",
+      "target": "components_icons_projecticon"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Icons.jsx",
+      "source_location": "L69",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_icons_jsx",
+      "target": "components_icons_projecticons"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Icons.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_icons_jsx",
+      "target": "components_icons_s"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Icons.jsx",
+      "source_location": "L107",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_icons_jsx",
+      "target": "components_icons_talkicon"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Nav.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_nav_jsx",
+      "target": "portfolio_src_components_icons_jsx"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Projects.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_projects_jsx",
+      "target": "portfolio_src_components_icons_jsx"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Talks.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_talks_jsx",
+      "target": "portfolio_src_components_icons_jsx"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Nav.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_nav_jsx",
+      "target": "components_icons_iconsun"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Nav.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_nav_jsx",
+      "target": "components_icons_iconmoon"
     },
     {
       "relation": "imports",
@@ -1602,6 +2107,17 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Nav.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_nav_jsx",
+      "target": "components_icons_icondownload"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "portfolio/src/components/Hero.jsx",
       "source_location": "L2",
       "weight": 1.0,
@@ -1613,56 +2129,12 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Hero.jsx",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_hero_jsx",
-      "target": "data_portfolio_hero"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Hero.jsx",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_hero_jsx",
-      "target": "data_portfolio_personal"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Hero.jsx",
+      "source_file": "portfolio/src/components/Contact.jsx",
       "source_location": "L2",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "portfolio_src_components_hero_jsx",
-      "target": "portfolio_src_components_icons_jsx"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Hero.jsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "source": "portfolio_src_components_hero_jsx",
-      "target": "portfolio_src_components_profilecard_jsx",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Hero.jsx",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_hero_jsx",
-      "target": "portfolio_src_data_portfolio_js"
+      "source": "portfolio_src_components_contact_jsx",
+      "target": "components_icons_icongithub"
     },
     {
       "relation": "imports",
@@ -1671,9 +2143,31 @@
       "source_file": "portfolio/src/components/ProfileCard.jsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "portfolio_src_components_profilecard_jsx",
-      "target": "components_icons_iconemail",
-      "confidence_score": 1.0
+      "target": "components_icons_icongithub"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Projects.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_projects_jsx",
+      "target": "components_icons_icongithub"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Contact.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_contact_jsx",
+      "target": "components_icons_iconlinkedin"
     },
     {
       "relation": "imports",
@@ -1682,9 +2176,20 @@
       "source_file": "portfolio/src/components/ProfileCard.jsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "portfolio_src_components_profilecard_jsx",
-      "target": "components_icons_icongithub",
-      "confidence_score": 1.0
+      "target": "components_icons_iconlinkedin"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Contact.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_contact_jsx",
+      "target": "components_icons_iconemail"
     },
     {
       "relation": "imports",
@@ -1693,52 +2198,53 @@
       "source_file": "portfolio/src/components/ProfileCard.jsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "portfolio_src_components_profilecard_jsx",
-      "target": "components_icons_iconlinkedin",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/ProfileCard.jsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "source": "portfolio_src_components_profilecard_jsx",
-      "target": "components_profilecard_profilecard",
-      "confidence_score": 1.0
+      "target": "components_icons_iconemail"
     },
     {
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/ProfileCard.jsx",
-      "source_location": "L1",
+      "source_file": "portfolio/src/components/Certifications.jsx",
+      "source_location": "L2",
       "weight": 1.0,
-      "source": "portfolio_src_components_profilecard_jsx",
-      "target": "data_portfolio_about",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_certifications_jsx",
+      "target": "components_icons_iconexternal"
     },
     {
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/ProfileCard.jsx",
-      "source_location": "L1",
+      "source_file": "portfolio/src/components/Projects.jsx",
+      "source_location": "L2",
       "weight": 1.0,
-      "source": "portfolio_src_components_profilecard_jsx",
-      "target": "data_portfolio_personal",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_projects_jsx",
+      "target": "components_icons_iconexternal"
     },
     {
-      "relation": "imports_from",
+      "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/ProfileCard.jsx",
-      "source_location": "L1",
+      "source_file": "portfolio/src/components/Projects.jsx",
+      "source_location": "L2",
       "weight": 1.0,
-      "source": "portfolio_src_components_profilecard_jsx",
-      "target": "portfolio_src_data_portfolio_js",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_projects_jsx",
+      "target": "components_icons_projecticon"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Talks.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_talks_jsx",
+      "target": "components_icons_talkicon"
     },
     {
       "relation": "imports_from",
@@ -1810,11 +2316,33 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Hero.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_hero_jsx",
+      "target": "portfolio_src_data_portfolio_js"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "portfolio/src/components/Nav.jsx",
       "source_location": "L2",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "portfolio_src_components_nav_jsx",
+      "target": "portfolio_src_data_portfolio_js"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/ProfileCard.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_profilecard_jsx",
       "target": "portfolio_src_data_portfolio_js"
     },
     {
@@ -1884,6 +2412,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "portfolio/src/data/portfolio.js",
+      "source_location": "L177",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_data_portfolio_js",
+      "target": "data_portfolio_githubstats"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/data/portfolio.js",
       "source_location": "L21",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -1931,6 +2469,39 @@
       "target": "data_portfolio_talks"
     },
     {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/__tests__/Hero.test.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_tests_hero_test_jsx",
+      "target": "portfolio_src_data_portfolio_js"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/__tests__/Nav.test.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_tests_nav_test_jsx",
+      "target": "portfolio_src_data_portfolio_js"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/__tests__/ProfileCard.test.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_tests_profilecard_test_jsx",
+      "target": "portfolio_src_data_portfolio_js"
+    },
+    {
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -1967,11 +2538,33 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Hero.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_hero_jsx",
+      "target": "data_portfolio_personal"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "portfolio/src/components/Nav.jsx",
       "source_location": "L2",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "portfolio_src_components_nav_jsx",
+      "target": "data_portfolio_personal"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/ProfileCard.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_profilecard_jsx",
       "target": "data_portfolio_personal"
     },
     {
@@ -2011,12 +2604,45 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/__tests__/Hero.test.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_tests_hero_test_jsx",
+      "target": "data_portfolio_personal"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "portfolio/src/__tests__/Nav.test.jsx",
       "source_location": "L4",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "portfolio_src_tests_nav_test_jsx",
       "target": "data_portfolio_personal"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/__tests__/ProfileCard.test.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_tests_profilecard_test_jsx",
+      "target": "data_portfolio_personal"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Hero.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_hero_jsx",
+      "target": "data_portfolio_hero"
     },
     {
       "relation": "imports",
@@ -2033,11 +2659,33 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/__tests__/Hero.test.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_tests_hero_test_jsx",
+      "target": "data_portfolio_hero"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "portfolio/src/components/About.jsx",
       "source_location": "L1",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "portfolio_src_components_about_jsx",
+      "target": "data_portfolio_about"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/ProfileCard.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_profilecard_jsx",
       "target": "data_portfolio_about"
     },
     {
@@ -2060,6 +2708,17 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "portfolio_src_tests_data_test_js",
+      "target": "data_portfolio_about"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/__tests__/ProfileCard.test.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_tests_profilecard_test_jsx",
       "target": "data_portfolio_about"
     },
     {
@@ -2226,6 +2885,468 @@
       "confidence_score": 1.0,
       "source": "portfolio_src_tests_talks_test_jsx",
       "target": "data_portfolio_talks"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/hooks/useGithubData.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "portfolio_src_hooks_usegithubdata_js",
+      "target": "hooks_usegithubdata_fetchall",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/hooks/useGithubData.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_hooks_usegithubdata_js",
+      "target": "hooks_usegithubdata_usegithubdata"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/App.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_app_jsx",
+      "target": "hooks_usescrollreveal_usescrollreveal"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/App.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_app_jsx",
+      "target": "hooks_usetheme_usetheme"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/App.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_app_jsx",
+      "target": "portfolio_src_components_about_jsx"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/App.jsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_app_jsx",
+      "target": "portfolio_src_components_certifications_jsx"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/App.jsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_app_jsx",
+      "target": "portfolio_src_components_contact_jsx"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/App.jsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_app_jsx",
+      "target": "portfolio_src_components_experience_jsx"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/App.jsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_app_jsx",
+      "target": "portfolio_src_components_footer_jsx"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/App.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_app_jsx",
+      "target": "portfolio_src_components_hero_jsx"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/App.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_app_jsx",
+      "target": "portfolio_src_components_nav_jsx"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/App.jsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_app_jsx",
+      "target": "portfolio_src_components_projects_jsx"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/App.jsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_app_jsx",
+      "target": "portfolio_src_components_scrolltotop_jsx"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/App.jsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_app_jsx",
+      "target": "portfolio_src_components_skills_jsx"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/App.jsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_app_jsx",
+      "target": "portfolio_src_components_talks_jsx"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/App.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_app_jsx",
+      "target": "portfolio_src_hooks_usescrollreveal_js"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/App.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_app_jsx",
+      "target": "portfolio_src_hooks_usetheme_js"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/App.jsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_app_jsx",
+      "target": "portfolio_src_pages_aboutpage_jsx"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/App.jsx",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_app_jsx",
+      "target": "portfolio_src_pages_achievementspage_jsx"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/App.jsx",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_app_jsx",
+      "target": "portfolio_src_pages_contactpage_jsx"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/App.jsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_app_jsx",
+      "target": "portfolio_src_pages_experiencepage_jsx"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/App.jsx",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_app_jsx",
+      "target": "portfolio_src_pages_githubpage_jsx"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/App.jsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_app_jsx",
+      "target": "portfolio_src_pages_homepage_jsx"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/App.jsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_app_jsx",
+      "target": "portfolio_src_pages_projectspage_jsx"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/App.jsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_app_jsx",
+      "target": "portfolio_src_pages_skillspage_jsx"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/App.jsx",
+      "source_location": "L18",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_app_jsx",
+      "target": "src_app_app"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/App.jsx",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_app_jsx",
+      "target": "src_app_inner"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/main.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_main_jsx",
+      "target": "portfolio_src_app_jsx"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/__tests__/App.test.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_tests_app_test_jsx",
+      "target": "portfolio_src_app_jsx"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/App.jsx",
+      "source_location": "L19",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app_inner",
+      "target": "hooks_usescrollreveal_usescrollreveal"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "portfolio/src/App.jsx",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "src_app_app",
+      "target": "hooks_usescrollreveal_usescrollreveal"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "portfolio/src/App.jsx",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "src_app_app",
+      "target": "hooks_usetheme_usetheme"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/__tests__/Nav.test.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_tests_nav_test_jsx",
+      "target": "portfolio_src_components_nav_jsx"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/__tests__/Nav.test.jsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_tests_nav_test_jsx",
+      "target": "tests_nav_test_rendernav"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Nav.jsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_nav_jsx",
+      "target": "components_nav_nav"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Nav.jsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_nav_jsx",
+      "target": "components_nav_pages"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/pages/GithubPage.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_pages_githubpage_jsx",
+      "target": "pages_githubpage_githubpage"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/__tests__/Hero.test.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_tests_hero_test_jsx",
+      "target": "portfolio_src_components_hero_jsx"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/__tests__/Hero.test.jsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_tests_hero_test_jsx",
+      "target": "tests_hero_test_renderhero"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/__tests__/ProfileCard.test.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_tests_profilecard_test_jsx",
+      "target": "portfolio_src_components_profilecard_jsx"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Hero.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_hero_jsx",
+      "target": "components_hero_hero"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Hero.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_hero_jsx",
+      "target": "portfolio_src_components_profilecard_jsx"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/ProfileCard.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_profilecard_jsx",
+      "target": "components_profilecard_profilecard"
     },
     {
       "relation": "contains",
@@ -2548,312 +3669,6 @@
       "target": "portfolio_package_devdependencies_vitest_coverage_v8"
     },
     {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/App.jsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_app_jsx",
-      "target": "hooks_usescrollreveal_usescrollreveal"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/App.jsx",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_app_jsx",
-      "target": "hooks_usetheme_usetheme"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/App.jsx",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_app_jsx",
-      "target": "portfolio_src_components_about_jsx"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/App.jsx",
-      "source_location": "L9",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_app_jsx",
-      "target": "portfolio_src_components_certifications_jsx"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/App.jsx",
-      "source_location": "L11",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_app_jsx",
-      "target": "portfolio_src_components_contact_jsx"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/App.jsx",
-      "source_location": "L6",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_app_jsx",
-      "target": "portfolio_src_components_experience_jsx"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/App.jsx",
-      "source_location": "L12",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_app_jsx",
-      "target": "portfolio_src_components_footer_jsx"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/App.jsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_app_jsx",
-      "target": "portfolio_src_components_nav_jsx"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/App.jsx",
-      "source_location": "L7",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_app_jsx",
-      "target": "portfolio_src_components_projects_jsx"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/App.jsx",
-      "source_location": "L6",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_app_jsx",
-      "target": "portfolio_src_components_scrolltotop_jsx"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/App.jsx",
-      "source_location": "L8",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_app_jsx",
-      "target": "portfolio_src_components_skills_jsx"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/App.jsx",
-      "source_location": "L10",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_app_jsx",
-      "target": "portfolio_src_components_talks_jsx"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/App.jsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_app_jsx",
-      "target": "portfolio_src_hooks_usescrollreveal_js"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/App.jsx",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_app_jsx",
-      "target": "portfolio_src_hooks_usetheme_js"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/App.jsx",
-      "source_location": "L9",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_app_jsx",
-      "target": "portfolio_src_pages_aboutpage_jsx"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/App.jsx",
-      "source_location": "L13",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_app_jsx",
-      "target": "portfolio_src_pages_achievementspage_jsx"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/App.jsx",
-      "source_location": "L14",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_app_jsx",
-      "target": "portfolio_src_pages_contactpage_jsx"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/App.jsx",
-      "source_location": "L10",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_app_jsx",
-      "target": "portfolio_src_pages_experiencepage_jsx"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/App.jsx",
-      "source_location": "L8",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_app_jsx",
-      "target": "portfolio_src_pages_homepage_jsx"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/App.jsx",
-      "source_location": "L11",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_app_jsx",
-      "target": "portfolio_src_pages_projectspage_jsx"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/App.jsx",
-      "source_location": "L12",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_app_jsx",
-      "target": "portfolio_src_pages_skillspage_jsx"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/App.jsx",
-      "source_location": "L18",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_app_jsx",
-      "target": "src_app_app"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/App.jsx",
-      "source_location": "L17",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_app_jsx",
-      "target": "src_app_inner"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/main.jsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_main_jsx",
-      "target": "portfolio_src_app_jsx"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/__tests__/App.test.jsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_tests_app_test_jsx",
-      "target": "portfolio_src_app_jsx"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/App.jsx",
-      "source_location": "L19",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_app_inner",
-      "target": "hooks_usescrollreveal_usescrollreveal"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "portfolio/src/App.jsx",
-      "source_location": "L20",
-      "weight": 1.0,
-      "source": "src_app_app",
-      "target": "hooks_usescrollreveal_usescrollreveal"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "portfolio/src/App.jsx",
-      "source_location": "L19",
-      "weight": 1.0,
-      "source": "src_app_app",
-      "target": "hooks_usetheme_usetheme"
-    },
-    {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -2941,27 +3756,6 @@
       "target": "tests_app_test_renderpage"
     },
     {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/__tests__/Nav.test.jsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_tests_nav_test_jsx",
-      "target": "portfolio_src_components_nav_jsx"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/__tests__/Nav.test.jsx",
-      "source_location": "L6",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_tests_nav_test_jsx",
-      "target": "tests_nav_test_rendernav"
-    },
-    {
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -3003,70 +3797,6 @@
       "confidence_score": 1.0,
       "source": "tests_usescrollreveal_test_fixture",
       "target": "hooks_usescrollreveal_usescrollreveal"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Nav.jsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_nav_jsx",
-      "target": "components_icons_icondownload"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Nav.jsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_nav_jsx",
-      "target": "components_icons_iconmoon"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Nav.jsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_nav_jsx",
-      "target": "components_icons_iconsun"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Nav.jsx",
-      "source_location": "L7",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_nav_jsx",
-      "target": "components_nav_nav"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Nav.jsx",
-      "source_location": "L6",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_nav_jsx",
-      "target": "components_nav_pages"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Nav.jsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_nav_jsx",
-      "target": "portfolio_src_components_icons_jsx"
     },
     {
       "relation": "contains",
@@ -3451,28 +4181,6 @@
       "target": "components_certifications_certifications"
     },
     {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Certifications.jsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_certifications_jsx",
-      "target": "components_icons_iconexternal"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Certifications.jsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_certifications_jsx",
-      "target": "portfolio_src_components_icons_jsx"
-    },
-    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "portfolio/src/components/Contact.jsx",
@@ -3481,50 +4189,6 @@
       "confidence_score": 1.0,
       "source": "portfolio_src_components_contact_jsx",
       "target": "components_contact_contact"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Contact.jsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_contact_jsx",
-      "target": "components_icons_iconemail"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Contact.jsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_contact_jsx",
-      "target": "components_icons_icongithub"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Contact.jsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_contact_jsx",
-      "target": "components_icons_iconlinkedin"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Contact.jsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_contact_jsx",
-      "target": "portfolio_src_components_icons_jsx"
     },
     {
       "relation": "contains",
@@ -3545,222 +4209,6 @@
       "confidence_score": 1.0,
       "source": "portfolio_src_components_footer_jsx",
       "target": "components_footer_footer"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Icons.jsx",
-      "source_location": "L15",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_icons_jsx",
-      "target": "components_icons_iconarrowright"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Icons.jsx",
-      "source_location": "L21",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_icons_jsx",
-      "target": "components_icons_icondownload"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Icons.jsx",
-      "source_location": "L57",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_icons_jsx",
-      "target": "components_icons_iconedit"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Icons.jsx",
-      "source_location": "L45",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_icons_jsx",
-      "target": "components_icons_iconemail"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Icons.jsx",
-      "source_location": "L51",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_icons_jsx",
-      "target": "components_icons_iconexternal"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Icons.jsx",
-      "source_location": "L33",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_icons_jsx",
-      "target": "components_icons_icongithub"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Icons.jsx",
-      "source_location": "L39",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_icons_jsx",
-      "target": "components_icons_iconlinkedin"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Icons.jsx",
-      "source_location": "L63",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_icons_jsx",
-      "target": "components_icons_iconmonitor"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Icons.jsx",
-      "source_location": "L9",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_icons_jsx",
-      "target": "components_icons_iconmoon"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Icons.jsx",
-      "source_location": "L27",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_icons_jsx",
-      "target": "components_icons_iconscrolldown"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Icons.jsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_icons_jsx",
-      "target": "components_icons_iconsun"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Icons.jsx",
-      "source_location": "L102",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_icons_jsx",
-      "target": "components_icons_projecticon"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Icons.jsx",
-      "source_location": "L69",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_icons_jsx",
-      "target": "components_icons_projecticons"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Icons.jsx",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_icons_jsx",
-      "target": "components_icons_s"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Icons.jsx",
-      "source_location": "L107",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_icons_jsx",
-      "target": "components_icons_talkicon"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Projects.jsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_projects_jsx",
-      "target": "portfolio_src_components_icons_jsx"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Talks.jsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_talks_jsx",
-      "target": "portfolio_src_components_icons_jsx"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Projects.jsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_projects_jsx",
-      "target": "components_icons_icongithub"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Projects.jsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_projects_jsx",
-      "target": "components_icons_iconexternal"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Projects.jsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_projects_jsx",
-      "target": "components_icons_projecticon"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Talks.jsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_talks_jsx",
-      "target": "components_icons_talkicon"
     },
     {
       "relation": "contains",
@@ -3824,5 +4272,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "28fc2c2040a62db0193415e23cdea6a56e848d92"
+  "built_at_commit": "70c2cbd0ace302767d5385e6e3ab5e3b2021c79f"
 }
