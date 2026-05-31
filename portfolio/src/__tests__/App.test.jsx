@@ -59,8 +59,8 @@ describe('Page routes', () => {
     expect(screen.getByRole('heading', { name: 'Talks & Achievements' })).toBeInTheDocument();
   });
 
-  it('ContactPage renders Get in Touch heading', () => {
+  it('ContactPage renders heading', () => {
     renderPage(<ContactPage />);
-    expect(screen.getByRole('heading', { name: 'Get in Touch' })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: "Let's build something." })).toBeInTheDocument();
   });
 });

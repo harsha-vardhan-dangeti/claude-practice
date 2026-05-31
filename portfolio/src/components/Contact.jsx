@@ -2,51 +2,61 @@ import { personal } from '../data/portfolio';
 import { IconEmail, IconLinkedIn, IconGithub } from './Icons';
 
 export default function Contact() {
-  const cards = [
-    {
-      href: `mailto:${personal.email}`,
-      icon: <IconEmail />,
-      type: 'Email',
-      value: personal.email,
-    },
-    {
-      href: personal.linkedin.url,
-      icon: <IconLinkedIn />,
-      type: 'LinkedIn',
-      value: personal.linkedin.handle,
-      external: true,
-    },
-    {
-      href: personal.github.url,
-      icon: <IconGithub size={20} />,
-      type: 'GitHub',
-      value: personal.github.handle,
-      external: true,
-    },
-  ];
-
   return (
     <section id="contact" aria-label="Contact">
-      <div className="container">
-        <div className="section-eyebrow r">/ contact</div>
-        <h2 className="r d1" style={{ marginBottom: '.625rem' }}>Get in Touch</h2>
-        <p className="r d2" style={{ fontSize: '1.0313rem', marginBottom: '2.5rem', maxWidth: '48ch' }}>
-          Interested in AI engineering roles or want to discuss RAG systems, agents, or production LLM deployment.
+      <div className="container" style={{ textAlign: 'center' }}>
+        <div className="contact-eyebrow r d1">Contact</div>
+
+        <h2 className="r d1" style={{ marginBottom: '.625rem' }}>
+          Let's build something.
+        </h2>
+
+        <p
+          className="r d2"
+          style={{
+            fontSize: '1.0313rem',
+            margin: '0 auto 2.5rem',
+            maxWidth: '48ch',
+          }}
+        >
+          Open to senior AI/ML engineering roles — RAG pipelines, schema-aware
+          agents, and production LLM infrastructure.
         </p>
 
-        <div className="contact-grid">
-          {cards.map((c, i) => (
-            <a
-              key={i}
-              href={c.href}
-              className={`contact-card r d${i + 1}`}
-              {...(c.external ? { target: '_blank', rel: 'noopener' } : {})}
-            >
-              <div className="contact-ico" aria-hidden="true">{c.icon}</div>
-              <span className="contact-type">{c.type}</span>
-              <span className="contact-val">{c.value}</span>
-            </a>
-          ))}
+        <a
+          href={`mailto:${personal.email}`}
+          className="contact-email-btn r d2"
+        >
+          <IconEmail size={16} />
+          {personal.email}
+        </a>
+
+        <div className="contact-divider r d3">
+          <span className="contact-divider-line" />
+          <span className="contact-divider-text">or find me on</span>
+          <span className="contact-divider-line" />
+        </div>
+
+        <div className="contact-social-row r d3">
+          <a
+            href={personal.linkedin.url}
+            className="contact-social-link"
+            target="_blank"
+            rel="noopener"
+          >
+            <IconLinkedIn size={14} />
+            {personal.linkedin.handle}
+          </a>
+          <span className="contact-social-sep" aria-hidden="true" />
+          <a
+            href={personal.github.url}
+            className="contact-social-link"
+            target="_blank"
+            rel="noopener"
+          >
+            <IconGithub size={14} />
+            {personal.github.handle}
+          </a>
         </div>
       </div>
     </section>

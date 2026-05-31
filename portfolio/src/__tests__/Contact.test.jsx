@@ -7,7 +7,7 @@ describe('Contact', () => {
   beforeEach(() => render(<Contact />));
 
   it('renders the section heading', () => {
-    expect(screen.getByRole('heading', { name: 'Get in Touch' })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: "Let's build something." })).toBeInTheDocument();
   });
 
   it('renders the email card with correct href', () => {
@@ -35,8 +35,9 @@ describe('Contact', () => {
     expect(githubLink).toHaveAttribute('rel', 'noopener');
   });
 
-  it('renders 3 contact cards', () => {
-    const cards = document.querySelectorAll('.contact-card');
-    expect(cards.length).toBe(3);
+  it('renders the email as a mailto button', () => {
+    const btn = document.querySelector(`a[href="mailto:${personal.email}"]`);
+    expect(btn).toBeInTheDocument();
+    expect(btn).toHaveTextContent(personal.email);
   });
 });
