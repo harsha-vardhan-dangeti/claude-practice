@@ -1,7 +1,13 @@
 import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 export function useScrollReveal() {
+  const { pathname } = useLocation();
+
   useEffect(() => {
+    // Reset then re-observe whenever the page changes
+    document.querySelectorAll('.r').forEach(el => el.classList.remove('in'));
+
     const io = new IntersectionObserver((entries) => {
       entries.forEach(e => {
         if (e.isIntersecting) {
@@ -17,5 +23,5 @@ export function useScrollReveal() {
     });
 
     return () => io.disconnect();
-  }, []);
+  }, [pathname]);
 }

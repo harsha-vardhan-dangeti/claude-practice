@@ -1,10 +1,15 @@
 import { describe, it, expect, vi } from 'vitest';
 import { render, screen, fireEvent } from '@testing-library/react';
+import { MemoryRouter } from 'react-router-dom';
 import Nav from '../components/Nav';
 import { personal } from '../data/portfolio';
 
 const renderNav = (theme = 'dark') =>
-  render(<Nav theme={theme} onToggleTheme={vi.fn()} />);
+  render(
+    <MemoryRouter>
+      <Nav theme={theme} onToggleTheme={vi.fn()} />
+    </MemoryRouter>
+  );
 
 describe('Nav', () => {
   it('renders the brand name', () => {
@@ -14,7 +19,7 @@ describe('Nav', () => {
 
   it('renders all desktop nav links', () => {
     renderNav();
-    ['About', 'Experience', 'Projects', 'Skills', 'Contact'].forEach(label => {
+    ['Home', 'About', 'Experience', 'Projects', 'Skills', 'Achievements', 'Contact'].forEach(label => {
       expect(screen.getAllByText(label).length).toBeGreaterThan(0);
     });
   });
@@ -26,7 +31,7 @@ describe('Nav', () => {
 
   it('calls onToggleTheme when theme button clicked', () => {
     const onToggle = vi.fn();
-    render(<Nav theme="dark" onToggleTheme={onToggle} />);
+    render(<MemoryRouter><Nav theme="dark" onToggleTheme={onToggle} /></MemoryRouter>);
     fireEvent.click(screen.getByLabelText('Toggle light/dark theme'));
     expect(onToggle).toHaveBeenCalledOnce();
   });

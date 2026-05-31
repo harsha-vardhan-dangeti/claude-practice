@@ -1,43 +1,47 @@
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import { useTheme } from './hooks/useTheme';
 import { useScrollReveal } from './hooks/useScrollReveal';
 import Nav from './components/Nav';
-import Hero from './components/Hero';
-import About from './components/About';
-import Experience from './components/Experience';
-import Projects from './components/Projects';
-import Skills from './components/Skills';
-import Certifications from './components/Certifications';
-import Talks from './components/Talks';
-import Contact from './components/Contact';
 import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop';
 
-function Divider() {
-  return <div className="divider" />;
-}
+import HomePage        from './pages/HomePage';
+import AboutPage       from './pages/AboutPage';
+import ExperiencePage  from './pages/ExperiencePage';
+import ProjectsPage    from './pages/ProjectsPage';
+import SkillsPage      from './pages/SkillsPage';
+import AchievementsPage from './pages/AchievementsPage';
+import ContactPage     from './pages/ContactPage';
 
-export default function App() {
+// Must live inside HashRouter to access useLocation
+function Inner() {
   const { theme, toggle } = useTheme();
   useScrollReveal();
 
   return (
     <>
+      <ScrollToTop />
       <Nav theme={theme} onToggleTheme={toggle} />
-      <Hero />
-      <Divider />
-      <About />
-      <Divider />
-      <Experience />
-      <Divider />
-      <Projects />
-      <Divider />
-      <Skills />
-      <Divider />
-      <Certifications />
-      <Divider />
-      <Talks />
-      <Divider />
-      <Contact />
+      <main>
+        <Routes>
+          <Route path="/"             element={<HomePage />} />
+          <Route path="/about"        element={<AboutPage />} />
+          <Route path="/experience"   element={<ExperiencePage />} />
+          <Route path="/projects"     element={<ProjectsPage />} />
+          <Route path="/skills"       element={<SkillsPage />} />
+          <Route path="/achievements" element={<AchievementsPage />} />
+          <Route path="/contact"      element={<ContactPage />} />
+        </Routes>
+      </main>
       <Footer />
     </>
+  );
+}
+
+export default function App() {
+  return (
+    <HashRouter>
+      <Inner />
+    </HashRouter>
   );
 }

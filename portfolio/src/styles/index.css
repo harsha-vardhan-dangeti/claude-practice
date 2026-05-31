@@ -215,8 +215,23 @@ section { padding: clamp(4rem, 10vw, 6rem) 0; }
   font-weight: 500;
   color: var(--txt-2);
   transition: color .18s;
+  position: relative;
+  padding-bottom: 2px;
 }
 .nav-links a:hover { color: var(--txt); }
+.nav-links a.active {
+  color: var(--txt);
+}
+.nav-links a.active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--accent);
+  border-radius: 2px;
+}
 
 .nav-right {
   display: flex;
@@ -276,8 +291,16 @@ section { padding: clamp(4rem, 10vw, 6rem) 0; }
   font-weight: 500;
   padding: .625rem 0;
   border-bottom: 1px solid var(--border);
+  text-decoration: none;
 }
 .mob-menu a:last-child { border-bottom: none; }
+.mob-menu a.active { color: var(--accent); }
+
+/* ─── PAGE WRAPPER (non-hero pages) ─────────────────────────── */
+.page-wrap {
+  padding-top: 64px;
+  min-height: 100svh;
+}
 
 @media (max-width: 780px) {
   .nav-links, .nav-resume { display: none; }

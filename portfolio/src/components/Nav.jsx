@@ -1,8 +1,17 @@
 import { useState, useEffect } from 'react';
+import { NavLink, Link } from 'react-router-dom';
 import { personal } from '../data/portfolio';
 import { IconSun, IconMoon, IconDownload } from './Icons';
 
-const navLinks = ['about', 'experience', 'projects', 'skills', 'contact'];
+const pages = [
+  { path: '/',             label: 'Home',         end: true },
+  { path: '/about',        label: 'About' },
+  { path: '/experience',   label: 'Experience' },
+  { path: '/projects',     label: 'Projects' },
+  { path: '/skills',       label: 'Skills' },
+  { path: '/achievements', label: 'Achievements' },
+  { path: '/contact',      label: 'Contact' },
+];
 
 export default function Nav({ theme, onToggleTheme }) {
   const [scrolled, setScrolled] = useState(false);
@@ -20,11 +29,15 @@ export default function Nav({ theme, onToggleTheme }) {
     <>
       <nav className={`nav${scrolled ? ' scrolled' : ''}`} role="navigation" aria-label="Primary navigation">
         <div className="container nav-inner">
-          <a href="#hero" className="nav-brand">{personal.brand}</a>
+          <Link to="/" className="nav-brand">{personal.brand}</Link>
 
           <ul className="nav-links" role="list">
-            {navLinks.map(id => (
-              <li key={id}><a href={`#${id}`}>{id.charAt(0).toUpperCase() + id.slice(1)}</a></li>
+            {pages.map(p => (
+              <li key={p.path}>
+                <NavLink to={p.path} end={p.end ?? false}>
+                  {p.label}
+                </NavLink>
+              </li>
             ))}
           </ul>
 
@@ -45,10 +58,10 @@ export default function Nav({ theme, onToggleTheme }) {
       </nav>
 
       <div className={`mob-menu${menuOpen ? ' open' : ''}`} role="navigation" aria-label="Mobile navigation">
-        {['about','experience','projects','skills','certifications','talks','contact'].map(id => (
-          <a key={id} href={`#${id}`} onClick={closeMenu}>
-            {id.charAt(0).toUpperCase() + id.slice(1)}
-          </a>
+        {pages.map(p => (
+          <NavLink key={p.path} to={p.path} end={p.end ?? false} onClick={closeMenu}>
+            {p.label}
+          </NavLink>
         ))}
         <a href={personal.resumePdf} target="_blank" rel="noopener" className="btn btn-primary" style={{ marginTop: '.75rem', justifyContent: 'center' }} onClick={closeMenu}>
           Download Resume
