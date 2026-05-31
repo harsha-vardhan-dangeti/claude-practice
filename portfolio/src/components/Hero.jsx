@@ -1,5 +1,7 @@
+import { Link } from 'react-router-dom';
 import { personal, hero } from '../data/portfolio';
-import { IconArrowRight, IconDownload, IconScrollDown } from './Icons';
+import { IconArrowRight, IconDownload } from './Icons';
+import ProfileCard from './ProfileCard';
 
 export default function Hero() {
   return (
@@ -7,42 +9,47 @@ export default function Hero() {
       <div className="hero-orb orb-1" aria-hidden="true" />
       <div className="hero-orb orb-2" aria-hidden="true" />
 
-      <div className="container hero-inner">
-        <div className="hero-badge">{hero.badge}</div>
+      <div className="container hero-grid">
 
-        <h1 className="hero-name">
-          {personal.nameLine1}<br />{personal.nameLine2}
-        </h1>
+        {/* ── LEFT ── */}
+        <div className="hero-left">
+          <div className="hero-badge stagger s1">{hero.badge}</div>
 
-        <p className="hero-tagline">
-          <strong>{hero.tagline.bold}</strong>{hero.tagline.rest}
-        </p>
+          <h1 className="hero-name stagger s2">
+            {personal.nameLine1}<br />{personal.nameLine2}
+          </h1>
 
-        <div className="hero-ctas">
-          <a href="#projects" className="btn btn-primary">
-            View Projects <IconArrowRight />
-          </a>
-          <a href={personal.resumePdf} className="btn btn-ghost" target="_blank" rel="noopener">
-            Resume PDF <IconDownload />
-          </a>
-        </div>
+          <p className="hero-tagline stagger s3">
+            <strong>{hero.tagline.bold}</strong>{hero.tagline.rest}
+          </p>
 
-        <div className="hero-stats" aria-label="Career highlights">
-          {hero.stats.map((s, i) => (
-            <div key={i} style={{ display: 'contents' }}>
-              {i > 0 && <div className="stat-divider" aria-hidden="true" />}
-              <div>
-                <div className="stat-val">{s.value}</div>
-                <div className="stat-lbl">{s.label}</div>
+          <div className="hero-ctas stagger s4">
+            <Link to="/projects" className="btn btn-primary">
+              View Projects <IconArrowRight />
+            </Link>
+            <a href={personal.resumePdf} className="btn btn-ghost" target="_blank" rel="noopener">
+              Resume PDF <IconDownload />
+            </a>
+          </div>
+
+          <div className="hero-stats stagger s5" aria-label="Career highlights">
+            {hero.stats.map((s, i) => (
+              <div key={i} style={{ display: 'contents' }}>
+                {i > 0 && <div className="stat-divider" aria-hidden="true" />}
+                <div>
+                  <div className="stat-val">{s.value}</div>
+                  <div className="stat-lbl">{s.label}</div>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
 
-      <div className="scroll-hint" aria-hidden="true">
-        <span>scroll</span>
-        <IconScrollDown />
+        {/* ── RIGHT ── */}
+        <div className="hero-right stagger s3">
+          <ProfileCard />
+        </div>
+
       </div>
     </section>
   );

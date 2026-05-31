@@ -11,6 +11,8 @@ export const personal = {
   resumePdf: "/resume.pdf",
   // Set to image path (e.g. "/profile.jpg") to show your photo; null shows initials placeholder
   avatar: null,
+  // Tags shown in the home page profile card
+  profileStack: ["Python", "Rails", "RAG", "LangGraph", "MCP", "FastAPI", "BigQuery", "RAGAS"],
   linkedin: {
     url: "https://www.linkedin.com/in/harshavardhandangeti/",
     handle: "linkedin.com/in/harshavardhandangeti",

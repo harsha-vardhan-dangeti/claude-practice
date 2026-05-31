@@ -1,13 +1,15 @@
 import { describe, it, expect } from 'vitest';
 import { render, screen } from '@testing-library/react';
+import { MemoryRouter } from 'react-router-dom';
 import Hero from '../components/Hero';
 import { personal, hero } from '../data/portfolio';
 
-describe('Hero', () => {
-  beforeEach(() => render(<Hero />));
+const renderHero = () => render(<MemoryRouter><Hero /></MemoryRouter>);
 
-  it('renders full name', () => {
-    // <br> collapses whitespace in DOM text — match both parts separately
+describe('Hero', () => {
+  beforeEach(() => renderHero());
+
+  it('renders full name across both lines', () => {
     const h1 = screen.getByRole('heading', { level: 1 });
     expect(h1).toHaveTextContent(personal.nameLine1);
     expect(h1).toHaveTextContent(personal.nameLine2);
@@ -28,13 +30,17 @@ describe('Hero', () => {
     });
   });
 
-  it('View Projects button links to #projects', () => {
+  it('View Projects button links to /projects', () => {
     const btn = screen.getByText('View Projects').closest('a');
-    expect(btn).toHaveAttribute('href', '#projects');
+    expect(btn).toHaveAttribute('href', '/projects');
   });
 
   it('Resume PDF button links to resume', () => {
     const btn = screen.getByText('Resume PDF').closest('a');
     expect(btn).toHaveAttribute('href', personal.resumePdf);
+  });
+
+  it('renders the profile card', () => {
+    expect(document.querySelector('.profile-card')).toBeInTheDocument();
   });
 });
