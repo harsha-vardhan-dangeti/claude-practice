@@ -1,4 +1,5 @@
 import { about } from '../data/portfolio';
+import Avatar from './Avatar';
 
 export default function About() {
   return (
@@ -15,6 +16,7 @@ export default function About() {
           </div>
 
           <aside className="about-card r d2" aria-label="Quick facts">
+            <Avatar />
             {about.facts.map((f, i) => (
               <div key={i} className="about-row">
                 <div className="row-lbl">{f.label}</div>

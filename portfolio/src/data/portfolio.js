@@ -2,12 +2,15 @@ export const personal = {
   name: "Harsha Vardhan Dangeti",
   nameLine1: "Harsha Vardhan",
   nameLine2: "Dangeti",
+  initials: "HVD",
   brand: "HVD",
   title: "AI Engineer",
   email: "harsha.vardhan.422812@gmail.com",
   location: "Gachibowli, Hyderabad, IN",
   locationShort: "Gachibowli, Hyderabad",
   resumePdf: "/resume.pdf",
+  // Set to image path (e.g. "/profile.jpg") to show your photo; null shows initials placeholder
+  avatar: null,
   linkedin: {
     url: "https://www.linkedin.com/in/harshavardhandangeti/",
     handle: "linkedin.com/in/harshavardhandangeti",
