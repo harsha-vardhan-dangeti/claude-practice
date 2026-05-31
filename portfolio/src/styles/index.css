@@ -975,7 +975,22 @@ section { padding: clamp(4rem, 10vw, 6rem) 0; }
   letter-spacing: -.04em;
   color: var(--txt);
   line-height: 1;
+  min-height: 2rem;
 }
+
+.gh-skeleton {
+  display: inline-block;
+  width: 3.5rem;
+  height: 1.75rem;
+  background: linear-gradient(90deg, var(--bg-surface-2) 25%, var(--bg-surface) 50%, var(--bg-surface-2) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.4s ease-in-out infinite;
+  border-radius: 4px;
+  vertical-align: middle;
+}
+@keyframes shimmer { to { background-position: -200% 0; } }
+
+.gh-error { color: var(--txt-3); font-size: .8rem; }
 
 .gh-highlight-lbl {
   font-family: var(--mono);

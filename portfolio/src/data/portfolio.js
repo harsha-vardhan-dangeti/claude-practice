@@ -176,12 +176,12 @@ export const certifications = [
 
 export const githubStats = {
   username: 'harsha-vardhan-dangeti',
-  // Update these whenever you want to highlight different numbers
+  // key maps to the property returned by useGithubData
   highlights: [
-    { label: 'Public Repos',    value: '17',   icon: 'folder'    },
-    { label: 'Pull Requests',   value: '50+',  icon: 'pr'        },
-    { label: 'Commits (2024)',  value: '200+', icon: 'commit'    },
-    { label: 'Contributions',   value: '300+', icon: 'activity'  },
+    { label: 'Public Repos',  key: 'publicRepos',  icon: 'folder'   },
+    { label: 'Total Stars',   key: 'totalStars',   icon: 'star'     },
+    { label: 'Pull Requests', key: 'totalPRs',     icon: 'pr'       },
+    { label: 'Total Commits', key: 'totalCommits', icon: 'commit'   },
   ],
 };
 

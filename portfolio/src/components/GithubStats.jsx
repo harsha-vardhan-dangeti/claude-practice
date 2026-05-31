@@ -1,23 +1,30 @@
 import { githubStats, personal } from '../data/portfolio';
 import { useGithubData } from '../hooks/useGithubData';
+import { IconStar } from './Icons';
 
 const u = githubStats.username;
 
-// Themed URL builder for github-readme-stats cards
-const card = (path, extra = '') =>
+const cardUrl = (path, extra = '') =>
   `https://github-readme-stats.vercel.app/api/${path}?username=${u}&theme=transparent&hide_border=true&bg_color=0e0e1a&title_color=60a5fa&text_color=8892a8&icon_color=3b82f6${extra}`;
 
-const streakUrl = `https://streak-stats.demolab.com/?user=${u}&theme=transparent&hide_border=true&background=0e0e1a&ring=3b82f6&fire=60a5fa&currStreakLabel=60a5fa&sideLabels=8892a8&dates=4e5a72&sideNums=f0f2f8&currStreakNum=f0f2f8`;
+const streakUrl =
+  `https://streak-stats.demolab.com/?user=${u}&theme=transparent&hide_border=true&background=0e0e1a&ring=3b82f6&fire=60a5fa&currStreakLabel=60a5fa&sideLabels=8892a8&dates=4e5a72&sideNums=f0f2f8&currStreakNum=f0f2f8`;
 
 const icons = {
-  folder:   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>,
-  pr:       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><path d="M13 6h3a2 2 0 0 1 2 2v7"/><line x1="6" y1="9" x2="6" y2="21"/></svg>,
-  commit:   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="4"/><line x1="1.05" y1="12" x2="7" y2="12"/><line x1="17.01" y1="12" x2="22.96" y2="12"/></svg>,
-  activity: <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>,
+  folder: <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>,
+  star:   <IconStar />,
+  pr:     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><path d="M13 6h3a2 2 0 0 1 2 2v7"/><line x1="6" y1="9" x2="6" y2="21"/></svg>,
+  commit: <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="4"/><line x1="1.05" y1="12" x2="7" y2="12"/><line x1="17.01" y1="12" x2="22.96" y2="12"/></svg>,
 };
 
+function StatValue({ loading, value }) {
+  if (loading) return <span className="gh-skeleton" aria-label="Loading…" />;
+  if (value === undefined || value === null) return <span>—</span>;
+  return <span>{value.toLocaleString()}</span>;
+}
+
 export default function GithubStats() {
-  const { data, loading } = useGithubData(u);
+  const { data, loading, error } = useGithubData(u);
 
   return (
     <section id="github" aria-label="GitHub stats">
@@ -27,38 +34,37 @@ export default function GithubStats() {
         <p className="r d2" style={{ marginBottom: '2.5rem', maxWidth: '48ch' }}>
           Open-source work, contributions, and coding activity on{' '}
           <a href={personal.github.url} target="_blank" rel="noopener">@{u}</a>.
+          {error && <span className="gh-error"> (Could not fetch live data)</span>}
         </p>
 
-        {/* ── Highlight boxes ── */}
+        {/* ── Live highlight cards ── */}
         <div className="gh-highlights r d2">
           {githubStats.highlights.map((h, i) => (
             <div key={i} className="gh-highlight-card">
               <div className="gh-highlight-icon">{icons[h.icon]}</div>
               <div className="gh-highlight-val">
-                {/* live public_repos from API if available */}
-                {!loading && data && h.icon === 'folder' ? data.public_repos : h.value}
+                <StatValue loading={loading} value={data?.[h.key]} />
               </div>
               <div className="gh-highlight-lbl">{h.label}</div>
             </div>
           ))}
         </div>
 
-        {/* ── Stats cards grid ── */}
+        {/* ── Stats cards ── */}
         <div className="gh-cards r d3">
           <div className="gh-card-wrap">
             <div className="gh-card-label">Overview</div>
             <img
-              src={card('', '&show_icons=true&count_private=true&include_all_commits=true')}
+              src={cardUrl('', '&show_icons=true&count_private=true&include_all_commits=true')}
               alt="GitHub stats"
               className="gh-stats-img"
               loading="lazy"
             />
           </div>
-
           <div className="gh-card-wrap">
             <div className="gh-card-label">Top Languages</div>
             <img
-              src={card('top-langs/', '&layout=compact&langs_count=6')}
+              src={cardUrl('top-langs/', '&layout=compact&langs_count=6')}
               alt="Top languages"
               className="gh-stats-img"
               loading="lazy"
@@ -77,14 +83,12 @@ export default function GithubStats() {
           />
         </div>
 
-        {/* ── Profile link ── */}
         <div className="r d5" style={{ marginTop: '2rem' }}>
           <a href={personal.github.url} className="btn btn-ghost" target="_blank" rel="noopener">
             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
             View GitHub Profile
           </a>
         </div>
-
       </div>
     </section>
   );
