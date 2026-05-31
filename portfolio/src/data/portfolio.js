@@ -10,7 +10,7 @@ export const personal = {
   locationShort: "Gachibowli, Hyderabad",
   resumePdf: "/resume.pdf",
   // Set to image path (e.g. "/profile.jpg") to show your photo; null shows initials placeholder
-  avatar: null,
+  avatar: "/profile.png",
   // Tags shown in the home page profile card
   profileStack: ["Python", "Rails", "RAG", "LangGraph", "MCP", "FastAPI", "BigQuery", "RAGAS"],
   linkedin: {
@@ -134,10 +134,10 @@ export const education = [
   {
     degree: "Bachelor of Technology",
     field: "Computer Science & Engineering",
-    institution: "Your University Name",
-    location: "City, State",
-    dates: "2017 — 2021",
-    grade: "",          // e.g. "CGPA: 8.4 / 10" — leave empty to hide
+    institution: "Amrita Vishwa Vidyapeetham",
+    location: "Coimbatore, IN",
+    dates: "2018 — 2022",
+    grade: "CGPA: 8.1/10",          // e.g. "CGPA: 8.4 / 10" — leave empty to hide
     highlights: [],     // e.g. ["Relevant coursework: ...", "Final year project: ..."]
   },
 ];
