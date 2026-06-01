@@ -45,8 +45,8 @@
     "semantic_hash": ""
   },
   "/Users/harsha/Apps/projects/Claude/portfolio/vite.config.js": {
-    "mtime": 1780311459.5028362,
-    "ast_hash": "d739f367b1202b7b9c7cf51d2e41f4d3",
+    "mtime": 1780190693.3615134,
+    "ast_hash": "b03027c9b8727332341ba31f510dffd7",
     "semantic_hash": ""
   },
   "/Users/harsha/Apps/projects/Claude/portfolio/package.json": {
@@ -80,8 +80,8 @@
     "semantic_hash": ""
   },
   "/Users/harsha/Apps/projects/Claude/portfolio/src/components/Certifications.jsx": {
-    "mtime": 1780311612.1309426,
-    "ast_hash": "e183844fd7cc63dfed2883098488e0d5",
+    "mtime": 1780190189.1001139,
+    "ast_hash": "49a52949bbd58b71864fd58e005e5902",
     "semantic_hash": ""
   },
   "/Users/harsha/Apps/projects/Claude/portfolio/src/components/About.jsx": {
@@ -135,8 +135,8 @@
     "semantic_hash": ""
   },
   "/Users/harsha/Apps/projects/Claude/portfolio/src/data/portfolio.js": {
-    "mtime": 1780311527.5830944,
-    "ast_hash": "179b88cc3c41880d411e2f942aceb30d",
+    "mtime": 1780249392.2708075,
+    "ast_hash": "8cb34e73e5bac10878b7bc3e8af61e5b",
     "semantic_hash": ""
   },
   "/Users/harsha/Apps/projects/Claude/portfolio/index.html": {
@@ -165,8 +165,8 @@
     "semantic_hash": ""
   },
   "/Users/harsha/Apps/projects/Claude/portfolio/src/__tests__/Certifications.test.jsx": {
-    "mtime": 1780312060.4644606,
-    "ast_hash": "d118e12c0b44b77e7836fa915fe43db5",
+    "mtime": 1780191134.9689443,
+    "ast_hash": "d46315ebcc942f5e15e00d099cc071de",
     "semantic_hash": ""
   },
   "/Users/harsha/Apps/projects/Claude/portfolio/src/__tests__/Footer.test.jsx": {
@@ -200,8 +200,8 @@
     "semantic_hash": ""
   },
   "/Users/harsha/Apps/projects/Claude/portfolio/src/__tests__/Experience.test.jsx": {
-    "mtime": 1780312047.612765,
-    "ast_hash": "4aae8a2603926b30b38fa962835ba4c8",
+    "mtime": 1780191129.2566786,
+    "ast_hash": "9b085965688e01dda310448b37b41c26",
     "semantic_hash": ""
   },
   "/Users/harsha/Apps/projects/Claude/portfolio/src/__tests__/setup.js": {
@@ -315,8 +315,8 @@
     "semantic_hash": ""
   },
   "/Users/harsha/Apps/projects/Claude/portfolio/src/__tests__/ProfileCard.test.jsx": {
-    "mtime": 1780311796.196575,
-    "ast_hash": "772c95b8273d33bc23f10443dc676dd6",
+    "mtime": 1780209307.7595913,
+    "ast_hash": "283a6c054a44f4853d3cd6c88c4dc1c1",
     "semantic_hash": ""
   },
   "/Users/harsha/Apps/projects/Claude/.playwright-mcp/page-2026-05-31T06-35-39-027Z.yml": {
@@ -392,11 +392,6 @@
   "/Users/harsha/Apps/projects/Claude/portfolio/public/profile.png": {
     "mtime": 1780249090.3073566,
     "ast_hash": "5e1157b2eddafaeffd79ad30e5cf2d3f",
-    "semantic_hash": ""
-  },
-  "/Users/harsha/Apps/projects/Claude/portfolio/src/hooks/useCreedlyData.js": {
-    "mtime": 1780311549.0633233,
-    "ast_hash": "93987376dea5d8ab0d7481bb858a17a6",
     "semantic_hash": ""
   }
 }

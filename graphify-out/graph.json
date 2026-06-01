@@ -4,139 +4,508 @@
   "graph": {},
   "nodes": [
     {
+      "label": "Certifications.test.jsx",
+      "file_type": "code",
+      "source_file": "portfolio/src/__tests__/Certifications.test.jsx",
+      "source_location": "L1",
+      "id": "portfolio_src_tests_certifications_test_jsx",
+      "community": 7,
+      "norm_label": "certifications.test.jsx"
+    },
+    {
+      "label": "Experience.test.jsx",
+      "file_type": "code",
+      "source_file": "portfolio/src/__tests__/Experience.test.jsx",
+      "source_location": "L1",
+      "id": "portfolio_src_tests_experience_test_jsx",
+      "community": 7,
+      "norm_label": "experience.test.jsx"
+    },
+    {
+      "label": "ProfileCard.test.jsx",
+      "file_type": "code",
+      "source_file": "portfolio/src/__tests__/ProfileCard.test.jsx",
+      "source_location": "L1",
+      "id": "portfolio_src_tests_profilecard_test_jsx",
+      "community": 7,
+      "norm_label": "profilecard.test.jsx"
+    },
+    {
+      "label": "Certifications.jsx",
+      "file_type": "code",
+      "source_file": "portfolio/src/components/Certifications.jsx",
+      "source_location": "L1",
+      "id": "portfolio_src_components_certifications_jsx",
+      "community": 7,
+      "norm_label": "certifications.jsx"
+    },
+    {
+      "label": "Certifications()",
+      "file_type": "code",
+      "source_file": "portfolio/src/components/Certifications.jsx",
+      "source_location": "L5",
+      "id": "components_certifications_certifications",
+      "community": 7,
+      "norm_label": "certifications()"
+    },
+    {
+      "label": "portfolio.js",
+      "file_type": "code",
+      "source_file": "portfolio/src/data/portfolio.js",
+      "source_location": "L1",
+      "id": "portfolio_src_data_portfolio_js",
+      "community": 7,
+      "norm_label": "portfolio.js"
+    },
+    {
+      "label": "personal",
+      "file_type": "code",
+      "source_file": "portfolio/src/data/portfolio.js",
+      "source_location": "L1",
+      "id": "data_portfolio_personal",
+      "community": 7,
+      "norm_label": "personal"
+    },
+    {
+      "label": "hero",
+      "file_type": "code",
+      "source_file": "portfolio/src/data/portfolio.js",
+      "source_location": "L27",
+      "id": "data_portfolio_hero",
+      "community": 7,
+      "norm_label": "hero"
+    },
+    {
+      "label": "about",
+      "file_type": "code",
+      "source_file": "portfolio/src/data/portfolio.js",
+      "source_location": "L40",
+      "id": "data_portfolio_about",
+      "community": 7,
+      "norm_label": "about"
+    },
+    {
+      "label": "experience",
+      "file_type": "code",
+      "source_file": "portfolio/src/data/portfolio.js",
+      "source_location": "L56",
+      "id": "data_portfolio_experience",
+      "community": 7,
+      "norm_label": "experience"
+    },
+    {
+      "label": "projects",
+      "file_type": "code",
+      "source_file": "portfolio/src/data/portfolio.js",
+      "source_location": "L95",
+      "id": "data_portfolio_projects",
+      "community": 7,
+      "norm_label": "projects"
+    },
+    {
+      "label": "education",
+      "file_type": "code",
+      "source_file": "portfolio/src/data/portfolio.js",
+      "source_location": "L146",
+      "id": "data_portfolio_education",
+      "community": 7,
+      "norm_label": "education"
+    },
+    {
+      "label": "skills",
+      "file_type": "code",
+      "source_file": "portfolio/src/data/portfolio.js",
+      "source_location": "L158",
+      "id": "data_portfolio_skills",
+      "community": 7,
+      "norm_label": "skills"
+    },
+    {
+      "label": "certifications",
+      "file_type": "code",
+      "source_file": "portfolio/src/data/portfolio.js",
+      "source_location": "L184",
+      "id": "data_portfolio_certifications",
+      "community": 7,
+      "norm_label": "certifications"
+    },
+    {
+      "label": "githubStats",
+      "file_type": "code",
+      "source_file": "portfolio/src/data/portfolio.js",
+      "source_location": "L215",
+      "id": "data_portfolio_githubstats",
+      "community": 3,
+      "norm_label": "githubstats"
+    },
+    {
+      "label": "talks",
+      "file_type": "code",
+      "source_file": "portfolio/src/data/portfolio.js",
+      "source_location": "L226",
+      "id": "data_portfolio_talks",
+      "community": 7,
+      "norm_label": "talks"
+    },
+    {
+      "label": "useCreedlyData.js",
+      "file_type": "code",
+      "source_file": "portfolio/src/hooks/useCreedlyData.js",
+      "source_location": "L1",
+      "id": "portfolio_src_hooks_usecreedlydata_js",
+      "community": 7,
+      "norm_label": "usecreedlydata.js"
+    },
+    {
+      "label": "parseBadges()",
+      "file_type": "code",
+      "source_file": "portfolio/src/hooks/useCreedlyData.js",
+      "source_location": "L7",
+      "id": "hooks_usecreedlydata_parsebadges",
+      "community": 7,
+      "norm_label": "parsebadges()"
+    },
+    {
+      "label": "useCreedlyData()",
+      "file_type": "code",
+      "source_file": "portfolio/src/hooks/useCreedlyData.js",
+      "source_location": "L19",
+      "id": "hooks_usecreedlydata_usecreedlydata",
+      "community": 7,
+      "norm_label": "usecreedlydata()"
+    },
+    {
+      "label": "vite.config.js",
+      "file_type": "code",
+      "source_file": "portfolio/vite.config.js",
+      "source_location": "L1",
+      "id": "portfolio_vite_config_js",
+      "community": 13,
+      "norm_label": "vite.config.js"
+    },
+    {
+      "label": "Experience.jsx",
+      "file_type": "code",
+      "source_file": "portfolio/src/components/Experience.jsx",
+      "source_location": "L1",
+      "community": 7,
+      "norm_label": "experience.jsx",
+      "id": "portfolio_src_components_experience_jsx"
+    },
+    {
+      "label": "Experience()",
+      "file_type": "code",
+      "source_file": "portfolio/src/components/Experience.jsx",
+      "source_location": "L3",
+      "community": 7,
+      "norm_label": "experience()",
+      "id": "components_experience_experience"
+    },
+    {
+      "label": "App.test.jsx",
+      "file_type": "code",
+      "source_file": "portfolio/src/__tests__/App.test.jsx",
+      "source_location": "L1",
+      "community": 9,
+      "norm_label": "app.test.jsx",
+      "id": "portfolio_src_tests_app_test_jsx"
+    },
+    {
+      "label": "renderPage()",
+      "file_type": "code",
+      "source_file": "portfolio/src/__tests__/App.test.jsx",
+      "source_location": "L14",
+      "community": 9,
+      "norm_label": "renderpage()",
+      "id": "tests_app_test_renderpage"
+    },
+    {
+      "label": "Contact.test.jsx",
+      "file_type": "code",
+      "source_file": "portfolio/src/__tests__/Contact.test.jsx",
+      "source_location": "L1",
+      "community": 6,
+      "norm_label": "contact.test.jsx",
+      "id": "portfolio_src_tests_contact_test_jsx"
+    },
+    {
+      "label": "Contact.jsx",
+      "file_type": "code",
+      "source_file": "portfolio/src/components/Contact.jsx",
+      "source_location": "L1",
+      "community": 6,
+      "norm_label": "contact.jsx",
+      "id": "portfolio_src_components_contact_jsx"
+    },
+    {
+      "label": "Contact()",
+      "file_type": "code",
+      "source_file": "portfolio/src/components/Contact.jsx",
+      "source_location": "L4",
+      "community": 6,
+      "norm_label": "contact()",
+      "id": "components_contact_contact"
+    },
+    {
+      "label": "2026-05-31-contact-redesign.md",
+      "file_type": "document",
+      "source_file": "portfolio/docs/superpowers/specs/2026-05-31-contact-redesign.md",
+      "source_location": "L1",
+      "community": 14,
+      "norm_label": "2026-05-31-contact-redesign.md",
+      "id": "portfolio_docs_superpowers_specs_2026_05_31_contact_redesign_md"
+    },
+    {
+      "label": "Contact Section Redesign",
+      "file_type": "document",
+      "source_file": "portfolio/docs/superpowers/specs/2026-05-31-contact-redesign.md",
+      "source_location": "L1",
+      "community": 14,
+      "norm_label": "contact section redesign",
+      "id": "specs_2026_05_31_contact_redesign_contact_section_redesign"
+    },
+    {
+      "label": "Goal",
+      "file_type": "document",
+      "source_file": "portfolio/docs/superpowers/specs/2026-05-31-contact-redesign.md",
+      "source_location": "L6",
+      "community": 14,
+      "norm_label": "goal",
+      "id": "specs_2026_05_31_contact_redesign_goal"
+    },
+    {
+      "label": "What Changes",
+      "file_type": "document",
+      "source_file": "portfolio/docs/superpowers/specs/2026-05-31-contact-redesign.md",
+      "source_location": "L10",
+      "community": 14,
+      "norm_label": "what changes",
+      "id": "specs_2026_05_31_contact_redesign_what_changes"
+    },
+    {
+      "label": "Layout",
+      "file_type": "document",
+      "source_file": "portfolio/docs/superpowers/specs/2026-05-31-contact-redesign.md",
+      "source_location": "L12",
+      "community": 14,
+      "norm_label": "layout",
+      "id": "specs_2026_05_31_contact_redesign_layout"
+    },
+    {
+      "label": "Eyebrow",
+      "file_type": "document",
+      "source_file": "portfolio/docs/superpowers/specs/2026-05-31-contact-redesign.md",
+      "source_location": "L22",
+      "community": 14,
+      "norm_label": "eyebrow",
+      "id": "specs_2026_05_31_contact_redesign_eyebrow"
+    },
+    {
+      "label": "Email Button",
+      "file_type": "document",
+      "source_file": "portfolio/docs/superpowers/specs/2026-05-31-contact-redesign.md",
+      "source_location": "L34",
+      "community": 14,
+      "norm_label": "email button",
+      "id": "specs_2026_05_31_contact_redesign_email_button"
+    },
+    {
+      "label": "Divider",
+      "file_type": "document",
+      "source_file": "portfolio/docs/superpowers/specs/2026-05-31-contact-redesign.md",
+      "source_location": "L44",
+      "community": 14,
+      "norm_label": "divider",
+      "id": "specs_2026_05_31_contact_redesign_divider"
+    },
+    {
+      "label": "Social Row",
+      "file_type": "document",
+      "source_file": "portfolio/docs/superpowers/specs/2026-05-31-contact-redesign.md",
+      "source_location": "L55",
+      "community": 14,
+      "norm_label": "social row",
+      "id": "specs_2026_05_31_contact_redesign_social_row"
+    },
+    {
+      "label": "CSS Changes",
+      "file_type": "document",
+      "source_file": "portfolio/docs/superpowers/specs/2026-05-31-contact-redesign.md",
+      "source_location": "L69",
+      "community": 14,
+      "norm_label": "css changes",
+      "id": "specs_2026_05_31_contact_redesign_css_changes"
+    },
+    {
+      "label": "Component Changes",
+      "file_type": "document",
+      "source_file": "portfolio/docs/superpowers/specs/2026-05-31-contact-redesign.md",
+      "source_location": "L87",
+      "community": 14,
+      "norm_label": "component changes",
+      "id": "specs_2026_05_31_contact_redesign_component_changes"
+    },
+    {
+      "label": "Scroll Reveal",
+      "file_type": "document",
+      "source_file": "portfolio/docs/superpowers/specs/2026-05-31-contact-redesign.md",
+      "source_location": "L97",
+      "community": 14,
+      "norm_label": "scroll reveal",
+      "id": "specs_2026_05_31_contact_redesign_scroll_reveal"
+    },
+    {
+      "label": "Light Theme",
+      "file_type": "document",
+      "source_file": "portfolio/docs/superpowers/specs/2026-05-31-contact-redesign.md",
+      "source_location": "L103",
+      "community": 14,
+      "norm_label": "light theme",
+      "id": "specs_2026_05_31_contact_redesign_light_theme"
+    },
+    {
+      "label": "Tests",
+      "file_type": "document",
+      "source_file": "portfolio/docs/superpowers/specs/2026-05-31-contact-redesign.md",
+      "source_location": "L107",
+      "community": 14,
+      "norm_label": "tests",
+      "id": "specs_2026_05_31_contact_redesign_tests"
+    },
+    {
       "label": "GithubStats.test.jsx",
       "file_type": "code",
       "source_file": "portfolio/src/__tests__/GithubStats.test.jsx",
       "source_location": "L1",
-      "id": "portfolio_src_tests_githubstats_test_jsx",
-      "community": 14,
-      "norm_label": "githubstats.test.jsx"
+      "community": 3,
+      "norm_label": "githubstats.test.jsx",
+      "id": "portfolio_src_tests_githubstats_test_jsx"
     },
     {
       "label": "mockFetch",
       "file_type": "code",
       "source_file": "portfolio/src/__tests__/GithubStats.test.jsx",
       "source_location": "L7",
-      "id": "tests_githubstats_test_mockfetch",
-      "community": 14,
-      "norm_label": "mockfetch"
+      "community": 3,
+      "norm_label": "mockfetch",
+      "id": "tests_githubstats_test_mockfetch"
     },
     {
       "label": "setupFetch()",
       "file_type": "code",
       "source_file": "portfolio/src/__tests__/GithubStats.test.jsx",
       "source_location": "L11",
-      "id": "tests_githubstats_test_setupfetch",
-      "community": 14,
-      "norm_label": "setupfetch()"
+      "community": 3,
+      "norm_label": "setupfetch()",
+      "id": "tests_githubstats_test_setupfetch"
     },
     {
       "label": "renderGithub()",
       "file_type": "code",
       "source_file": "portfolio/src/__tests__/GithubStats.test.jsx",
       "source_location": "L28",
-      "id": "tests_githubstats_test_rendergithub",
-      "community": 14,
-      "norm_label": "rendergithub()"
+      "community": 3,
+      "norm_label": "rendergithub()",
+      "id": "tests_githubstats_test_rendergithub"
     },
     {
       "label": "GithubStats.jsx",
       "file_type": "code",
       "source_file": "portfolio/src/components/GithubStats.jsx",
       "source_location": "L1",
-      "id": "portfolio_src_components_githubstats_jsx",
-      "community": 14,
-      "norm_label": "githubstats.jsx"
+      "community": 3,
+      "norm_label": "githubstats.jsx",
+      "id": "portfolio_src_components_githubstats_jsx"
     },
     {
       "label": "icons",
       "file_type": "code",
       "source_file": "portfolio/src/components/GithubStats.jsx",
       "source_location": "L10",
-      "id": "components_githubstats_icons",
-      "community": 14,
-      "norm_label": "icons"
+      "community": 3,
+      "norm_label": "icons",
+      "id": "components_githubstats_icons"
     },
     {
       "label": "StatValue()",
       "file_type": "code",
       "source_file": "portfolio/src/components/GithubStats.jsx",
       "source_location": "L17",
-      "id": "components_githubstats_statvalue",
-      "community": 14,
-      "norm_label": "statvalue()"
+      "community": 3,
+      "norm_label": "statvalue()",
+      "id": "components_githubstats_statvalue"
     },
     {
       "label": "OverviewCard()",
       "file_type": "code",
       "source_file": "portfolio/src/components/GithubStats.jsx",
       "source_location": "L24",
-      "id": "components_githubstats_overviewcard",
-      "community": 14,
-      "norm_label": "overviewcard()"
+      "community": 3,
+      "norm_label": "overviewcard()",
+      "id": "components_githubstats_overviewcard"
     },
     {
       "label": "TopLangsCard()",
       "file_type": "code",
       "source_file": "portfolio/src/components/GithubStats.jsx",
       "source_location": "L55",
-      "id": "components_githubstats_toplangscard",
-      "community": 14,
-      "norm_label": "toplangscard()"
+      "community": 3,
+      "norm_label": "toplangscard()",
+      "id": "components_githubstats_toplangscard"
     },
     {
       "label": "GithubStats()",
       "file_type": "code",
       "source_file": "portfolio/src/components/GithubStats.jsx",
       "source_location": "L105",
-      "id": "components_githubstats_githubstats",
-      "community": 14,
-      "norm_label": "githubstats()"
+      "community": 3,
+      "norm_label": "githubstats()",
+      "id": "components_githubstats_githubstats"
     },
     {
       "label": "useGithubData.js",
       "file_type": "code",
       "source_file": "portfolio/src/hooks/useGithubData.js",
       "source_location": "L1",
-      "id": "portfolio_src_hooks_usegithubdata_js",
-      "community": 14,
-      "norm_label": "usegithubdata.js"
+      "community": 3,
+      "norm_label": "usegithubdata.js",
+      "id": "portfolio_src_hooks_usegithubdata_js"
     },
     {
       "label": "LANG_COLORS",
       "file_type": "code",
       "source_file": "portfolio/src/hooks/useGithubData.js",
       "source_location": "L6",
-      "id": "hooks_usegithubdata_lang_colors",
-      "community": 14,
-      "norm_label": "lang_colors"
+      "community": 3,
+      "norm_label": "lang_colors",
+      "id": "hooks_usegithubdata_lang_colors"
     },
     {
       "label": "computeTopLangs()",
       "file_type": "code",
       "source_file": "portfolio/src/hooks/useGithubData.js",
       "source_location": "L23",
-      "id": "hooks_usegithubdata_computetoplangs",
-      "community": 14,
-      "norm_label": "computetoplangs()"
+      "community": 3,
+      "norm_label": "computetoplangs()",
+      "id": "hooks_usegithubdata_computetoplangs"
     },
     {
       "label": "fetchAll()",
       "file_type": "code",
       "source_file": "portfolio/src/hooks/useGithubData.js",
       "source_location": "L40",
-      "id": "hooks_usegithubdata_fetchall",
-      "community": 14,
-      "norm_label": "fetchall()"
+      "community": 3,
+      "norm_label": "fetchall()",
+      "id": "hooks_usegithubdata_fetchall"
     },
     {
       "label": "useGithubData()",
       "file_type": "code",
       "source_file": "portfolio/src/hooks/useGithubData.js",
       "source_location": "L72",
-      "id": "hooks_usegithubdata_usegithubdata",
-      "community": 14,
-      "norm_label": "usegithubdata()"
+      "community": 3,
+      "norm_label": "usegithubdata()",
+      "id": "hooks_usegithubdata_usegithubdata"
     },
     {
       "label": "Icons.jsx",
@@ -197,7 +566,7 @@
       "file_type": "code",
       "source_file": "portfolio/src/components/Icons.jsx",
       "source_location": "L27",
-      "community": 6,
+      "community": 7,
       "norm_label": "iconscrolldown()",
       "id": "components_icons_iconscrolldown"
     },
@@ -278,7 +647,7 @@
       "file_type": "code",
       "source_file": "portfolio/src/components/Icons.jsx",
       "source_location": "L107",
-      "community": 14,
+      "community": 3,
       "norm_label": "iconstar()",
       "id": "components_icons_iconstar"
     },
@@ -290,96 +659,6 @@
       "community": 6,
       "norm_label": "talkicon()",
       "id": "components_icons_talkicon"
-    },
-    {
-      "label": "portfolio.js",
-      "file_type": "code",
-      "source_file": "portfolio/src/data/portfolio.js",
-      "source_location": "L1",
-      "community": 7,
-      "norm_label": "portfolio.js",
-      "id": "portfolio_src_data_portfolio_js"
-    },
-    {
-      "label": "personal",
-      "file_type": "code",
-      "source_file": "portfolio/src/data/portfolio.js",
-      "source_location": "L1",
-      "community": 7,
-      "norm_label": "personal",
-      "id": "data_portfolio_personal"
-    },
-    {
-      "label": "hero",
-      "file_type": "code",
-      "source_file": "portfolio/src/data/portfolio.js",
-      "source_location": "L26",
-      "community": 7,
-      "norm_label": "hero",
-      "id": "data_portfolio_hero"
-    },
-    {
-      "label": "about",
-      "file_type": "code",
-      "source_file": "portfolio/src/data/portfolio.js",
-      "source_location": "L39",
-      "community": 7,
-      "norm_label": "about",
-      "id": "data_portfolio_about"
-    },
-    {
-      "label": "experience",
-      "file_type": "code",
-      "source_file": "portfolio/src/data/portfolio.js",
-      "source_location": "L55",
-      "community": 7,
-      "norm_label": "experience",
-      "id": "data_portfolio_experience"
-    },
-    {
-      "label": "projects",
-      "file_type": "code",
-      "source_file": "portfolio/src/data/portfolio.js",
-      "source_location": "L82",
-      "community": 7,
-      "norm_label": "projects",
-      "id": "data_portfolio_projects"
-    },
-    {
-      "label": "skills",
-      "file_type": "code",
-      "source_file": "portfolio/src/data/portfolio.js",
-      "source_location": "L133",
-      "community": 7,
-      "norm_label": "skills",
-      "id": "data_portfolio_skills"
-    },
-    {
-      "label": "certifications",
-      "file_type": "code",
-      "source_file": "portfolio/src/data/portfolio.js",
-      "source_location": "L156",
-      "community": 7,
-      "norm_label": "certifications",
-      "id": "data_portfolio_certifications"
-    },
-    {
-      "label": "githubStats",
-      "file_type": "code",
-      "source_file": "portfolio/src/data/portfolio.js",
-      "source_location": "L177",
-      "community": 14,
-      "norm_label": "githubstats",
-      "id": "data_portfolio_githubstats"
-    },
-    {
-      "label": "talks",
-      "file_type": "code",
-      "source_file": "portfolio/src/data/portfolio.js",
-      "source_location": "L188",
-      "community": 7,
-      "norm_label": "talks",
-      "id": "data_portfolio_talks"
     },
     {
       "label": "App.jsx",
@@ -458,7 +737,7 @@
       "file_type": "code",
       "source_file": "portfolio/src/pages/GithubPage.jsx",
       "source_location": "L1",
-      "community": 14,
+      "community": 3,
       "norm_label": "githubpage.jsx",
       "id": "portfolio_src_pages_githubpage_jsx"
     },
@@ -467,7 +746,7 @@
       "file_type": "code",
       "source_file": "portfolio/src/pages/GithubPage.jsx",
       "source_location": "L3",
-      "community": 14,
+      "community": 3,
       "norm_label": "githubpage()",
       "id": "pages_githubpage_githubpage"
     },
@@ -490,20 +769,11 @@
       "id": "tests_hero_test_renderhero"
     },
     {
-      "label": "ProfileCard.test.jsx",
-      "file_type": "code",
-      "source_file": "portfolio/src/__tests__/ProfileCard.test.jsx",
-      "source_location": "L1",
-      "community": 7,
-      "norm_label": "profilecard.test.jsx",
-      "id": "portfolio_src_tests_profilecard_test_jsx"
-    },
-    {
       "label": "Hero.jsx",
       "file_type": "code",
       "source_file": "portfolio/src/components/Hero.jsx",
       "source_location": "L1",
-      "community": 6,
+      "community": 7,
       "norm_label": "hero.jsx",
       "id": "portfolio_src_components_hero_jsx"
     },
@@ -512,7 +782,7 @@
       "file_type": "code",
       "source_file": "portfolio/src/components/Hero.jsx",
       "source_location": "L6",
-      "community": 6,
+      "community": 7,
       "norm_label": "hero()",
       "id": "components_hero_hero"
     },
@@ -539,7 +809,7 @@
       "file_type": "code",
       "source_file": "portfolio/package.json",
       "source_location": "L1",
-      "community": 8,
+      "community": 10,
       "norm_label": "package.json",
       "id": "portfolio_package_json"
     },
@@ -548,7 +818,7 @@
       "file_type": "code",
       "source_file": "portfolio/package.json",
       "source_location": "L2",
-      "community": 8,
+      "community": 10,
       "norm_label": "name",
       "id": "portfolio_package_name"
     },
@@ -557,7 +827,7 @@
       "file_type": "code",
       "source_file": "portfolio/package.json",
       "source_location": "L3",
-      "community": 8,
+      "community": 10,
       "norm_label": "private",
       "id": "portfolio_package_private"
     },
@@ -566,7 +836,7 @@
       "file_type": "code",
       "source_file": "portfolio/package.json",
       "source_location": "L4",
-      "community": 8,
+      "community": 10,
       "norm_label": "version",
       "id": "portfolio_package_version"
     },
@@ -575,7 +845,7 @@
       "file_type": "code",
       "source_file": "portfolio/package.json",
       "source_location": "L5",
-      "community": 8,
+      "community": 10,
       "norm_label": "type",
       "id": "portfolio_package_type"
     },
@@ -656,7 +926,7 @@
       "file_type": "code",
       "source_file": "portfolio/package.json",
       "source_location": "L15",
-      "community": 8,
+      "community": 10,
       "norm_label": "dependencies",
       "id": "portfolio_package_dependencies"
     },
@@ -665,7 +935,7 @@
       "file_type": "code",
       "source_file": "portfolio/package.json",
       "source_location": "L16",
-      "community": 8,
+      "community": 10,
       "norm_label": "react",
       "id": "portfolio_package_dependencies_react"
     },
@@ -674,7 +944,7 @@
       "file_type": "code",
       "source_file": "portfolio/package.json",
       "source_location": "L17",
-      "community": 8,
+      "community": 10,
       "norm_label": "react-dom",
       "id": "portfolio_package_dependencies_react_dom"
     },
@@ -683,7 +953,7 @@
       "file_type": "code",
       "source_file": "portfolio/package.json",
       "source_location": "L18",
-      "community": 8,
+      "community": 10,
       "norm_label": "react-router-dom",
       "id": "portfolio_package_dependencies_react_router_dom"
     },
@@ -830,24 +1100,6 @@
       "community": 10,
       "norm_label": "vitest",
       "id": "portfolio_package_devdependencies_vitest"
-    },
-    {
-      "label": "App.test.jsx",
-      "file_type": "code",
-      "source_file": "portfolio/src/__tests__/App.test.jsx",
-      "source_location": "L1",
-      "community": 9,
-      "norm_label": "app.test.jsx",
-      "id": "portfolio_src_tests_app_test_jsx"
-    },
-    {
-      "label": "renderPage()",
-      "file_type": "code",
-      "source_file": "portfolio/src/__tests__/App.test.jsx",
-      "source_location": "L14",
-      "community": 9,
-      "norm_label": "renderpage()",
-      "id": "tests_app_test_renderpage"
     },
     {
       "label": "useScrollReveal.test.jsx",
@@ -1237,33 +1489,6 @@
       "id": "portfolio_src_tests_about_test_jsx"
     },
     {
-      "label": "Certifications.test.jsx",
-      "file_type": "code",
-      "source_file": "portfolio/src/__tests__/Certifications.test.jsx",
-      "source_location": "L1",
-      "community": 7,
-      "norm_label": "certifications.test.jsx",
-      "id": "portfolio_src_tests_certifications_test_jsx"
-    },
-    {
-      "label": "Contact.test.jsx",
-      "file_type": "code",
-      "source_file": "portfolio/src/__tests__/Contact.test.jsx",
-      "source_location": "L1",
-      "community": 7,
-      "norm_label": "contact.test.jsx",
-      "id": "portfolio_src_tests_contact_test_jsx"
-    },
-    {
-      "label": "Experience.test.jsx",
-      "file_type": "code",
-      "source_file": "portfolio/src/__tests__/Experience.test.jsx",
-      "source_location": "L1",
-      "community": 7,
-      "norm_label": "experience.test.jsx",
-      "id": "portfolio_src_tests_experience_test_jsx"
-    },
-    {
       "label": "Footer.test.jsx",
       "file_type": "code",
       "source_file": "portfolio/src/__tests__/Footer.test.jsx",
@@ -1372,15 +1597,6 @@
       "id": "portfolio_src_tests_usetheme_test_js"
     },
     {
-      "label": "vite.config.js",
-      "file_type": "code",
-      "source_file": "portfolio/vite.config.js",
-      "source_location": "L1",
-      "community": 13,
-      "norm_label": "vite.config.js",
-      "id": "portfolio_vite_config_js"
-    },
-    {
       "label": "README.md",
       "file_type": "document",
       "source_file": "portfolio/README.md",
@@ -1424,60 +1640,6 @@
       "community": 12,
       "norm_label": "eslint.config.js",
       "id": "portfolio_eslint_config_js"
-    },
-    {
-      "label": "Certifications.jsx",
-      "file_type": "code",
-      "source_file": "portfolio/src/components/Certifications.jsx",
-      "source_location": "L1",
-      "community": 6,
-      "norm_label": "certifications.jsx",
-      "id": "portfolio_src_components_certifications_jsx"
-    },
-    {
-      "label": "Certifications()",
-      "file_type": "code",
-      "source_file": "portfolio/src/components/Certifications.jsx",
-      "source_location": "L4",
-      "community": 6,
-      "norm_label": "certifications()",
-      "id": "components_certifications_certifications"
-    },
-    {
-      "label": "Contact.jsx",
-      "file_type": "code",
-      "source_file": "portfolio/src/components/Contact.jsx",
-      "source_location": "L1",
-      "community": 6,
-      "norm_label": "contact.jsx",
-      "id": "portfolio_src_components_contact_jsx"
-    },
-    {
-      "label": "Contact()",
-      "file_type": "code",
-      "source_file": "portfolio/src/components/Contact.jsx",
-      "source_location": "L4",
-      "community": 6,
-      "norm_label": "contact()",
-      "id": "components_contact_contact"
-    },
-    {
-      "label": "Experience.jsx",
-      "file_type": "code",
-      "source_file": "portfolio/src/components/Experience.jsx",
-      "source_location": "L1",
-      "community": 7,
-      "norm_label": "experience.jsx",
-      "id": "portfolio_src_components_experience_jsx"
-    },
-    {
-      "label": "Experience()",
-      "file_type": "code",
-      "source_file": "portfolio/src/components/Experience.jsx",
-      "source_location": "L3",
-      "community": 7,
-      "norm_label": "experience()",
-      "id": "components_experience_experience"
     },
     {
       "label": "Footer.jsx",
@@ -1632,23 +1794,452 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/__tests__/GithubStats.test.jsx",
-      "source_location": "L5",
+      "source_file": "portfolio/src/__tests__/Certifications.test.jsx",
+      "source_location": "L4",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "portfolio_src_tests_githubstats_test_jsx",
-      "target": "data_portfolio_githubstats"
+      "source": "portfolio_src_tests_certifications_test_jsx",
+      "target": "data_portfolio_certifications"
     },
     {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/__tests__/GithubStats.test.jsx",
+      "source_file": "portfolio/src/__tests__/Certifications.test.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "portfolio_src_tests_certifications_test_jsx",
+      "target": "portfolio_src_components_certifications_jsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/__tests__/Certifications.test.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "portfolio_src_tests_certifications_test_jsx",
+      "target": "portfolio_src_data_portfolio_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/__tests__/Experience.test.jsx",
       "source_location": "L4",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "portfolio_src_tests_githubstats_test_jsx",
-      "target": "portfolio_src_components_githubstats_jsx"
+      "source": "portfolio_src_tests_experience_test_jsx",
+      "target": "data_portfolio_experience"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/__tests__/Experience.test.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "portfolio_src_tests_experience_test_jsx",
+      "target": "portfolio_src_data_portfolio_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/__tests__/ProfileCard.test.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_tests_profilecard_test_jsx",
+      "target": "data_portfolio_about"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/__tests__/ProfileCard.test.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_tests_profilecard_test_jsx",
+      "target": "data_portfolio_personal"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/__tests__/ProfileCard.test.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_tests_profilecard_test_jsx",
+      "target": "portfolio_src_components_profilecard_jsx"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/__tests__/ProfileCard.test.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_tests_profilecard_test_jsx",
+      "target": "portfolio_src_data_portfolio_js"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/App.jsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_app_jsx",
+      "target": "portfolio_src_components_certifications_jsx"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Certifications.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_certifications_jsx",
+      "target": "components_certifications_certifications"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Certifications.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_certifications_jsx",
+      "target": "components_icons_iconexternal"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Certifications.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_certifications_jsx",
+      "target": "data_portfolio_certifications"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Certifications.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "portfolio_src_components_certifications_jsx",
+      "target": "data_portfolio_personal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Certifications.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "portfolio_src_components_certifications_jsx",
+      "target": "hooks_usecreedlydata_usecreedlydata",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Certifications.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_certifications_jsx",
+      "target": "portfolio_src_components_icons_jsx"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Certifications.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_certifications_jsx",
+      "target": "portfolio_src_data_portfolio_js"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Certifications.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "portfolio_src_components_certifications_jsx",
+      "target": "portfolio_src_hooks_usecreedlydata_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "portfolio/src/components/Certifications.jsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "components_certifications_certifications",
+      "target": "hooks_usecreedlydata_usecreedlydata"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/About.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_about_jsx",
+      "target": "portfolio_src_data_portfolio_js"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Avatar.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_avatar_jsx",
+      "target": "portfolio_src_data_portfolio_js"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Contact.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_contact_jsx",
+      "target": "portfolio_src_data_portfolio_js"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Experience.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_experience_jsx",
+      "target": "portfolio_src_data_portfolio_js"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Footer.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_footer_jsx",
+      "target": "portfolio_src_data_portfolio_js"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/GithubStats.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_githubstats_jsx",
+      "target": "portfolio_src_data_portfolio_js"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Hero.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_hero_jsx",
+      "target": "portfolio_src_data_portfolio_js"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Nav.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_nav_jsx",
+      "target": "portfolio_src_data_portfolio_js"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/ProfileCard.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_profilecard_jsx",
+      "target": "portfolio_src_data_portfolio_js"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Projects.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_projects_jsx",
+      "target": "portfolio_src_data_portfolio_js"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Skills.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_skills_jsx",
+      "target": "portfolio_src_data_portfolio_js"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Talks.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_talks_jsx",
+      "target": "portfolio_src_data_portfolio_js"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/data/portfolio.js",
+      "source_location": "L34",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_data_portfolio_js",
+      "target": "data_portfolio_about"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/data/portfolio.js",
+      "source_location": "L151",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_data_portfolio_js",
+      "target": "data_portfolio_certifications"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/data/portfolio.js",
+      "source_location": "L133",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_data_portfolio_js",
+      "target": "data_portfolio_education"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/data/portfolio.js",
+      "source_location": "L50",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_data_portfolio_js",
+      "target": "data_portfolio_experience"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/data/portfolio.js",
+      "source_location": "L177",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_data_portfolio_js",
+      "target": "data_portfolio_githubstats"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/data/portfolio.js",
+      "source_location": "L21",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_data_portfolio_js",
+      "target": "data_portfolio_hero"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/data/portfolio.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_data_portfolio_js",
+      "target": "data_portfolio_personal"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/data/portfolio.js",
+      "source_location": "L77",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_data_portfolio_js",
+      "target": "data_portfolio_projects"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/data/portfolio.js",
+      "source_location": "L128",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_data_portfolio_js",
+      "target": "data_portfolio_skills"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/data/portfolio.js",
+      "source_location": "L172",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_data_portfolio_js",
+      "target": "data_portfolio_talks"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/hooks/useCreedlyData.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "portfolio_src_hooks_usecreedlydata_js",
+      "target": "portfolio_src_data_portfolio_js",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -1660,6 +2251,769 @@
       "confidence_score": 1.0,
       "source": "portfolio_src_tests_githubstats_test_jsx",
       "target": "portfolio_src_data_portfolio_js"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/__tests__/Hero.test.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_tests_hero_test_jsx",
+      "target": "portfolio_src_data_portfolio_js"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/__tests__/Nav.test.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_tests_nav_test_jsx",
+      "target": "portfolio_src_data_portfolio_js"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Avatar.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_avatar_jsx",
+      "target": "data_portfolio_personal"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Contact.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_contact_jsx",
+      "target": "data_portfolio_personal"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Footer.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_footer_jsx",
+      "target": "data_portfolio_personal"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/GithubStats.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_githubstats_jsx",
+      "target": "data_portfolio_personal"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Hero.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_hero_jsx",
+      "target": "data_portfolio_personal"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Nav.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_nav_jsx",
+      "target": "data_portfolio_personal"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/ProfileCard.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_profilecard_jsx",
+      "target": "data_portfolio_personal"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/__tests__/Contact.test.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_tests_contact_test_jsx",
+      "target": "data_portfolio_personal"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/__tests__/data.test.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_tests_data_test_js",
+      "target": "data_portfolio_personal"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/__tests__/Footer.test.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_tests_footer_test_jsx",
+      "target": "data_portfolio_personal"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/__tests__/Hero.test.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_tests_hero_test_jsx",
+      "target": "data_portfolio_personal"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/__tests__/Nav.test.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_tests_nav_test_jsx",
+      "target": "data_portfolio_personal"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Hero.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_hero_jsx",
+      "target": "data_portfolio_hero"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/__tests__/data.test.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_tests_data_test_js",
+      "target": "data_portfolio_hero"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/__tests__/Hero.test.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_tests_hero_test_jsx",
+      "target": "data_portfolio_hero"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/About.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_about_jsx",
+      "target": "data_portfolio_about"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/ProfileCard.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_profilecard_jsx",
+      "target": "data_portfolio_about"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/__tests__/About.test.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_tests_about_test_jsx",
+      "target": "data_portfolio_about"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/__tests__/data.test.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_tests_data_test_js",
+      "target": "data_portfolio_about"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Experience.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_experience_jsx",
+      "target": "data_portfolio_experience"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/__tests__/data.test.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_tests_data_test_js",
+      "target": "data_portfolio_experience"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Projects.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_projects_jsx",
+      "target": "data_portfolio_projects"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/__tests__/data.test.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_tests_data_test_js",
+      "target": "data_portfolio_projects"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/__tests__/Projects.test.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_tests_projects_test_jsx",
+      "target": "data_portfolio_projects"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Experience.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_experience_jsx",
+      "target": "data_portfolio_education"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Skills.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_skills_jsx",
+      "target": "data_portfolio_skills"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/__tests__/data.test.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_tests_data_test_js",
+      "target": "data_portfolio_skills"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/__tests__/Skills.test.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_tests_skills_test_jsx",
+      "target": "data_portfolio_skills"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/hooks/useCreedlyData.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "portfolio_src_hooks_usecreedlydata_js",
+      "target": "data_portfolio_certifications",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/__tests__/data.test.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_tests_data_test_js",
+      "target": "data_portfolio_certifications"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/GithubStats.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_githubstats_jsx",
+      "target": "data_portfolio_githubstats"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/__tests__/GithubStats.test.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_tests_githubstats_test_jsx",
+      "target": "data_portfolio_githubstats"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Talks.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_talks_jsx",
+      "target": "data_portfolio_talks"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/__tests__/data.test.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_tests_data_test_js",
+      "target": "data_portfolio_talks"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/__tests__/Talks.test.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_tests_talks_test_jsx",
+      "target": "data_portfolio_talks"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/hooks/useCreedlyData.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "portfolio_src_hooks_usecreedlydata_js",
+      "target": "hooks_usecreedlydata_parsebadges",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/hooks/useCreedlyData.js",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "portfolio_src_hooks_usecreedlydata_js",
+      "target": "hooks_usecreedlydata_usecreedlydata",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/App.jsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_app_jsx",
+      "target": "portfolio_src_components_experience_jsx"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Experience.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_experience_jsx",
+      "target": "components_experience_experience"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/__tests__/App.test.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_tests_app_test_jsx",
+      "target": "portfolio_src_app_jsx"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/__tests__/App.test.jsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_tests_app_test_jsx",
+      "target": "portfolio_src_pages_aboutpage_jsx"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/__tests__/App.test.jsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_tests_app_test_jsx",
+      "target": "portfolio_src_pages_achievementspage_jsx"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/__tests__/App.test.jsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_tests_app_test_jsx",
+      "target": "portfolio_src_pages_contactpage_jsx"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/__tests__/App.test.jsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_tests_app_test_jsx",
+      "target": "portfolio_src_pages_experiencepage_jsx"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/__tests__/App.test.jsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_tests_app_test_jsx",
+      "target": "portfolio_src_pages_homepage_jsx"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/__tests__/App.test.jsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_tests_app_test_jsx",
+      "target": "portfolio_src_pages_projectspage_jsx"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/__tests__/App.test.jsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_tests_app_test_jsx",
+      "target": "portfolio_src_pages_skillspage_jsx"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/__tests__/App.test.jsx",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_tests_app_test_jsx",
+      "target": "tests_app_test_renderpage"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/__tests__/Contact.test.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_tests_contact_test_jsx",
+      "target": "portfolio_src_components_contact_jsx"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/App.jsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_app_jsx",
+      "target": "portfolio_src_components_contact_jsx"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Contact.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_contact_jsx",
+      "target": "components_contact_contact"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Contact.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_contact_jsx",
+      "target": "components_icons_iconemail"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Contact.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_contact_jsx",
+      "target": "components_icons_icongithub"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Contact.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_contact_jsx",
+      "target": "components_icons_iconlinkedin"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Contact.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_contact_jsx",
+      "target": "portfolio_src_components_icons_jsx"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/docs/superpowers/specs/2026-05-31-contact-redesign.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_docs_superpowers_specs_2026_05_31_contact_redesign_md",
+      "target": "specs_2026_05_31_contact_redesign_contact_section_redesign"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/docs/superpowers/specs/2026-05-31-contact-redesign.md",
+      "source_location": "L87",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "specs_2026_05_31_contact_redesign_contact_section_redesign",
+      "target": "specs_2026_05_31_contact_redesign_component_changes"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/docs/superpowers/specs/2026-05-31-contact-redesign.md",
+      "source_location": "L69",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "specs_2026_05_31_contact_redesign_contact_section_redesign",
+      "target": "specs_2026_05_31_contact_redesign_css_changes"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/docs/superpowers/specs/2026-05-31-contact-redesign.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "specs_2026_05_31_contact_redesign_contact_section_redesign",
+      "target": "specs_2026_05_31_contact_redesign_goal"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/docs/superpowers/specs/2026-05-31-contact-redesign.md",
+      "source_location": "L103",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "specs_2026_05_31_contact_redesign_contact_section_redesign",
+      "target": "specs_2026_05_31_contact_redesign_light_theme"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/docs/superpowers/specs/2026-05-31-contact-redesign.md",
+      "source_location": "L97",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "specs_2026_05_31_contact_redesign_contact_section_redesign",
+      "target": "specs_2026_05_31_contact_redesign_scroll_reveal"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/docs/superpowers/specs/2026-05-31-contact-redesign.md",
+      "source_location": "L107",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "specs_2026_05_31_contact_redesign_contact_section_redesign",
+      "target": "specs_2026_05_31_contact_redesign_tests"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/docs/superpowers/specs/2026-05-31-contact-redesign.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "specs_2026_05_31_contact_redesign_contact_section_redesign",
+      "target": "specs_2026_05_31_contact_redesign_what_changes"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/docs/superpowers/specs/2026-05-31-contact-redesign.md",
+      "source_location": "L44",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "specs_2026_05_31_contact_redesign_what_changes",
+      "target": "specs_2026_05_31_contact_redesign_divider"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/docs/superpowers/specs/2026-05-31-contact-redesign.md",
+      "source_location": "L34",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "specs_2026_05_31_contact_redesign_what_changes",
+      "target": "specs_2026_05_31_contact_redesign_email_button"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/docs/superpowers/specs/2026-05-31-contact-redesign.md",
+      "source_location": "L22",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "specs_2026_05_31_contact_redesign_what_changes",
+      "target": "specs_2026_05_31_contact_redesign_eyebrow"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/docs/superpowers/specs/2026-05-31-contact-redesign.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "specs_2026_05_31_contact_redesign_what_changes",
+      "target": "specs_2026_05_31_contact_redesign_layout"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/docs/superpowers/specs/2026-05-31-contact-redesign.md",
+      "source_location": "L55",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "specs_2026_05_31_contact_redesign_what_changes",
+      "target": "specs_2026_05_31_contact_redesign_social_row"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/__tests__/GithubStats.test.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_tests_githubstats_test_jsx",
+      "target": "portfolio_src_components_githubstats_jsx"
     },
     {
       "relation": "contains",
@@ -1717,9 +3071,9 @@
       "source_file": "portfolio/src/components/GithubStats.jsx",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "portfolio_src_components_githubstats_jsx",
-      "target": "components_githubstats_overviewcard",
-      "confidence_score": 1.0
+      "target": "components_githubstats_overviewcard"
     },
     {
       "relation": "contains",
@@ -1737,9 +3091,9 @@
       "source_file": "portfolio/src/components/GithubStats.jsx",
       "source_location": "L55",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "portfolio_src_components_githubstats_jsx",
-      "target": "components_githubstats_toplangscard",
-      "confidence_score": 1.0
+      "target": "components_githubstats_toplangscard"
     },
     {
       "relation": "imports",
@@ -1751,28 +3105,6 @@
       "confidence_score": 1.0,
       "source": "portfolio_src_components_githubstats_jsx",
       "target": "components_icons_iconstar"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/GithubStats.jsx",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_githubstats_jsx",
-      "target": "data_portfolio_githubstats"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/GithubStats.jsx",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_githubstats_jsx",
-      "target": "data_portfolio_personal"
     },
     {
       "relation": "imports",
@@ -1795,17 +3127,6 @@
       "confidence_score": 1.0,
       "source": "portfolio_src_components_githubstats_jsx",
       "target": "portfolio_src_components_icons_jsx"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/GithubStats.jsx",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_githubstats_jsx",
-      "target": "portfolio_src_data_portfolio_js"
     },
     {
       "relation": "imports_from",
@@ -1846,9 +3167,9 @@
       "source_file": "portfolio/src/hooks/useGithubData.js",
       "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "portfolio_src_hooks_usegithubdata_js",
-      "target": "hooks_usegithubdata_computetoplangs",
-      "confidence_score": 1.0
+      "target": "hooks_usegithubdata_computetoplangs"
     },
     {
       "relation": "contains",
@@ -1866,9 +3187,9 @@
       "source_file": "portfolio/src/hooks/useGithubData.js",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "portfolio_src_hooks_usegithubdata_js",
-      "target": "hooks_usegithubdata_lang_colors",
-      "confidence_score": 1.0
+      "target": "hooks_usegithubdata_lang_colors"
     },
     {
       "relation": "contains",
@@ -1887,31 +3208,9 @@
       "source_file": "portfolio/src/hooks/useGithubData.js",
       "source_location": "L68",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "hooks_usegithubdata_fetchall",
-      "target": "hooks_usegithubdata_computetoplangs",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Certifications.jsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_certifications_jsx",
-      "target": "portfolio_src_components_icons_jsx"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Contact.jsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_contact_jsx",
-      "target": "portfolio_src_components_icons_jsx"
+      "target": "hooks_usegithubdata_computetoplangs"
     },
     {
       "relation": "imports_from",
@@ -2187,17 +3486,6 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Contact.jsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_contact_jsx",
-      "target": "components_icons_icongithub"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
       "source_file": "portfolio/src/components/ProfileCard.jsx",
       "source_location": "L2",
       "weight": 1.0,
@@ -2220,17 +3508,6 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Contact.jsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_contact_jsx",
-      "target": "components_icons_iconlinkedin"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
       "source_file": "portfolio/src/components/ProfileCard.jsx",
       "source_location": "L2",
       "weight": 1.0,
@@ -2242,34 +3519,12 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Contact.jsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_contact_jsx",
-      "target": "components_icons_iconemail"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
       "source_file": "portfolio/src/components/ProfileCard.jsx",
       "source_location": "L2",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "portfolio_src_components_profilecard_jsx",
       "target": "components_icons_iconemail"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Certifications.jsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_certifications_jsx",
-      "target": "components_icons_iconexternal"
     },
     {
       "relation": "imports",
@@ -2305,646 +3560,6 @@
       "target": "components_icons_talkicon"
     },
     {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/About.jsx",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_about_jsx",
-      "target": "portfolio_src_data_portfolio_js"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Avatar.jsx",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_avatar_jsx",
-      "target": "portfolio_src_data_portfolio_js"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Certifications.jsx",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_certifications_jsx",
-      "target": "portfolio_src_data_portfolio_js"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Contact.jsx",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_contact_jsx",
-      "target": "portfolio_src_data_portfolio_js"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Experience.jsx",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_experience_jsx",
-      "target": "portfolio_src_data_portfolio_js"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Footer.jsx",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_footer_jsx",
-      "target": "portfolio_src_data_portfolio_js"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Hero.jsx",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_hero_jsx",
-      "target": "portfolio_src_data_portfolio_js"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Nav.jsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_nav_jsx",
-      "target": "portfolio_src_data_portfolio_js"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/ProfileCard.jsx",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_profilecard_jsx",
-      "target": "portfolio_src_data_portfolio_js"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Projects.jsx",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_projects_jsx",
-      "target": "portfolio_src_data_portfolio_js"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Skills.jsx",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_skills_jsx",
-      "target": "portfolio_src_data_portfolio_js"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Talks.jsx",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_talks_jsx",
-      "target": "portfolio_src_data_portfolio_js"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/data/portfolio.js",
-      "source_location": "L34",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_data_portfolio_js",
-      "target": "data_portfolio_about"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/data/portfolio.js",
-      "source_location": "L151",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_data_portfolio_js",
-      "target": "data_portfolio_certifications"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/data/portfolio.js",
-      "source_location": "L50",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_data_portfolio_js",
-      "target": "data_portfolio_experience"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/data/portfolio.js",
-      "source_location": "L177",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_data_portfolio_js",
-      "target": "data_portfolio_githubstats"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/data/portfolio.js",
-      "source_location": "L21",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_data_portfolio_js",
-      "target": "data_portfolio_hero"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/data/portfolio.js",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_data_portfolio_js",
-      "target": "data_portfolio_personal"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/data/portfolio.js",
-      "source_location": "L77",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_data_portfolio_js",
-      "target": "data_portfolio_projects"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/data/portfolio.js",
-      "source_location": "L128",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_data_portfolio_js",
-      "target": "data_portfolio_skills"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/data/portfolio.js",
-      "source_location": "L172",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_data_portfolio_js",
-      "target": "data_portfolio_talks"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/__tests__/Hero.test.jsx",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_tests_hero_test_jsx",
-      "target": "portfolio_src_data_portfolio_js"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/__tests__/Nav.test.jsx",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_tests_nav_test_jsx",
-      "target": "portfolio_src_data_portfolio_js"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/__tests__/ProfileCard.test.jsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_tests_profilecard_test_jsx",
-      "target": "portfolio_src_data_portfolio_js"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Avatar.jsx",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_avatar_jsx",
-      "target": "data_portfolio_personal"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Contact.jsx",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_contact_jsx",
-      "target": "data_portfolio_personal"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Footer.jsx",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_footer_jsx",
-      "target": "data_portfolio_personal"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Hero.jsx",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_hero_jsx",
-      "target": "data_portfolio_personal"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Nav.jsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_nav_jsx",
-      "target": "data_portfolio_personal"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/ProfileCard.jsx",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_profilecard_jsx",
-      "target": "data_portfolio_personal"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/__tests__/Contact.test.jsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_tests_contact_test_jsx",
-      "target": "data_portfolio_personal"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/__tests__/data.test.js",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_tests_data_test_js",
-      "target": "data_portfolio_personal"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/__tests__/Footer.test.jsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_tests_footer_test_jsx",
-      "target": "data_portfolio_personal"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/__tests__/Hero.test.jsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_tests_hero_test_jsx",
-      "target": "data_portfolio_personal"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/__tests__/Nav.test.jsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_tests_nav_test_jsx",
-      "target": "data_portfolio_personal"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/__tests__/ProfileCard.test.jsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_tests_profilecard_test_jsx",
-      "target": "data_portfolio_personal"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Hero.jsx",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_hero_jsx",
-      "target": "data_portfolio_hero"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/__tests__/data.test.js",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_tests_data_test_js",
-      "target": "data_portfolio_hero"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/__tests__/Hero.test.jsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_tests_hero_test_jsx",
-      "target": "data_portfolio_hero"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/About.jsx",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_about_jsx",
-      "target": "data_portfolio_about"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/ProfileCard.jsx",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_profilecard_jsx",
-      "target": "data_portfolio_about"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/__tests__/About.test.jsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_tests_about_test_jsx",
-      "target": "data_portfolio_about"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/__tests__/data.test.js",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_tests_data_test_js",
-      "target": "data_portfolio_about"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/__tests__/ProfileCard.test.jsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_tests_profilecard_test_jsx",
-      "target": "data_portfolio_about"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Experience.jsx",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_experience_jsx",
-      "target": "data_portfolio_experience"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/__tests__/data.test.js",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_tests_data_test_js",
-      "target": "data_portfolio_experience"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/__tests__/Experience.test.jsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_tests_experience_test_jsx",
-      "target": "data_portfolio_experience"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Projects.jsx",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_projects_jsx",
-      "target": "data_portfolio_projects"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/__tests__/data.test.js",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_tests_data_test_js",
-      "target": "data_portfolio_projects"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/__tests__/Projects.test.jsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_tests_projects_test_jsx",
-      "target": "data_portfolio_projects"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Skills.jsx",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_skills_jsx",
-      "target": "data_portfolio_skills"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/__tests__/data.test.js",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_tests_data_test_js",
-      "target": "data_portfolio_skills"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/__tests__/Skills.test.jsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_tests_skills_test_jsx",
-      "target": "data_portfolio_skills"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Certifications.jsx",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_certifications_jsx",
-      "target": "data_portfolio_certifications"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/__tests__/Certifications.test.jsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_tests_certifications_test_jsx",
-      "target": "data_portfolio_certifications"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/__tests__/data.test.js",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_tests_data_test_js",
-      "target": "data_portfolio_certifications"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Talks.jsx",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_talks_jsx",
-      "target": "data_portfolio_talks"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/__tests__/data.test.js",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_tests_data_test_js",
-      "target": "data_portfolio_talks"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/__tests__/Talks.test.jsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_tests_talks_test_jsx",
-      "target": "data_portfolio_talks"
-    },
-    {
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -2976,39 +3591,6 @@
       "confidence_score": 1.0,
       "source": "portfolio_src_app_jsx",
       "target": "portfolio_src_components_about_jsx"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/App.jsx",
-      "source_location": "L9",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_app_jsx",
-      "target": "portfolio_src_components_certifications_jsx"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/App.jsx",
-      "source_location": "L11",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_app_jsx",
-      "target": "portfolio_src_components_contact_jsx"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/App.jsx",
-      "source_location": "L6",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_app_jsx",
-      "target": "portfolio_src_components_experience_jsx"
     },
     {
       "relation": "imports_from",
@@ -3229,17 +3811,6 @@
       "target": "portfolio_src_app_jsx"
     },
     {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/__tests__/App.test.jsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_tests_app_test_jsx",
-      "target": "portfolio_src_app_jsx"
-    },
-    {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
@@ -3343,17 +3914,6 @@
       "confidence_score": 1.0,
       "source": "portfolio_src_tests_hero_test_jsx",
       "target": "tests_hero_test_renderhero"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/__tests__/ProfileCard.test.jsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_tests_profilecard_test_jsx",
-      "target": "portfolio_src_components_profilecard_jsx"
     },
     {
       "relation": "contains",
@@ -3705,93 +4265,6 @@
       "confidence_score": 1.0,
       "source": "portfolio_package_devdependencies",
       "target": "portfolio_package_devdependencies_vitest_coverage_v8"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/__tests__/App.test.jsx",
-      "source_location": "L6",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_tests_app_test_jsx",
-      "target": "portfolio_src_pages_aboutpage_jsx"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/__tests__/App.test.jsx",
-      "source_location": "L10",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_tests_app_test_jsx",
-      "target": "portfolio_src_pages_achievementspage_jsx"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/__tests__/App.test.jsx",
-      "source_location": "L11",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_tests_app_test_jsx",
-      "target": "portfolio_src_pages_contactpage_jsx"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/__tests__/App.test.jsx",
-      "source_location": "L7",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_tests_app_test_jsx",
-      "target": "portfolio_src_pages_experiencepage_jsx"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/__tests__/App.test.jsx",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_tests_app_test_jsx",
-      "target": "portfolio_src_pages_homepage_jsx"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/__tests__/App.test.jsx",
-      "source_location": "L8",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_tests_app_test_jsx",
-      "target": "portfolio_src_pages_projectspage_jsx"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/__tests__/App.test.jsx",
-      "source_location": "L9",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_tests_app_test_jsx",
-      "target": "portfolio_src_pages_skillspage_jsx"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/__tests__/App.test.jsx",
-      "source_location": "L14",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_tests_app_test_jsx",
-      "target": "tests_app_test_renderpage"
     },
     {
       "relation": "imports",
@@ -4211,36 +4684,6 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Certifications.jsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_certifications_jsx",
-      "target": "components_certifications_certifications"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Contact.jsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_contact_jsx",
-      "target": "components_contact_contact"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Experience.jsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_experience_jsx",
-      "target": "components_experience_experience"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
       "source_file": "portfolio/src/components/Footer.jsx",
       "source_location": "L3",
       "weight": 1.0,
@@ -4310,5 +4753,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "2a4112d7fc5510358f8d1ecb649a3e2a23da5f1c"
+  "built_at_commit": "e7cf03f78643ccb6c01367e4292b411d6c7f01af"
 }

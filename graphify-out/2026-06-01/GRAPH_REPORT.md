@@ -1,16 +1,16 @@
 # Graph Report - Claude  (2026-05-31)
 
 ## Corpus Check
-- 56 files · ~16,428 words
+- 57 files · ~18,511 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 193 nodes · 269 edges · 15 communities (13 shown, 2 thin omitted)
+- 194 nodes · 271 edges · 15 communities (13 shown, 2 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 1 edges (avg confidence: 0.75)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `b220636a`
+- Built from commit: `c17894ef`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -33,12 +33,12 @@
 2. `How to make changes` - 9 edges
 3. `Contact Section Redesign` - 8 edges
 4. `scripts` - 8 edges
-5. `What Changes` - 6 edges
-6. `about` - 6 edges
+5. `about` - 6 edges
+6. `What Changes` - 6 edges
 7. `useScrollReveal()` - 6 edges
 8. `Portfolio — React (Vite)` - 6 edges
-9. `IconGithub()` - 4 edges
-10. `hero` - 4 edges
+9. `hero` - 4 edges
+10. `experience` - 4 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `CLAUDE.md - Project Guidance Document` --conceptually_related_to--> `sample.py - Empty Python File`  [INFERRED]
@@ -64,15 +64,15 @@ Nodes (14): Add a certification, Add a job, Add a new section, Add a project, Ad
 
 ### Community 3 - "Community 3"
 Cohesion: 0.13
-Nodes (4): IconEmail(), IconLinkedIn(), about, personal
+Nodes (9): GithubStats(), icons, IconStar(), githubStats, computeTopLangs(), fetchAll(), LANG_COLORS, useGithubData() (+1 more)
 
 ### Community 6 - "Community 6"
-Cohesion: 0.13
-Nodes (12): IconArrowRight(), IconDownload(), IconExternal(), IconGithub(), IconMoon(), IconScrollDown(), IconStar(), IconSun() (+4 more)
+Cohesion: 0.10
+Nodes (14): IconArrowRight(), IconDownload(), IconEmail(), IconExternal(), IconGithub(), IconLinkedIn(), IconMoon(), IconScrollDown() (+6 more)
 
 ### Community 7 - "Community 7"
-Cohesion: 0.07
-Nodes (15): GithubStats(), icons, TalkIcon(), certifications, experience, githubStats, hero, projects (+7 more)
+Cohesion: 0.09
+Nodes (9): about, certifications, education, experience, hero, personal, projects, skills (+1 more)
 
 ### Community 8 - "Community 8"
 Cohesion: 0.12
@@ -102,17 +102,17 @@ Nodes (13): Component Changes, Contact Section Redesign, CSS Changes, Divider, E
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `personal` connect `Community 3` to `Community 6`, `Community 7`?**
-  _High betweenness centrality (0.022) - this node is a cross-community bridge._
+- **Why does `personal` connect `Community 7` to `Community 3`, `Community 6`?**
+  _High betweenness centrality (0.021) - this node is a cross-community bridge._
 - **Why does `devDependencies` connect `Community 10` to `Community 8`?**
-  _High betweenness centrality (0.020) - this node is a cross-community bridge._
+  _High betweenness centrality (0.019) - this node is a cross-community bridge._
 - **What connects `Goal`, `Layout`, `Eyebrow` to the rest of the system?**
   _64 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 2` be split into smaller, more focused modules?**
   _Cohesion score 0.13333333333333333 - nodes in this community are weakly interconnected._
 - **Should `Community 3` be split into smaller, more focused modules?**
-  _Cohesion score 0.13157894736842105 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.1286549707602339 - nodes in this community are weakly interconnected._
 - **Should `Community 6` be split into smaller, more focused modules?**
-  _Cohesion score 0.12648221343873517 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.10052910052910052 - nodes in this community are weakly interconnected._
 - **Should `Community 7` be split into smaller, more focused modules?**
-  _Cohesion score 0.06923076923076923 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.09309309309309309 - nodes in this community are weakly interconnected._

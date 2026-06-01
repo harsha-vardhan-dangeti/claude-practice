@@ -35,7 +35,7 @@
     "semantic_hash": ""
   },
   "/Users/harsha/Apps/projects/Claude/portfolio.html": {
-    "mtime": 1780167684.8139908,
+    "mtime": 1780230381.6224165,
     "ast_hash": "752238c109c2b74e9d84b6627f45ca20",
     "semantic_hash": ""
   },
@@ -115,8 +115,8 @@
     "semantic_hash": ""
   },
   "/Users/harsha/Apps/projects/Claude/portfolio/src/components/Contact.jsx": {
-    "mtime": 1780190211.9705503,
-    "ast_hash": "7bbf0defacf989fa9726d183d326522a",
+    "mtime": 1780232330.816508,
+    "ast_hash": "608c80330a751a8603ae40eef9d6f3a3",
     "semantic_hash": ""
   },
   "/Users/harsha/Apps/projects/Claude/portfolio/src/components/Talks.jsx": {
@@ -175,8 +175,8 @@
     "semantic_hash": ""
   },
   "/Users/harsha/Apps/projects/Claude/portfolio/src/__tests__/Contact.test.jsx": {
-    "mtime": 1780190995.874988,
-    "ast_hash": "f873e14d36123aad818c7c346e6aca34",
+    "mtime": 1780232250.7273633,
+    "ast_hash": "a59daec70adc1d79e3a77a3e08aa48c0",
     "semantic_hash": ""
   },
   "/Users/harsha/Apps/projects/Claude/portfolio/src/__tests__/Talks.test.jsx": {
@@ -230,8 +230,8 @@
     "semantic_hash": ""
   },
   "/Users/harsha/Apps/projects/Claude/portfolio/src/__tests__/App.test.jsx": {
-    "mtime": 1780206947.7628944,
-    "ast_hash": "f659a25c34176489f012ad8500258dec",
+    "mtime": 1780232392.45009,
+    "ast_hash": "6a270138066a26c863f154cd7706072f",
     "semantic_hash": ""
   },
   "/Users/harsha/Apps/projects/Claude/.playwright-mcp/page-2026-05-31T01-19-09-738Z.yml": {
@@ -350,18 +350,18 @@
     "semantic_hash": ""
   },
   "/Users/harsha/Apps/projects/Claude/portfolio/src/components/GithubStats.jsx": {
-    "mtime": 1780221837.0349607,
-    "ast_hash": "d7d4f3f0e383af2cfa1dfa431374b552",
+    "mtime": 1780222432.0364084,
+    "ast_hash": "74a6114c62f792e9f95165bad8138c6f",
     "semantic_hash": ""
   },
   "/Users/harsha/Apps/projects/Claude/portfolio/src/__tests__/GithubStats.test.jsx": {
-    "mtime": 1780221880.0641053,
-    "ast_hash": "4638b0629d02b559caf466aaeacdab9c",
+    "mtime": 1780222569.3782153,
+    "ast_hash": "c91d7e4650a508069c62dcc8c3afd8fe",
     "semantic_hash": ""
   },
   "/Users/harsha/Apps/projects/Claude/portfolio/src/hooks/useGithubData.js": {
-    "mtime": 1780221725.0432298,
-    "ast_hash": "1e519584283876faef0b4de4ebbbd208",
+    "mtime": 1780222306.6352775,
+    "ast_hash": "6211fb099c9932d8580e7c9c191253e5",
     "semantic_hash": ""
   },
   "/Users/harsha/Apps/projects/Claude/portfolio/src/pages/GithubPage.jsx": {
@@ -372,6 +372,16 @@
   "/Users/harsha/Apps/projects/Claude/.playwright-mcp/page-2026-05-31T06-42-11-241Z.yml": {
     "mtime": 1780209731.2417333,
     "ast_hash": "e44650adf2445c0d1f55eaec554f6217",
+    "semantic_hash": ""
+  },
+  "/Users/harsha/Apps/projects/Claude/portfolio/docs/superpowers/specs/2026-05-31-contact-redesign.md": {
+    "mtime": 1780231519.0864127,
+    "ast_hash": "bf08197e0501f8b58da4baccf868ed27",
+    "semantic_hash": ""
+  },
+  "/Users/harsha/Apps/projects/Claude/portfolio/docs/superpowers/plans/2026-05-31-contact-redesign.md": {
+    "mtime": 1780231679.037047,
+    "ast_hash": "fdd2c88769cc67809f433d11288a4778",
     "semantic_hash": ""
   }
 }
