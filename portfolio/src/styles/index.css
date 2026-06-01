@@ -473,8 +473,8 @@ section { padding: clamp(4rem, 10vw, 6rem) 0; }
 
 /* static gradient ring */
 .pc-avatar-ring {
-  width: 100px;
-  height: 100px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   padding: 3px;
   background: conic-gradient(var(--accent) 0deg, var(--accent-hi) 120deg, var(--accent-dim) 200deg, var(--accent) 360deg);
