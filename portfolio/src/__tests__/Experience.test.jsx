@@ -18,7 +18,7 @@ describe('Experience', () => {
 
   it('renders every company name', () => {
     experience.forEach(job => {
-      expect(screen.getByText(job.company)).toBeInTheDocument();
+      expect(screen.getAllByText(job.company).length).toBeGreaterThan(0);
     });
   });
 

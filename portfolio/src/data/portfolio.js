@@ -21,6 +21,7 @@ export const personal = {
     url: "https://github.com/harsha-vardhan-dangeti",
     handle: "github.com/harsha-vardhan-dangeti",
   },
+  credly: "harsha-vardhan.c11364e9",
 };
 
 export const hero = {
@@ -54,29 +55,41 @@ export const about = {
 
 export const experience = [
   {
-    role: "Software Developer",
+    role: "IT Software Developer",
     company: "Qualcomm",
-    dates: "2022 — Present · ~3.5 yrs",
+    dates: "2025 — Present · ~1.5 yrs",
     current: true,
     bullets: [
       "Maintained and extended production Ruby on Rails APIs handling high-volume traffic; led zero-downtime schema migrations on live databases.",
       "Built internal RAG evaluation pipeline using RAGAS and HyDE; reduced hallucination rate on schema-sensitive queries by ~40% in A/B testing against the baseline retrieval setup.",
       "Delivered 45-min RAG Evaluation workshop (live demo on production data) and AI Trends 2025–2026 presentation to an engineering org of 50+ engineers.",
     ],
-    tags: ["Ruby on Rails", "PostgreSQL", "Python", "LangChain", "RAGAS", "BigQuery"],
+    tags: ["Ruby on Rails", "PostgreSQL", "Python", "LangChain", "RAGAS", "BigQuery"]
   },
   {
-    role: "Junior Software Developer",
-    company: "[Previous Company]",
-    dates: "2021 — 2022 · ~1 yr",
+    role: "Associate IT Software Developer",
+    company: "Qualcomm",
+    dates: "2022 — 2025· ~2.5 yrs",
     current: false,
     bullets: [
       "Built and shipped Rails features end-to-end — database design, API implementation, frontend integration.",
       "[Add outcome with impact metric]",
       "[Add outcome with impact metric]",
     ],
-    tags: ["Ruby on Rails", "JavaScript", "PostgreSQL"],
+    tags: ["Ruby on Rails", "JavaScript", "MySQL", "Redis", "Rspec", "REST APIs", "RabbitMQ", "Docker"],
   },
+  {
+    role: "Technical Solution Consultant (GRSB Internship)",
+    company: "Hewlett Packard Enterprise",
+    dates: "2022 — 2022· ~6 months",
+    current: false,
+    bullets: [
+      "Developed technical solutions that streamlined internal processees, resulting in a 20% increase in team efficiency during project exectuion with the six-month intership period",
+      "collaborated with cross-functional teams to identify bottlenecks and implement automation tools, reducing manual effort by 30% and improving overall project delivery timelines.",
+    ],
+    tags: ["Python", "Shell Scripting", "Automation", "Cross-functional Collaboration"],
+  },
+
 ];
 
 export const projects = [
@@ -149,15 +162,15 @@ export const skills = [
   },
   {
     category: "AI / ML",
-    items: ["LangChain", "LlamaIndex", "LangGraph", "CrewAI", "RAGAS", "HyDE", "Graph RAG", "Embeddings"],
+    items: ["LangChain", "LlamaIndex", "LangGraph", "RAGAS", "HyDE", "Graph RAG", "Embeddings"],
   },
   {
     category: "Backend",
-    items: ["Ruby on Rails", "FastAPI", "PostgreSQL", "Redis", "REST APIs"],
+    items: ["Ruby on Rails", "FastAPI", "MySQL", "Redis", "REST APIs"],
   },
   {
     category: "Cloud & Data",
-    items: ["BigQuery", "BigQuery ML", "Vector Search", "GCP", "Pinecone"],
+    items: ["Google Cloud Services", "AWS Services", "Vector Search", "Pinecone"],
   },
   {
     category: "Tools & Protocol",
@@ -165,24 +178,37 @@ export const skills = [
   },
 ];
 
+// Fallback static data — shown in production (Credly API is CORS-restricted).
+// The hook in useCreedlyData.js updates this live in development via Vite proxy.
+// Run `node scripts/sync-credly.js` to refresh this list from Credly anytime.
 export const certifications = [
   {
-    issuer: "Google Cloud",
-    name: "Professional Data Engineer",
-    date: "2024",
-    url: "#",
+    issuer: "IBM",
+    name: "Docker Essentials: A Developer Introduction",
+    date: "2023-09-22",
+    url: "https://www.credly.com/badges/bcc7cad1-0b64-4504-b3c4-1e53f0e50df9",
+    image: "https://images.credly.com/images/b0c5445a-72a2-46ce-a599-96147e210efb/blob",
   },
   {
-    issuer: "DeepLearning.AI",
-    name: "LangChain for LLM Application Development",
-    date: "2024",
-    url: "#",
+    issuer: "Cisco",
+    name: "Cybersecurity Essentials",
+    date: "2021-05-13",
+    url: "https://www.credly.com/badges/3619372b-50d2-40ef-9859-7c7baffabce2",
+    image: "https://images.credly.com/images/054913b2-e271-49a2-a1a4-9bf1c1f9a404/CyberEssentials.png",
   },
   {
-    issuer: "",
-    name: "",
-    date: "",
-    url: "#",
+    issuer: "Cisco",
+    name: "Introduction to Cybersecurity",
+    date: "2021-04-18",
+    url: "https://www.credly.com/badges/bbd7b01f-b893-4886-af1e-52966d5106a7",
+    image: "https://images.credly.com/images/af8c6b4e-fc31-47c4-8dcb-eb7a2065dc5b/I2CS__1_.png",
+  },
+  {
+    issuer: "Cisco",
+    name: "Introduction to Packet Tracer",
+    date: "2021-04-15",
+    url: "https://www.credly.com/badges/c100bb20-ac73-4c86-8f27-3a907afe341e",
+    image: "https://images.credly.com/images/09b6d58c-763a-4b40-aea1-787d8f46bbcd/Intro2PT.png",
   },
 ];
 

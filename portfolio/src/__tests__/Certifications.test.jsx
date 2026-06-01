@@ -25,7 +25,7 @@ describe('Certifications', () => {
 
   it('renders each cert issuer', () => {
     filled.forEach(c => {
-      expect(screen.getByText(c.issuer)).toBeInTheDocument();
+      expect(screen.getAllByText(c.issuer).length).toBeGreaterThan(0);
     });
   });
 

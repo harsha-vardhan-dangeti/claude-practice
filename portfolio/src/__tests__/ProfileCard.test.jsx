@@ -14,8 +14,12 @@ describe('ProfileCard', () => {
     expect(screen.getByText(personal.title)).toBeInTheDocument();
   });
 
-  it('renders initials placeholder when no avatar', () => {
-    expect(screen.getByText(personal.initials)).toBeInTheDocument();
+  it('renders avatar image when avatar is set', () => {
+    if (personal.avatar) {
+      expect(document.querySelector('.pc-avatar-img')).toBeInTheDocument();
+    } else {
+      expect(screen.getByText(personal.initials)).toBeInTheDocument();
+    }
   });
 
   it('renders the open-to-work status', () => {
