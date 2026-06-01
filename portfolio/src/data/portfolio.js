@@ -8,7 +8,7 @@ export const personal = {
   email: "harsha.vardhan.422812@gmail.com",
   location: "Gachibowli, Hyderabad, IN",
   locationShort: "Gachibowli, Hyderabad",
-  resumePdf: "https://drive.google.com/file/d/1JFOjrIYu5S6Q3qrWltE_m1WWS5-rcATQ/preview",
+  resumePdf: "https://drive.google.com/uc?export=download&id=1JFOjrIYu5S6Q3qrWltE_m1WWS5-rcATQ",
   // Set to image path (e.g. "/profile.jpg") to show your photo; null shows initials placeholder
   avatar: "/profile.png",
   // Tags shown in the home page profile card
