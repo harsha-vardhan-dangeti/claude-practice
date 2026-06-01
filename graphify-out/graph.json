@@ -4,184 +4,463 @@
   "graph": {},
   "nodes": [
     {
+      "label": "recruiter-review-2026-05-31.md",
+      "file_type": "document",
+      "source_file": "portfolio/docs/recruiter-review-2026-05-31.md",
+      "source_location": "L1",
+      "id": "portfolio_docs_recruiter_review_2026_05_31_md",
+      "community": 15,
+      "norm_label": "recruiter-review-2026-05-31.md"
+    },
+    {
+      "label": "Portfolio Review \u2014 Recruiter Assessment",
+      "file_type": "document",
+      "source_file": "portfolio/docs/recruiter-review-2026-05-31.md",
+      "source_location": "L1",
+      "id": "docs_recruiter_review_2026_05_31_portfolio_review_recruiter_assessment",
+      "community": 15,
+      "norm_label": "portfolio review \u2014 recruiter assessment"
+    },
+    {
+      "label": "Executive Summary",
+      "file_type": "document",
+      "source_file": "portfolio/docs/recruiter-review-2026-05-31.md",
+      "source_location": "L8",
+      "id": "docs_recruiter_review_2026_05_31_executive_summary",
+      "community": 15,
+      "norm_label": "executive summary"
+    },
+    {
+      "label": "CRITICAL \u2014 Will Cause Rejection",
+      "file_type": "document",
+      "source_file": "portfolio/docs/recruiter-review-2026-05-31.md",
+      "source_location": "L14",
+      "id": "docs_recruiter_review_2026_05_31_critical_will_cause_rejection",
+      "community": 15,
+      "norm_label": "critical \u2014 will cause rejection"
+    },
+    {
+      "label": "1. All Project GitHub Links Are Dead (`#`)",
+      "file_type": "document",
+      "source_file": "portfolio/docs/recruiter-review-2026-05-31.md",
+      "source_location": "L16",
+      "id": "docs_recruiter_review_2026_05_31_1_all_project_github_links_are_dead",
+      "community": 15,
+      "norm_label": "1. all project github links are dead (`#`)"
+    },
+    {
+      "label": "2. Placeholder Text Is Visible in the Experience Section",
+      "file_type": "document",
+      "source_file": "portfolio/docs/recruiter-review-2026-05-31.md",
+      "source_location": "L26",
+      "id": "docs_recruiter_review_2026_05_31_2_placeholder_text_is_visible_in_the_experience_section",
+      "community": 15,
+      "norm_label": "2. placeholder text is visible in the experience section"
+    },
+    {
+      "label": "3. Empty Certification Entry",
+      "file_type": "document",
+      "source_file": "portfolio/docs/recruiter-review-2026-05-31.md",
+      "source_location": "L43",
+      "id": "docs_recruiter_review_2026_05_31_3_empty_certification_entry",
+      "community": 15,
+      "norm_label": "3. empty certification entry"
+    },
+    {
+      "label": "HIGH PRIORITY \u2014 Weakens the Application Significantly",
+      "file_type": "document",
+      "source_file": "portfolio/docs/recruiter-review-2026-05-31.md",
+      "source_location": "L51",
+      "id": "docs_recruiter_review_2026_05_31_high_priority_weakens_the_application_significantly",
+      "community": 15,
+      "norm_label": "high priority \u2014 weakens the application significantly"
+    },
+    {
+      "label": "4. Full-Stack Frontend Evidence Is Missing",
+      "file_type": "document",
+      "source_file": "portfolio/docs/recruiter-review-2026-05-31.md",
+      "source_location": "L53",
+      "id": "docs_recruiter_review_2026_05_31_4_full_stack_frontend_evidence_is_missing",
+      "community": 15,
+      "norm_label": "4. full-stack frontend evidence is missing"
+    },
+    {
+      "label": "5. No Profile Photo",
+      "file_type": "document",
+      "source_file": "portfolio/docs/recruiter-review-2026-05-31.md",
+      "source_location": "L69",
+      "id": "docs_recruiter_review_2026_05_31_5_no_profile_photo",
+      "community": 15,
+      "norm_label": "5. no profile photo"
+    },
+    {
+      "label": "6. Total Experience Is Understated",
+      "file_type": "document",
+      "source_file": "portfolio/docs/recruiter-review-2026-05-31.md",
+      "source_location": "L77",
+      "id": "docs_recruiter_review_2026_05_31_6_total_experience_is_understated",
+      "community": 15,
+      "norm_label": "6. total experience is understated"
+    },
+    {
+      "label": "7. No Education Sectionus",
+      "file_type": "document",
+      "source_file": "portfolio/docs/recruiter-review-2026-05-31.md",
+      "source_location": "L88",
+      "id": "docs_recruiter_review_2026_05_31_7_no_education_sectionus",
+      "community": 15,
+      "norm_label": "7. no education sectionus"
+    },
+    {
+      "label": "MEDIUM PRIORITY \u2014 Reduces Competitiveness",
+      "file_type": "document",
+      "source_file": "portfolio/docs/recruiter-review-2026-05-31.md",
+      "source_location": "L96",
+      "id": "docs_recruiter_review_2026_05_31_medium_priority_reduces_competitiveness",
+      "community": 15,
+      "norm_label": "medium priority \u2014 reduces competitiveness"
+    },
+    {
+      "label": "8. Hero Stats Don't Speak to Full-Stack or Scale",
+      "file_type": "document",
+      "source_file": "portfolio/docs/recruiter-review-2026-05-31.md",
+      "source_location": "L98",
+      "id": "docs_recruiter_review_2026_05_31_8_hero_stats_don_t_speak_to_full_stack_or_scale",
+      "community": 15,
+      "norm_label": "8. hero stats don't speak to full-stack or scale"
+    },
+    {
+      "label": "9. Experience Bullets at Qualcomm Lack Scale Context",
+      "file_type": "document",
+      "source_file": "portfolio/docs/recruiter-review-2026-05-31.md",
+      "source_location": "L115",
+      "id": "docs_recruiter_review_2026_05_31_9_experience_bullets_at_qualcomm_lack_scale_context",
+      "community": 15,
+      "norm_label": "9. experience bullets at qualcomm lack scale context"
+    },
+    {
+      "label": "10. Skills Section Is Missing Key Full-Stack Technologies",
+      "file_type": "document",
+      "source_file": "portfolio/docs/recruiter-review-2026-05-31.md",
+      "source_location": "L133",
+      "id": "docs_recruiter_review_2026_05_31_10_skills_section_is_missing_key_full_stack_technologies",
+      "community": 15,
+      "norm_label": "10. skills section is missing key full-stack technologies"
+    },
+    {
+      "label": "11. \"Talks\" Section Needs Slide Links or Recordings",
+      "file_type": "document",
+      "source_file": "portfolio/docs/recruiter-review-2026-05-31.md",
+      "source_location": "L148",
+      "id": "docs_recruiter_review_2026_05_31_11_talks_section_needs_slide_links_or_recordings",
+      "community": 15,
+      "norm_label": "11. \"talks\" section needs slide links or recordings"
+    },
+    {
+      "label": "12. Job Title Positioning Mismatch",
+      "file_type": "document",
+      "source_file": "portfolio/docs/recruiter-review-2026-05-31.md",
+      "source_location": "L159",
+      "id": "docs_recruiter_review_2026_05_31_12_job_title_positioning_mismatch",
+      "community": 15,
+      "norm_label": "12. job title positioning mismatch"
+    },
+    {
+      "label": "13. No Mention of Remote / Hybrid Availability",
+      "file_type": "document",
+      "source_file": "portfolio/docs/recruiter-review-2026-05-31.md",
+      "source_location": "L169",
+      "id": "docs_recruiter_review_2026_05_31_13_no_mention_of_remote_hybrid_availability",
+      "community": 15,
+      "norm_label": "13. no mention of remote / hybrid availability"
+    },
+    {
+      "label": "LOW PRIORITY \u2014 Polish",
+      "file_type": "document",
+      "source_file": "portfolio/docs/recruiter-review-2026-05-31.md",
+      "source_location": "L177",
+      "id": "docs_recruiter_review_2026_05_31_low_priority_polish",
+      "community": 15,
+      "norm_label": "low priority \u2014 polish"
+    },
+    {
+      "label": "14. Resume PDF Link May Be Broken",
+      "file_type": "document",
+      "source_file": "portfolio/docs/recruiter-review-2026-05-31.md",
+      "source_location": "L179",
+      "id": "docs_recruiter_review_2026_05_31_14_resume_pdf_link_may_be_broken",
+      "community": 15,
+      "norm_label": "14. resume pdf link may be broken"
+    },
+    {
+      "label": "15. The \"45 Min RAG Eval Talk\" Stat Is Also in the About Section",
+      "file_type": "document",
+      "source_file": "portfolio/docs/recruiter-review-2026-05-31.md",
+      "source_location": "L187",
+      "id": "docs_recruiter_review_2026_05_31_15_the_45_min_rag_eval_talk_stat_is_also_in_the_about_section",
+      "community": 15,
+      "norm_label": "15. the \"45 min rag eval talk\" stat is also in the about section"
+    },
+    {
+      "label": "16. GitHub Stats Page Shows Actual Public Activity",
+      "file_type": "document",
+      "source_file": "portfolio/docs/recruiter-review-2026-05-31.md",
+      "source_location": "L193",
+      "id": "docs_recruiter_review_2026_05_31_16_github_stats_page_shows_actual_public_activity",
+      "community": 15,
+      "norm_label": "16. github stats page shows actual public activity"
+    },
+    {
+      "label": "Summary Checklist \u2014 Priority Order",
+      "file_type": "document",
+      "source_file": "portfolio/docs/recruiter-review-2026-05-31.md",
+      "source_location": "L199",
+      "id": "docs_recruiter_review_2026_05_31_summary_checklist_priority_order",
+      "community": 15,
+      "norm_label": "summary checklist \u2014 priority order"
+    },
+    {
+      "label": "What's Already Working Well",
+      "file_type": "document",
+      "source_file": "portfolio/docs/recruiter-review-2026-05-31.md",
+      "source_location": "L222",
+      "id": "docs_recruiter_review_2026_05_31_what_s_already_working_well",
+      "community": 15,
+      "norm_label": "what's already working well"
+    },
+    {
+      "label": "2026-05-31-contact-redesign.md",
+      "file_type": "document",
+      "source_file": "portfolio/docs/superpowers/plans/2026-05-31-contact-redesign.md",
+      "source_location": "L1",
+      "id": "portfolio_docs_superpowers_plans_2026_05_31_contact_redesign_md",
+      "community": 17,
+      "norm_label": "2026-05-31-contact-redesign.md"
+    },
+    {
+      "label": "Contact Section Redesign Implementation Plan",
+      "file_type": "document",
+      "source_file": "portfolio/docs/superpowers/plans/2026-05-31-contact-redesign.md",
+      "source_location": "L1",
+      "id": "plans_2026_05_31_contact_redesign_contact_section_redesign_implementation_plan",
+      "community": 17,
+      "norm_label": "contact section redesign implementation plan"
+    },
+    {
+      "label": "Task 1: Update tests to match the new structure",
+      "file_type": "document",
+      "source_file": "portfolio/docs/superpowers/plans/2026-05-31-contact-redesign.md",
+      "source_location": "L13",
+      "id": "plans_2026_05_31_contact_redesign_task_1_update_tests_to_match_the_new_structure",
+      "community": 17,
+      "norm_label": "task 1: update tests to match the new structure"
+    },
+    {
+      "label": "Task 2: Rewrite Contact.jsx",
+      "file_type": "document",
+      "source_file": "portfolio/docs/superpowers/plans/2026-05-31-contact-redesign.md",
+      "source_location": "L59",
+      "id": "plans_2026_05_31_contact_redesign_task_2_rewrite_contact_jsx",
+      "community": 17,
+      "norm_label": "task 2: rewrite contact.jsx"
+    },
+    {
+      "label": "Task 3: Update CSS",
+      "file_type": "document",
+      "source_file": "portfolio/docs/superpowers/plans/2026-05-31-contact-redesign.md",
+      "source_location": "L143",
+      "id": "plans_2026_05_31_contact_redesign_task_3_update_css",
+      "community": 17,
+      "norm_label": "task 3: update css"
+    },
+    {
+      "label": "Task 4: Visual verification and commit",
+      "file_type": "document",
+      "source_file": "portfolio/docs/superpowers/plans/2026-05-31-contact-redesign.md",
+      "source_location": "L266",
+      "id": "plans_2026_05_31_contact_redesign_task_4_visual_verification_and_commit",
+      "community": 17,
+      "norm_label": "task 4: visual verification and commit"
+    },
+    {
       "label": "Certifications.test.jsx",
       "file_type": "code",
       "source_file": "portfolio/src/__tests__/Certifications.test.jsx",
       "source_location": "L1",
-      "id": "portfolio_src_tests_certifications_test_jsx",
       "community": 7,
-      "norm_label": "certifications.test.jsx"
+      "norm_label": "certifications.test.jsx",
+      "id": "portfolio_src_tests_certifications_test_jsx"
     },
     {
       "label": "Experience.test.jsx",
       "file_type": "code",
       "source_file": "portfolio/src/__tests__/Experience.test.jsx",
       "source_location": "L1",
-      "id": "portfolio_src_tests_experience_test_jsx",
       "community": 7,
-      "norm_label": "experience.test.jsx"
+      "norm_label": "experience.test.jsx",
+      "id": "portfolio_src_tests_experience_test_jsx"
     },
     {
       "label": "ProfileCard.test.jsx",
       "file_type": "code",
       "source_file": "portfolio/src/__tests__/ProfileCard.test.jsx",
       "source_location": "L1",
-      "id": "portfolio_src_tests_profilecard_test_jsx",
-      "community": 7,
-      "norm_label": "profilecard.test.jsx"
+      "community": 16,
+      "norm_label": "profilecard.test.jsx",
+      "id": "portfolio_src_tests_profilecard_test_jsx"
     },
     {
       "label": "Certifications.jsx",
       "file_type": "code",
       "source_file": "portfolio/src/components/Certifications.jsx",
       "source_location": "L1",
-      "id": "portfolio_src_components_certifications_jsx",
       "community": 7,
-      "norm_label": "certifications.jsx"
+      "norm_label": "certifications.jsx",
+      "id": "portfolio_src_components_certifications_jsx"
     },
     {
       "label": "Certifications()",
       "file_type": "code",
       "source_file": "portfolio/src/components/Certifications.jsx",
       "source_location": "L5",
-      "id": "components_certifications_certifications",
       "community": 7,
-      "norm_label": "certifications()"
+      "norm_label": "certifications()",
+      "id": "components_certifications_certifications"
     },
     {
       "label": "portfolio.js",
       "file_type": "code",
       "source_file": "portfolio/src/data/portfolio.js",
       "source_location": "L1",
-      "id": "portfolio_src_data_portfolio_js",
       "community": 7,
-      "norm_label": "portfolio.js"
+      "norm_label": "portfolio.js",
+      "id": "portfolio_src_data_portfolio_js"
     },
     {
       "label": "personal",
       "file_type": "code",
       "source_file": "portfolio/src/data/portfolio.js",
       "source_location": "L1",
-      "id": "data_portfolio_personal",
-      "community": 7,
-      "norm_label": "personal"
+      "community": 16,
+      "norm_label": "personal",
+      "id": "data_portfolio_personal"
     },
     {
       "label": "hero",
       "file_type": "code",
       "source_file": "portfolio/src/data/portfolio.js",
       "source_location": "L27",
-      "id": "data_portfolio_hero",
       "community": 7,
-      "norm_label": "hero"
+      "norm_label": "hero",
+      "id": "data_portfolio_hero"
     },
     {
       "label": "about",
       "file_type": "code",
       "source_file": "portfolio/src/data/portfolio.js",
       "source_location": "L40",
-      "id": "data_portfolio_about",
-      "community": 7,
-      "norm_label": "about"
+      "community": 16,
+      "norm_label": "about",
+      "id": "data_portfolio_about"
     },
     {
       "label": "experience",
       "file_type": "code",
       "source_file": "portfolio/src/data/portfolio.js",
       "source_location": "L56",
-      "id": "data_portfolio_experience",
       "community": 7,
-      "norm_label": "experience"
+      "norm_label": "experience",
+      "id": "data_portfolio_experience"
     },
     {
       "label": "projects",
       "file_type": "code",
       "source_file": "portfolio/src/data/portfolio.js",
       "source_location": "L95",
-      "id": "data_portfolio_projects",
       "community": 7,
-      "norm_label": "projects"
+      "norm_label": "projects",
+      "id": "data_portfolio_projects"
     },
     {
       "label": "education",
       "file_type": "code",
       "source_file": "portfolio/src/data/portfolio.js",
       "source_location": "L146",
-      "id": "data_portfolio_education",
       "community": 7,
-      "norm_label": "education"
+      "norm_label": "education",
+      "id": "data_portfolio_education"
     },
     {
       "label": "skills",
       "file_type": "code",
       "source_file": "portfolio/src/data/portfolio.js",
       "source_location": "L158",
-      "id": "data_portfolio_skills",
       "community": 7,
-      "norm_label": "skills"
+      "norm_label": "skills",
+      "id": "data_portfolio_skills"
     },
     {
       "label": "certifications",
       "file_type": "code",
       "source_file": "portfolio/src/data/portfolio.js",
       "source_location": "L184",
-      "id": "data_portfolio_certifications",
       "community": 7,
-      "norm_label": "certifications"
+      "norm_label": "certifications",
+      "id": "data_portfolio_certifications"
     },
     {
       "label": "githubStats",
       "file_type": "code",
       "source_file": "portfolio/src/data/portfolio.js",
       "source_location": "L215",
-      "id": "data_portfolio_githubstats",
       "community": 3,
-      "norm_label": "githubstats"
+      "norm_label": "githubstats",
+      "id": "data_portfolio_githubstats"
     },
     {
       "label": "talks",
       "file_type": "code",
       "source_file": "portfolio/src/data/portfolio.js",
       "source_location": "L226",
-      "id": "data_portfolio_talks",
       "community": 7,
-      "norm_label": "talks"
+      "norm_label": "talks",
+      "id": "data_portfolio_talks"
     },
     {
       "label": "useCreedlyData.js",
       "file_type": "code",
       "source_file": "portfolio/src/hooks/useCreedlyData.js",
       "source_location": "L1",
-      "id": "portfolio_src_hooks_usecreedlydata_js",
       "community": 7,
-      "norm_label": "usecreedlydata.js"
+      "norm_label": "usecreedlydata.js",
+      "id": "portfolio_src_hooks_usecreedlydata_js"
     },
     {
       "label": "parseBadges()",
       "file_type": "code",
       "source_file": "portfolio/src/hooks/useCreedlyData.js",
       "source_location": "L7",
-      "id": "hooks_usecreedlydata_parsebadges",
       "community": 7,
-      "norm_label": "parsebadges()"
+      "norm_label": "parsebadges()",
+      "id": "hooks_usecreedlydata_parsebadges"
     },
     {
       "label": "useCreedlyData()",
       "file_type": "code",
       "source_file": "portfolio/src/hooks/useCreedlyData.js",
       "source_location": "L19",
-      "id": "hooks_usecreedlydata_usecreedlydata",
       "community": 7,
-      "norm_label": "usecreedlydata()"
+      "norm_label": "usecreedlydata()",
+      "id": "hooks_usecreedlydata_usecreedlydata"
     },
     {
       "label": "vite.config.js",
       "file_type": "code",
       "source_file": "portfolio/vite.config.js",
       "source_location": "L1",
-      "id": "portfolio_vite_config_js",
       "community": 13,
-      "norm_label": "vite.config.js"
+      "norm_label": "vite.config.js",
+      "id": "portfolio_vite_config_js"
     },
     {
       "label": "Experience.jsx",
@@ -224,7 +503,7 @@
       "file_type": "code",
       "source_file": "portfolio/src/__tests__/Contact.test.jsx",
       "source_location": "L1",
-      "community": 6,
+      "community": 16,
       "norm_label": "contact.test.jsx",
       "id": "portfolio_src_tests_contact_test_jsx"
     },
@@ -233,7 +512,7 @@
       "file_type": "code",
       "source_file": "portfolio/src/components/Contact.jsx",
       "source_location": "L1",
-      "community": 6,
+      "community": 16,
       "norm_label": "contact.jsx",
       "id": "portfolio_src_components_contact_jsx"
     },
@@ -242,7 +521,7 @@
       "file_type": "code",
       "source_file": "portfolio/src/components/Contact.jsx",
       "source_location": "L4",
-      "community": 6,
+      "community": 16,
       "norm_label": "contact()",
       "id": "components_contact_contact"
     },
@@ -566,7 +845,7 @@
       "file_type": "code",
       "source_file": "portfolio/src/components/Icons.jsx",
       "source_location": "L27",
-      "community": 7,
+      "community": 6,
       "norm_label": "iconscrolldown()",
       "id": "components_icons_iconscrolldown"
     },
@@ -584,7 +863,7 @@
       "file_type": "code",
       "source_file": "portfolio/src/components/Icons.jsx",
       "source_location": "L39",
-      "community": 6,
+      "community": 16,
       "norm_label": "iconlinkedin()",
       "id": "components_icons_iconlinkedin"
     },
@@ -593,7 +872,7 @@
       "file_type": "code",
       "source_file": "portfolio/src/components/Icons.jsx",
       "source_location": "L45",
-      "community": 6,
+      "community": 16,
       "norm_label": "iconemail()",
       "id": "components_icons_iconemail"
     },
@@ -692,7 +971,7 @@
       "file_type": "code",
       "source_file": "portfolio/src/__tests__/Nav.test.jsx",
       "source_location": "L1",
-      "community": 7,
+      "community": 16,
       "norm_label": "nav.test.jsx",
       "id": "portfolio_src_tests_nav_test_jsx"
     },
@@ -701,7 +980,7 @@
       "file_type": "code",
       "source_file": "portfolio/src/__tests__/Nav.test.jsx",
       "source_location": "L7",
-      "community": 7,
+      "community": 16,
       "norm_label": "rendernav()",
       "id": "tests_nav_test_rendernav"
     },
@@ -773,7 +1052,7 @@
       "file_type": "code",
       "source_file": "portfolio/src/components/Hero.jsx",
       "source_location": "L1",
-      "community": 7,
+      "community": 6,
       "norm_label": "hero.jsx",
       "id": "portfolio_src_components_hero_jsx"
     },
@@ -782,7 +1061,7 @@
       "file_type": "code",
       "source_file": "portfolio/src/components/Hero.jsx",
       "source_location": "L6",
-      "community": 7,
+      "community": 6,
       "norm_label": "hero()",
       "id": "components_hero_hero"
     },
@@ -791,7 +1070,7 @@
       "file_type": "code",
       "source_file": "portfolio/src/components/ProfileCard.jsx",
       "source_location": "L1",
-      "community": 6,
+      "community": 16,
       "norm_label": "profilecard.jsx",
       "id": "portfolio_src_components_profilecard_jsx"
     },
@@ -800,7 +1079,7 @@
       "file_type": "code",
       "source_file": "portfolio/src/components/ProfileCard.jsx",
       "source_location": "L4",
-      "community": 6,
+      "community": 16,
       "norm_label": "profilecard()",
       "id": "components_profilecard_profilecard"
     },
@@ -809,7 +1088,7 @@
       "file_type": "code",
       "source_file": "portfolio/package.json",
       "source_location": "L1",
-      "community": 10,
+      "community": 8,
       "norm_label": "package.json",
       "id": "portfolio_package_json"
     },
@@ -818,7 +1097,7 @@
       "file_type": "code",
       "source_file": "portfolio/package.json",
       "source_location": "L2",
-      "community": 10,
+      "community": 8,
       "norm_label": "name",
       "id": "portfolio_package_name"
     },
@@ -827,7 +1106,7 @@
       "file_type": "code",
       "source_file": "portfolio/package.json",
       "source_location": "L3",
-      "community": 10,
+      "community": 8,
       "norm_label": "private",
       "id": "portfolio_package_private"
     },
@@ -836,7 +1115,7 @@
       "file_type": "code",
       "source_file": "portfolio/package.json",
       "source_location": "L4",
-      "community": 10,
+      "community": 8,
       "norm_label": "version",
       "id": "portfolio_package_version"
     },
@@ -845,7 +1124,7 @@
       "file_type": "code",
       "source_file": "portfolio/package.json",
       "source_location": "L5",
-      "community": 10,
+      "community": 8,
       "norm_label": "type",
       "id": "portfolio_package_type"
     },
@@ -926,7 +1205,7 @@
       "file_type": "code",
       "source_file": "portfolio/package.json",
       "source_location": "L15",
-      "community": 10,
+      "community": 8,
       "norm_label": "dependencies",
       "id": "portfolio_package_dependencies"
     },
@@ -935,7 +1214,7 @@
       "file_type": "code",
       "source_file": "portfolio/package.json",
       "source_location": "L16",
-      "community": 10,
+      "community": 8,
       "norm_label": "react",
       "id": "portfolio_package_dependencies_react"
     },
@@ -944,7 +1223,7 @@
       "file_type": "code",
       "source_file": "portfolio/package.json",
       "source_location": "L17",
-      "community": 10,
+      "community": 8,
       "norm_label": "react-dom",
       "id": "portfolio_package_dependencies_react_dom"
     },
@@ -953,7 +1232,7 @@
       "file_type": "code",
       "source_file": "portfolio/package.json",
       "source_location": "L18",
-      "community": 10,
+      "community": 8,
       "norm_label": "react-router-dom",
       "id": "portfolio_package_dependencies_react_router_dom"
     },
@@ -1286,7 +1565,7 @@
       "file_type": "code",
       "source_file": "portfolio/src/components/About.jsx",
       "source_location": "L1",
-      "community": 7,
+      "community": 16,
       "norm_label": "about.jsx",
       "id": "portfolio_src_components_about_jsx"
     },
@@ -1295,7 +1574,7 @@
       "file_type": "code",
       "source_file": "portfolio/src/components/About.jsx",
       "source_location": "L4",
-      "community": 7,
+      "community": 16,
       "norm_label": "about()",
       "id": "components_about_about"
     },
@@ -1304,7 +1583,7 @@
       "file_type": "code",
       "source_file": "portfolio/src/components/Avatar.jsx",
       "source_location": "L1",
-      "community": 7,
+      "community": 16,
       "norm_label": "avatar.jsx",
       "id": "portfolio_src_components_avatar_jsx"
     },
@@ -1313,7 +1592,7 @@
       "file_type": "code",
       "source_file": "portfolio/src/components/Avatar.jsx",
       "source_location": "L3",
-      "community": 7,
+      "community": 16,
       "norm_label": "avatar()",
       "id": "components_avatar_avatar"
     },
@@ -1484,7 +1763,7 @@
       "file_type": "code",
       "source_file": "portfolio/src/__tests__/About.test.jsx",
       "source_location": "L1",
-      "community": 7,
+      "community": 16,
       "norm_label": "about.test.jsx",
       "id": "portfolio_src_tests_about_test_jsx"
     },
@@ -1493,7 +1772,7 @@
       "file_type": "code",
       "source_file": "portfolio/src/__tests__/Footer.test.jsx",
       "source_location": "L1",
-      "community": 7,
+      "community": 16,
       "norm_label": "footer.test.jsx",
       "id": "portfolio_src_tests_footer_test_jsx"
     },
@@ -1646,7 +1925,7 @@
       "file_type": "code",
       "source_file": "portfolio/src/components/Footer.jsx",
       "source_location": "L1",
-      "community": 7,
+      "community": 16,
       "norm_label": "footer.jsx",
       "id": "portfolio_src_components_footer_jsx"
     },
@@ -1655,7 +1934,7 @@
       "file_type": "code",
       "source_file": "portfolio/src/components/Footer.jsx",
       "source_location": "L3",
-      "community": 7,
+      "community": 16,
       "norm_label": "footer()",
       "id": "components_footer_footer"
     },
@@ -1791,6 +2070,296 @@
   ],
   "links": [
     {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/docs/recruiter-review-2026-05-31.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "portfolio_docs_recruiter_review_2026_05_31_md",
+      "target": "docs_recruiter_review_2026_05_31_portfolio_review_recruiter_assessment",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/docs/recruiter-review-2026-05-31.md",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "docs_recruiter_review_2026_05_31_portfolio_review_recruiter_assessment",
+      "target": "docs_recruiter_review_2026_05_31_critical_will_cause_rejection",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/docs/recruiter-review-2026-05-31.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "docs_recruiter_review_2026_05_31_portfolio_review_recruiter_assessment",
+      "target": "docs_recruiter_review_2026_05_31_executive_summary",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/docs/recruiter-review-2026-05-31.md",
+      "source_location": "L51",
+      "weight": 1.0,
+      "source": "docs_recruiter_review_2026_05_31_portfolio_review_recruiter_assessment",
+      "target": "docs_recruiter_review_2026_05_31_high_priority_weakens_the_application_significantly",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/docs/recruiter-review-2026-05-31.md",
+      "source_location": "L177",
+      "weight": 1.0,
+      "source": "docs_recruiter_review_2026_05_31_portfolio_review_recruiter_assessment",
+      "target": "docs_recruiter_review_2026_05_31_low_priority_polish",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/docs/recruiter-review-2026-05-31.md",
+      "source_location": "L96",
+      "weight": 1.0,
+      "source": "docs_recruiter_review_2026_05_31_portfolio_review_recruiter_assessment",
+      "target": "docs_recruiter_review_2026_05_31_medium_priority_reduces_competitiveness",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/docs/recruiter-review-2026-05-31.md",
+      "source_location": "L199",
+      "weight": 1.0,
+      "source": "docs_recruiter_review_2026_05_31_portfolio_review_recruiter_assessment",
+      "target": "docs_recruiter_review_2026_05_31_summary_checklist_priority_order",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/docs/recruiter-review-2026-05-31.md",
+      "source_location": "L222",
+      "weight": 1.0,
+      "source": "docs_recruiter_review_2026_05_31_portfolio_review_recruiter_assessment",
+      "target": "docs_recruiter_review_2026_05_31_what_s_already_working_well",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/docs/recruiter-review-2026-05-31.md",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "docs_recruiter_review_2026_05_31_critical_will_cause_rejection",
+      "target": "docs_recruiter_review_2026_05_31_1_all_project_github_links_are_dead",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/docs/recruiter-review-2026-05-31.md",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "docs_recruiter_review_2026_05_31_critical_will_cause_rejection",
+      "target": "docs_recruiter_review_2026_05_31_2_placeholder_text_is_visible_in_the_experience_section",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/docs/recruiter-review-2026-05-31.md",
+      "source_location": "L43",
+      "weight": 1.0,
+      "source": "docs_recruiter_review_2026_05_31_critical_will_cause_rejection",
+      "target": "docs_recruiter_review_2026_05_31_3_empty_certification_entry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/docs/recruiter-review-2026-05-31.md",
+      "source_location": "L53",
+      "weight": 1.0,
+      "source": "docs_recruiter_review_2026_05_31_high_priority_weakens_the_application_significantly",
+      "target": "docs_recruiter_review_2026_05_31_4_full_stack_frontend_evidence_is_missing",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/docs/recruiter-review-2026-05-31.md",
+      "source_location": "L69",
+      "weight": 1.0,
+      "source": "docs_recruiter_review_2026_05_31_high_priority_weakens_the_application_significantly",
+      "target": "docs_recruiter_review_2026_05_31_5_no_profile_photo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/docs/recruiter-review-2026-05-31.md",
+      "source_location": "L77",
+      "weight": 1.0,
+      "source": "docs_recruiter_review_2026_05_31_high_priority_weakens_the_application_significantly",
+      "target": "docs_recruiter_review_2026_05_31_6_total_experience_is_understated",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/docs/recruiter-review-2026-05-31.md",
+      "source_location": "L88",
+      "weight": 1.0,
+      "source": "docs_recruiter_review_2026_05_31_high_priority_weakens_the_application_significantly",
+      "target": "docs_recruiter_review_2026_05_31_7_no_education_sectionus",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/docs/recruiter-review-2026-05-31.md",
+      "source_location": "L133",
+      "weight": 1.0,
+      "source": "docs_recruiter_review_2026_05_31_medium_priority_reduces_competitiveness",
+      "target": "docs_recruiter_review_2026_05_31_10_skills_section_is_missing_key_full_stack_technologies",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/docs/recruiter-review-2026-05-31.md",
+      "source_location": "L148",
+      "weight": 1.0,
+      "source": "docs_recruiter_review_2026_05_31_medium_priority_reduces_competitiveness",
+      "target": "docs_recruiter_review_2026_05_31_11_talks_section_needs_slide_links_or_recordings",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/docs/recruiter-review-2026-05-31.md",
+      "source_location": "L159",
+      "weight": 1.0,
+      "source": "docs_recruiter_review_2026_05_31_medium_priority_reduces_competitiveness",
+      "target": "docs_recruiter_review_2026_05_31_12_job_title_positioning_mismatch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/docs/recruiter-review-2026-05-31.md",
+      "source_location": "L169",
+      "weight": 1.0,
+      "source": "docs_recruiter_review_2026_05_31_medium_priority_reduces_competitiveness",
+      "target": "docs_recruiter_review_2026_05_31_13_no_mention_of_remote_hybrid_availability",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/docs/recruiter-review-2026-05-31.md",
+      "source_location": "L98",
+      "weight": 1.0,
+      "source": "docs_recruiter_review_2026_05_31_medium_priority_reduces_competitiveness",
+      "target": "docs_recruiter_review_2026_05_31_8_hero_stats_don_t_speak_to_full_stack_or_scale",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/docs/recruiter-review-2026-05-31.md",
+      "source_location": "L115",
+      "weight": 1.0,
+      "source": "docs_recruiter_review_2026_05_31_medium_priority_reduces_competitiveness",
+      "target": "docs_recruiter_review_2026_05_31_9_experience_bullets_at_qualcomm_lack_scale_context",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/docs/recruiter-review-2026-05-31.md",
+      "source_location": "L179",
+      "weight": 1.0,
+      "source": "docs_recruiter_review_2026_05_31_low_priority_polish",
+      "target": "docs_recruiter_review_2026_05_31_14_resume_pdf_link_may_be_broken",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/docs/recruiter-review-2026-05-31.md",
+      "source_location": "L187",
+      "weight": 1.0,
+      "source": "docs_recruiter_review_2026_05_31_low_priority_polish",
+      "target": "docs_recruiter_review_2026_05_31_15_the_45_min_rag_eval_talk_stat_is_also_in_the_about_section",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/docs/recruiter-review-2026-05-31.md",
+      "source_location": "L193",
+      "weight": 1.0,
+      "source": "docs_recruiter_review_2026_05_31_low_priority_polish",
+      "target": "docs_recruiter_review_2026_05_31_16_github_stats_page_shows_actual_public_activity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/docs/superpowers/plans/2026-05-31-contact-redesign.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "portfolio_docs_superpowers_plans_2026_05_31_contact_redesign_md",
+      "target": "plans_2026_05_31_contact_redesign_contact_section_redesign_implementation_plan",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/docs/superpowers/plans/2026-05-31-contact-redesign.md",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "plans_2026_05_31_contact_redesign_contact_section_redesign_implementation_plan",
+      "target": "plans_2026_05_31_contact_redesign_task_1_update_tests_to_match_the_new_structure",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/docs/superpowers/plans/2026-05-31-contact-redesign.md",
+      "source_location": "L59",
+      "weight": 1.0,
+      "source": "plans_2026_05_31_contact_redesign_contact_section_redesign_implementation_plan",
+      "target": "plans_2026_05_31_contact_redesign_task_2_rewrite_contact_jsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/docs/superpowers/plans/2026-05-31-contact-redesign.md",
+      "source_location": "L143",
+      "weight": 1.0,
+      "source": "plans_2026_05_31_contact_redesign_contact_section_redesign_implementation_plan",
+      "target": "plans_2026_05_31_contact_redesign_task_3_update_css",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/docs/superpowers/plans/2026-05-31-contact-redesign.md",
+      "source_location": "L266",
+      "weight": 1.0,
+      "source": "plans_2026_05_31_contact_redesign_contact_section_redesign_implementation_plan",
+      "target": "plans_2026_05_31_contact_redesign_task_4_visual_verification_and_commit",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -1808,9 +2377,9 @@
       "source_file": "portfolio/src/__tests__/Certifications.test.jsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "portfolio_src_tests_certifications_test_jsx",
-      "target": "portfolio_src_components_certifications_jsx",
-      "confidence_score": 1.0
+      "target": "portfolio_src_components_certifications_jsx"
     },
     {
       "relation": "imports_from",
@@ -1819,9 +2388,9 @@
       "source_file": "portfolio/src/__tests__/Certifications.test.jsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "portfolio_src_tests_certifications_test_jsx",
-      "target": "portfolio_src_data_portfolio_js",
-      "confidence_score": 1.0
+      "target": "portfolio_src_data_portfolio_js"
     },
     {
       "relation": "imports",
@@ -1841,9 +2410,9 @@
       "source_file": "portfolio/src/__tests__/Experience.test.jsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "portfolio_src_tests_experience_test_jsx",
-      "target": "portfolio_src_data_portfolio_js",
-      "confidence_score": 1.0
+      "target": "portfolio_src_data_portfolio_js"
     },
     {
       "relation": "imports",
@@ -1939,9 +2508,9 @@
       "source_file": "portfolio/src/components/Certifications.jsx",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "portfolio_src_components_certifications_jsx",
-      "target": "data_portfolio_personal",
-      "confidence_score": 1.0
+      "target": "data_portfolio_personal"
     },
     {
       "relation": "imports",
@@ -1950,9 +2519,9 @@
       "source_file": "portfolio/src/components/Certifications.jsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "portfolio_src_components_certifications_jsx",
-      "target": "hooks_usecreedlydata_usecreedlydata",
-      "confidence_score": 1.0
+      "target": "hooks_usecreedlydata_usecreedlydata"
     },
     {
       "relation": "imports_from",
@@ -1983,9 +2552,9 @@
       "source_file": "portfolio/src/components/Certifications.jsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "portfolio_src_components_certifications_jsx",
-      "target": "portfolio_src_hooks_usecreedlydata_js",
-      "confidence_score": 1.0
+      "target": "portfolio_src_hooks_usecreedlydata_js"
     },
     {
       "relation": "calls",
@@ -2237,9 +2806,9 @@
       "source_file": "portfolio/src/hooks/useCreedlyData.js",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "portfolio_src_hooks_usecreedlydata_js",
-      "target": "portfolio_src_data_portfolio_js",
-      "confidence_score": 1.0
+      "target": "portfolio_src_data_portfolio_js"
     },
     {
       "relation": "imports_from",
@@ -2589,9 +3158,9 @@
       "source_file": "portfolio/src/hooks/useCreedlyData.js",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "portfolio_src_hooks_usecreedlydata_js",
-      "target": "data_portfolio_certifications",
-      "confidence_score": 1.0
+      "target": "data_portfolio_certifications"
     },
     {
       "relation": "imports",
@@ -2665,9 +3234,9 @@
       "source_file": "portfolio/src/hooks/useCreedlyData.js",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "portfolio_src_hooks_usecreedlydata_js",
-      "target": "hooks_usecreedlydata_parsebadges",
-      "confidence_score": 1.0
+      "target": "hooks_usecreedlydata_parsebadges"
     },
     {
       "relation": "contains",
@@ -2675,9 +3244,9 @@
       "source_file": "portfolio/src/hooks/useCreedlyData.js",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "portfolio_src_hooks_usecreedlydata_js",
-      "target": "hooks_usecreedlydata_usecreedlydata",
-      "confidence_score": 1.0
+      "target": "hooks_usecreedlydata_usecreedlydata"
     },
     {
       "relation": "imports_from",
@@ -4753,5 +5322,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "e7cf03f78643ccb6c01367e4292b411d6c7f01af"
+  "built_at_commit": "007b2a6ef0b2a29631be7db4e8523fd994826043"
 }
