@@ -638,13 +638,14 @@ section { padding: clamp(4rem, 10vw, 6rem) 0; }
 .avail-dot::before { content: ''; width: 6px; height: 6px; background: #22c55e; border-radius: 50%; animation: blink 2s ease-in-out infinite; }
 
 /* ─── EXPERIENCE ─────────────────────────────────────────────── */
-.timeline { position: relative; padding-left: 1.75rem; }
+.timeline { position: relative; padding-left: 2rem; }
 .timeline::before {
   content: '';
   position: absolute;
-  left: 0; top: 10px; bottom: 0;
-  width: 1px;
-  background: var(--border);
+  left: 0; top: 14px; bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--accent), var(--accent-dim), transparent);
+  border-radius: 2px;
 }
 
 .tl-item {
@@ -655,18 +656,25 @@ section { padding: clamp(4rem, 10vw, 6rem) 0; }
 
 .tl-dot {
   position: absolute;
-  left: -2.125rem;
-  top: 7px;
-  width: 9px;
-  height: 9px;
+  left: -2.3rem;
+  top: 5px;
+  width: 13px;
+  height: 13px;
   border-radius: 50%;
   background: var(--accent);
   border: 2px solid var(--bg);
-  box-shadow: 0 0 0 2px var(--accent);
+  box-shadow: 0 0 0 3px var(--accent), 0 0 12px rgba(59,130,246,.5);
+  animation: tl-pulse 2.5s ease-in-out infinite;
+}
+@keyframes tl-pulse {
+  0%, 100% { box-shadow: 0 0 0 3px var(--accent), 0 0 12px rgba(59,130,246,.5); }
+  50%       { box-shadow: 0 0 0 3px var(--accent), 0 0 20px rgba(59,130,246,.8); }
 }
 .tl-dot.inactive {
   background: var(--bg-surface-2);
+  border-color: var(--bg);
   box-shadow: 0 0 0 2px var(--txt-3);
+  animation: none;
 }
 
 .tl-role { font-size: 1.0625rem; font-weight: 600; color: var(--txt); margin-bottom: .3rem; }
