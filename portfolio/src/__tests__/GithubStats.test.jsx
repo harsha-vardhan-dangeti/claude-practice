@@ -5,21 +5,23 @@ import GithubStats from '../components/GithubStats';
 import { githubStats } from '../data/portfolio';
 
 const mockFetch = vi.fn();
-beforeEach(() => { global.fetch = mockFetch; localStorage.clear(); });
+beforeEach(() => { global.fetch = mockFetch; });
 afterEach(() => vi.restoreAllMocks());
 
 const setupFetch = () => {
   mockFetch.mockImplementation(url => {
     if (url.includes('/repos'))
       return Promise.resolve({ ok: true, json: async () => [
-        { stargazers_count: 3, language: 'Ruby' },
-        { stargazers_count: 5, language: 'Python' },
-        { stargazers_count: 0, language: 'Ruby' },
+        { stargazers_count: 3, forks_count: 1, language: 'Ruby' },
+        { stargazers_count: 5, forks_count: 2, language: 'Python' },
+        { stargazers_count: 0, forks_count: 0, language: 'Ruby' },
       ]});
-    if (url.includes('type:pr'))
-      return Promise.resolve({ ok: true, json: async () => ({ total_count: 42 }) });
-    if (url.includes('/commits'))
-      return Promise.resolve({ ok: true, json: async () => ({ total_count: 210 }) });
+    if (url.includes('/events'))
+      return Promise.resolve({ ok: true, json: async () => [
+        { type: 'PushEvent',        payload: { commits: [1, 2, 3] } },
+        { type: 'PushEvent',        payload: { commits: [1] } },
+        { type: 'PullRequestEvent', payload: {} },
+      ]});
     // default: user endpoint
     return Promise.resolve({ ok: true, json: async () => ({ public_repos: 17, followers: 5 }) });
   });
@@ -52,29 +54,32 @@ describe('GithubStats', () => {
     await waitFor(() => expect(screen.getAllByText('8').length).toBeGreaterThan(0)); // 3+5+0
   });
 
-  it('shows live PR count', async () => {
+  it('shows live recent commit count from push events', async () => {
     setupFetch();
     renderGithub();
-    await waitFor(() => expect(screen.getAllByText('42').length).toBeGreaterThan(0));
-  });
-
-  it('shows live commit count', async () => {
-    setupFetch();
-    renderGithub();
-    await waitFor(() => expect(screen.getAllByText('210').length).toBeGreaterThan(0));
+    await waitFor(() => expect(screen.getAllByText('4').length).toBeGreaterThan(0)); // 3+1
   });
 
   it('renders overview card rows', async () => {
     setupFetch();
     renderGithub();
     await waitFor(() => {
-      // labels appear in both highlight cards and overview rows — getAllByText handles duplicates
       expect(screen.getAllByText('Public Repos').length).toBeGreaterThan(0);
       expect(screen.getAllByText('Total Stars').length).toBeGreaterThan(0);
-      expect(screen.getAllByText('Pull Requests').length).toBeGreaterThan(0);
-      expect(screen.getAllByText('Total Commits').length).toBeGreaterThan(0);
-      expect(screen.getByText('Followers')).toBeInTheDocument();
+      expect(screen.getAllByText('Recent Commits').length).toBeGreaterThan(0);
+      expect(screen.getAllByText('Followers').length).toBeGreaterThan(0);
     });
+  });
+
+  it('fetches fresh data on every render (no cache)', async () => {
+    setupFetch();
+    const { unmount } = renderGithub();
+    await waitFor(() => screen.getAllByText('17'));
+    unmount();
+    mockFetch.mockClear();
+    renderGithub();
+    await waitFor(() => screen.getAllByText('17'));
+    expect(mockFetch).toHaveBeenCalled();
   });
 
   it('renders top languages after fetch', async () => {
@@ -92,17 +97,6 @@ describe('GithubStats', () => {
     await waitFor(() =>
       expect(screen.getByText(/could not fetch live data/i)).toBeInTheDocument()
     );
-  });
-
-  it('uses localStorage cache on second render', async () => {
-    setupFetch();
-    const { unmount } = renderGithub();
-    await waitFor(() => screen.getAllByText('17'));
-    unmount();
-    mockFetch.mockClear();
-    renderGithub();
-    await waitFor(() => screen.getAllByText('17'));
-    expect(mockFetch).not.toHaveBeenCalled();
   });
 
   it('renders streak image', () => {

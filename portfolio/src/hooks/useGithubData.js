@@ -1,8 +1,5 @@
 import { useState, useEffect } from 'react';
 
-const CACHE_KEY = 'hvd-github-stats';
-const CACHE_TTL = 60 * 60 * 1000; // 1 hour
-
 const LANG_COLORS = {
   Ruby:       '#CC342D',
   Python:     '#3572A5',
@@ -40,32 +37,42 @@ function computeTopLangs(repos) {
 async function fetchAll(username) {
   const h = { Accept: 'application/vnd.github.v3+json' };
 
-  const [userRes, reposRes, prsRes, commitsRes] = await Promise.all([
+  const [userRes, reposRes, eventsRes] = await Promise.all([
     fetch(`https://api.github.com/users/${username}`, { headers: h }),
-    fetch(`https://api.github.com/users/${username}/repos?per_page=100&type=owner`, { headers: h }),
-    fetch(`https://api.github.com/search/issues?q=author:${username}+type:pr&per_page=1`, { headers: h }),
-    fetch(`https://api.github.com/search/commits?q=author:${username}&per_page=1`, { headers: h }),
+    fetch(`https://api.github.com/users/${username}/repos?per_page=100&type=owner&sort=updated`, { headers: h }),
+    fetch(`https://api.github.com/users/${username}/events/public?per_page=100`, { headers: h }),
   ]);
 
   if (!userRes.ok) throw new Error(`GitHub API ${userRes.status}`);
 
-  const [user, repos, prs, commits] = await Promise.all([
+  const [user, repos, events] = await Promise.all([
     userRes.json(),
-    reposRes.ok   ? reposRes.json()   : [],
-    prsRes.ok     ? prsRes.json()     : { total_count: 0 },
-    commitsRes.ok ? commitsRes.json() : { total_count: 0 },
+    reposRes.ok  ? reposRes.json()  : [],
+    eventsRes.ok ? eventsRes.json() : [],
   ]);
 
-  const repoList = Array.isArray(repos) ? repos : [];
-  const totalStars = repoList.reduce((s, r) => s + (r.stargazers_count || 0), 0);
+  const repoList  = Array.isArray(repos)  ? repos  : [];
+  const eventList = Array.isArray(events) ? events : [];
+
+  const totalStars   = repoList.reduce((s, r) => s + (r.stargazers_count || 0), 0);
+  const totalForks   = repoList.reduce((s, r) => s + (r.forks_count || 0), 0);
+
+  // Count pushes from recent public events as a proxy for commits
+  const recentCommits = eventList
+    .filter(e => e.type === 'PushEvent')
+    .reduce((s, e) => s + (e.payload?.commits?.length || 0), 0);
+
+  // Count PR events
+  const recentPRs = eventList.filter(e => e.type === 'PullRequestEvent').length;
 
   return {
-    publicRepos:  user.public_repos,
-    followers:    user.followers,
+    publicRepos:   user.public_repos,
+    followers:     user.followers,
     totalStars,
-    totalPRs:     prs.total_count     || 0,
-    totalCommits: commits.total_count || 0,
-    topLangs:     computeTopLangs(repoList),
+    totalForks,
+    recentCommits,
+    recentPRs,
+    topLangs:      computeTopLangs(repoList),
   };
 }
 
@@ -78,23 +85,16 @@ export function useGithubData(username) {
     if (!username) return;
     let cancelled = false;
 
-    try {
-      const raw = localStorage.getItem(CACHE_KEY);
-      if (raw) {
-        const { stats, ts } = JSON.parse(raw);
-        if (Date.now() - ts < CACHE_TTL) {
-          setData(stats); setLoading(false); return;
-        }
-      }
-    } catch (_) {}
+    setLoading(true);
+    setError(null);
 
     fetchAll(username)
       .then(stats => {
-        if (cancelled) return;
-        try { localStorage.setItem(CACHE_KEY, JSON.stringify({ stats, ts: Date.now() })); } catch (_) {}
-        setData(stats); setLoading(false);
+        if (!cancelled) { setData(stats); setLoading(false); }
       })
-      .catch(e => { if (!cancelled) { setError(e.message); setLoading(false); } });
+      .catch(e => {
+        if (!cancelled) { setError(e.message); setLoading(false); }
+      });
 
     return () => { cancelled = true; };
   }, [username]);

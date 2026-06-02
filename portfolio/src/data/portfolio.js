@@ -224,10 +224,10 @@ export const githubStats = {
   username: 'harsha-vardhan-dangeti',
   // key maps to the property returned by useGithubData
   highlights: [
-    { label: 'Public Repos',  key: 'publicRepos',  icon: 'folder'   },
-    { label: 'Total Stars',   key: 'totalStars',   icon: 'star'     },
-    { label: 'Pull Requests', key: 'totalPRs',     icon: 'pr'       },
-    { label: 'Total Commits', key: 'totalCommits', icon: 'commit'   },
+    { label: 'Public Repos',    key: 'publicRepos',   icon: 'folder' },
+    { label: 'Total Stars',     key: 'totalStars',    icon: 'star'   },
+    { label: 'Recent Commits',  key: 'recentCommits', icon: 'commit' },
+    { label: 'Followers',       key: 'followers',     icon: 'pr'     },
   ],
 };
 
