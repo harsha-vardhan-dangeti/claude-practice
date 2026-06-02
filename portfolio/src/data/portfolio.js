@@ -233,6 +233,12 @@ export const githubStats = {
 
 export const talks = [
   {
+    title: "AIBUZZ Hot Finalist — Vision2Code",
+    meta: "Qualcomm AIBUZZ · 2025 · Hot Finalist",
+    description: "Selected as a Hot Finalist at Qualcomm's internal AIBUZZ innovation competition for Vision2Code — a system that takes Figma mockups and hand-drawn sketch diagrams as input and generates production-ready frontend code in the chosen technology stack. The pipeline interprets visual design intent, understands component hierarchy from the sketch, and outputs structured, framework-specific components ready for integration.",
+    icon: "trophy",
+  },
+  {
     title: "RAG Evaluation: From Theory to Production",
     meta: "Internal Engineering Talk · 45 min · Live Demo · Audience: 50+ engineers",
     description: "Covered RAGAS framework, G-Eval, HyDE, and custom evaluation metrics for production RAG systems. Included a live evaluation run on a production pipeline demonstrating retrieval quality measurement, hallucination detection, and regression tracking across model changes.",
