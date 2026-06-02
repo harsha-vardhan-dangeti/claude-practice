@@ -6,3 +6,6 @@
 
 # Brainstorming companion mockups
 .superpowers/
+
+# Graphify AST cache (large derived files, not useful in git history)
+graphify-out/cache/
