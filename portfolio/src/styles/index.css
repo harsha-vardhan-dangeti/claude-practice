@@ -823,6 +823,19 @@ section { padding: clamp(4rem, 10vw, 6rem) 0; }
   border-radius: 6px;
 }
 
+.cert-badge-emoji {
+  width: 52px;
+  height: 52px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: var(--bg-surface-2);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.625rem;
+}
+
 .cert-body { flex: 1; min-width: 0; }
 .cert-issuer { font-family: var(--mono); font-size: .67rem; letter-spacing: .1em; text-transform: uppercase; color: var(--accent); margin-bottom: .4rem; }
 .cert-name { font-size: .9125rem; font-weight: 600; color: var(--txt); line-height: 1.4; margin-bottom: .35rem; }

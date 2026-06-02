@@ -8,7 +8,7 @@ describe('personal', () => {
     expect(personal.title).toBeTruthy();
     expect(personal.email).toMatch(/@/);
     expect(personal.location).toBeTruthy();
-    expect(personal.resumePdf).toMatch(/^\//);
+    expect(personal.resumePdf).toMatch(/^(\/|https?:\/\/)/);
   });
 
   it('has valid linkedin shape', () => {

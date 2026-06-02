@@ -14,14 +14,16 @@ export default function Certifications() {
         <div className="certs-grid">
           {badges.map((c, i) => (
             <div key={i} className={`cert-card r d${i + 1}`}>
-              {c.image && (
+              {c.image ? (
                 <img
                   src={c.image}
                   alt={c.name}
                   className="cert-badge-img"
                   loading="lazy"
                 />
-              )}
+              ) : c.badge ? (
+                <div className="cert-badge-emoji">{c.badge}</div>
+              ) : null}
               <div className="cert-body">
                 <div className="cert-issuer">{c.issuer}</div>
                 <div className="cert-name">{c.name}</div>

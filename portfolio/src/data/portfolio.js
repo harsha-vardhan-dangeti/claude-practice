@@ -183,6 +183,14 @@ export const skills = [
 // Run `node scripts/sync-credly.js` to refresh this list from Credly anytime.
 export const certifications = [
   {
+    issuer: "Google for Developers · Hack2skill",
+    name: "PromptWars: Hyderabad — Participant",
+    date: "2026-06-02",
+    url: "https://certificate.hack2skill.com/claim/6035e10e31e66b03010073e1ecd8da79b9d76fda322bfce5c5da49f802c349a5",
+    image: null,
+    badge: "🏆",
+  },
+  {
     issuer: "IBM",
     name: "Docker Essentials: A Developer Introduction",
     date: "2023-09-22",
