@@ -584,7 +584,7 @@ section { padding: clamp(4rem, 10vw, 6rem) 0; }
 /* ─── ABOUT ──────────────────────────────────────────────────── */
 .about-grid {
   display: grid;
-  grid-template-columns: 1fr 340px;
+  grid-template-columns: 1fr 300px;
   gap: 4rem;
   align-items: start;
 }
@@ -602,81 +602,9 @@ section { padding: clamp(4rem, 10vw, 6rem) 0; }
   background: var(--bg-surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  overflow: hidden;
+  padding: 1.375rem;
   position: sticky;
   top: 80px;
-  transition: border-color .25s;
-}
-.about-card:hover { border-color: var(--border-hi); }
-
-/* ── banner photo ── */
-.about-banner {
-  position: relative;
-  width: 100%;
-  height: 230px;
-  background: var(--bg-surface-2);
-  overflow: hidden;
-}
-.about-banner-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center 12%;
-  display: block;
-  transition: transform .5s ease;
-}
-.about-card:hover .about-banner-img { transform: scale(1.03); }
-
-.about-banner-gradient {
-  position: absolute;
-  inset: 0;
-  background:
-    linear-gradient(135deg, rgba(59,130,246,.18) 0%, transparent 55%),
-    linear-gradient(to top, var(--bg-surface) 0%, transparent 45%);
-}
-
-.about-banner-badge {
-  position: absolute;
-  bottom: .875rem;
-  right: .875rem;
-  background: rgba(8,8,16,.72);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid var(--border-hi);
-  border-radius: 6px;
-  padding: .28rem .7rem;
-  font-family: var(--mono);
-  font-size: .6rem;
-  letter-spacing: .1em;
-  text-transform: uppercase;
-  color: var(--accent-hi);
-  display: flex;
-  align-items: center;
-  gap: .4rem;
-}
-.about-banner-badge::before {
-  content: '';
-  width: 5px; height: 5px;
-  background: #22c55e;
-  border-radius: 50%;
-  animation: blink 2s ease-in-out infinite;
-}
-
-/* ── info body ── */
-.about-body { padding: 1.25rem; }
-
-.about-person-name {
-  font-size: .9375rem;
-  font-weight: 700;
-  color: var(--txt);
-  letter-spacing: -.01em;
-  margin-bottom: .2rem;
-}
-.about-person-role {
-  font-size: .75rem;
-  color: var(--accent);
-  font-weight: 500;
-  margin-bottom: 1rem;
 }
 
 .about-row {
@@ -1281,9 +1209,9 @@ footer p { font-family: var(--mono); font-size: .725rem; color: var(--txt-3); ma
 
 /* ─── TABLET (768–1024px) ────────────────────────────────────── */
 @media (max-width: 1024px) and (min-width: 768px) {
-  /* About: keep two columns on tablets with proportional sidebar */
+  /* About: keep two columns on larger tablets, drop to 1fr+260px */
   .about-grid {
-    grid-template-columns: 1fr 300px;
+    grid-template-columns: 1fr 260px;
     gap: 2.5rem;
   }
   /* Unstick the sidebar so it doesn't fight scroll on tablet */
