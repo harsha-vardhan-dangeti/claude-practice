@@ -644,7 +644,7 @@ section { padding: clamp(4rem, 10vw, 6rem) 0; }
   position: absolute;
   left: 0; top: 14px; bottom: 0;
   width: 2px;
-  background: linear-gradient(to bottom, var(--accent), var(--accent-dim), transparent);
+  background: var(--border-hi);
   border-radius: 2px;
 }
 
