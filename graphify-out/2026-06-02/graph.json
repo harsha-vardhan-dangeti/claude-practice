@@ -4,31 +4,94 @@
   "graph": {},
   "nodes": [
     {
-      "label": "data.test.js",
+      "label": "GithubStats.test.jsx",
       "file_type": "code",
-      "source_file": "portfolio/src/__tests__/data.test.js",
+      "source_file": "portfolio/src/__tests__/GithubStats.test.jsx",
       "source_location": "L1",
-      "id": "portfolio_src_tests_data_test_js",
-      "community": 7,
-      "norm_label": "data.test.js"
+      "id": "portfolio_src_tests_githubstats_test_jsx",
+      "community": 3,
+      "norm_label": "githubstats.test.jsx"
     },
     {
-      "label": "Certifications.jsx",
+      "label": "mockFetch",
       "file_type": "code",
-      "source_file": "portfolio/src/components/Certifications.jsx",
-      "source_location": "L1",
-      "id": "portfolio_src_components_certifications_jsx",
-      "community": 7,
-      "norm_label": "certifications.jsx"
+      "source_file": "portfolio/src/__tests__/GithubStats.test.jsx",
+      "source_location": "L7",
+      "id": "tests_githubstats_test_mockfetch",
+      "community": 3,
+      "norm_label": "mockfetch"
     },
     {
-      "label": "Certifications()",
+      "label": "setupFetch()",
       "file_type": "code",
-      "source_file": "portfolio/src/components/Certifications.jsx",
-      "source_location": "L5",
-      "id": "components_certifications_certifications",
-      "community": 7,
-      "norm_label": "certifications()"
+      "source_file": "portfolio/src/__tests__/GithubStats.test.jsx",
+      "source_location": "L11",
+      "id": "tests_githubstats_test_setupfetch",
+      "community": 3,
+      "norm_label": "setupfetch()"
+    },
+    {
+      "label": "renderGithub()",
+      "file_type": "code",
+      "source_file": "portfolio/src/__tests__/GithubStats.test.jsx",
+      "source_location": "L30",
+      "id": "tests_githubstats_test_rendergithub",
+      "community": 3,
+      "norm_label": "rendergithub()"
+    },
+    {
+      "label": "GithubStats.jsx",
+      "file_type": "code",
+      "source_file": "portfolio/src/components/GithubStats.jsx",
+      "source_location": "L1",
+      "id": "portfolio_src_components_githubstats_jsx",
+      "community": 3,
+      "norm_label": "githubstats.jsx"
+    },
+    {
+      "label": "icons",
+      "file_type": "code",
+      "source_file": "portfolio/src/components/GithubStats.jsx",
+      "source_location": "L10",
+      "id": "components_githubstats_icons",
+      "community": 3,
+      "norm_label": "icons"
+    },
+    {
+      "label": "StatValue()",
+      "file_type": "code",
+      "source_file": "portfolio/src/components/GithubStats.jsx",
+      "source_location": "L17",
+      "id": "components_githubstats_statvalue",
+      "community": 3,
+      "norm_label": "statvalue()"
+    },
+    {
+      "label": "OverviewCard()",
+      "file_type": "code",
+      "source_file": "portfolio/src/components/GithubStats.jsx",
+      "source_location": "L24",
+      "id": "components_githubstats_overviewcard",
+      "community": 3,
+      "norm_label": "overviewcard()"
+    },
+    {
+      "label": "TopLangsCard()",
+      "file_type": "code",
+      "source_file": "portfolio/src/components/GithubStats.jsx",
+      "source_location": "L55",
+      "id": "components_githubstats_toplangscard",
+      "community": 3,
+      "norm_label": "toplangscard()"
+    },
+    {
+      "label": "GithubStats()",
+      "file_type": "code",
+      "source_file": "portfolio/src/components/GithubStats.jsx",
+      "source_location": "L105",
+      "id": "components_githubstats_githubstats",
+      "community": 3,
+      "norm_label": "githubstats()"
     },
     {
       "label": "portfolio.js",
@@ -128,6 +191,78 @@
       "id": "data_portfolio_talks",
       "community": 7,
       "norm_label": "talks"
+    },
+    {
+      "label": "useGithubData.js",
+      "file_type": "code",
+      "source_file": "portfolio/src/hooks/useGithubData.js",
+      "source_location": "L1",
+      "id": "portfolio_src_hooks_usegithubdata_js",
+      "community": 3,
+      "norm_label": "usegithubdata.js"
+    },
+    {
+      "label": "LANG_COLORS",
+      "file_type": "code",
+      "source_file": "portfolio/src/hooks/useGithubData.js",
+      "source_location": "L3",
+      "id": "hooks_usegithubdata_lang_colors",
+      "community": 3,
+      "norm_label": "lang_colors"
+    },
+    {
+      "label": "computeTopLangs()",
+      "file_type": "code",
+      "source_file": "portfolio/src/hooks/useGithubData.js",
+      "source_location": "L20",
+      "id": "hooks_usegithubdata_computetoplangs",
+      "community": 3,
+      "norm_label": "computetoplangs()"
+    },
+    {
+      "label": "fetchAll()",
+      "file_type": "code",
+      "source_file": "portfolio/src/hooks/useGithubData.js",
+      "source_location": "L37",
+      "id": "hooks_usegithubdata_fetchall",
+      "community": 3,
+      "norm_label": "fetchall()"
+    },
+    {
+      "label": "useGithubData()",
+      "file_type": "code",
+      "source_file": "portfolio/src/hooks/useGithubData.js",
+      "source_location": "L79",
+      "id": "hooks_usegithubdata_usegithubdata",
+      "community": 3,
+      "norm_label": "usegithubdata()"
+    },
+    {
+      "label": "data.test.js",
+      "file_type": "code",
+      "source_file": "portfolio/src/__tests__/data.test.js",
+      "source_location": "L1",
+      "community": 7,
+      "norm_label": "data.test.js",
+      "id": "portfolio_src_tests_data_test_js"
+    },
+    {
+      "label": "Certifications.jsx",
+      "file_type": "code",
+      "source_file": "portfolio/src/components/Certifications.jsx",
+      "source_location": "L1",
+      "community": 7,
+      "norm_label": "certifications.jsx",
+      "id": "portfolio_src_components_certifications_jsx"
+    },
+    {
+      "label": "Certifications()",
+      "file_type": "code",
+      "source_file": "portfolio/src/components/Certifications.jsx",
+      "source_location": "L5",
+      "community": 7,
+      "norm_label": "certifications()",
+      "id": "components_certifications_certifications"
     },
     {
       "label": "vercel.json",
@@ -704,141 +839,6 @@
       "community": 14,
       "norm_label": "tests",
       "id": "specs_2026_05_31_contact_redesign_tests"
-    },
-    {
-      "label": "GithubStats.test.jsx",
-      "file_type": "code",
-      "source_file": "portfolio/src/__tests__/GithubStats.test.jsx",
-      "source_location": "L1",
-      "community": 3,
-      "norm_label": "githubstats.test.jsx",
-      "id": "portfolio_src_tests_githubstats_test_jsx"
-    },
-    {
-      "label": "mockFetch",
-      "file_type": "code",
-      "source_file": "portfolio/src/__tests__/GithubStats.test.jsx",
-      "source_location": "L7",
-      "community": 3,
-      "norm_label": "mockfetch",
-      "id": "tests_githubstats_test_mockfetch"
-    },
-    {
-      "label": "setupFetch()",
-      "file_type": "code",
-      "source_file": "portfolio/src/__tests__/GithubStats.test.jsx",
-      "source_location": "L11",
-      "community": 3,
-      "norm_label": "setupfetch()",
-      "id": "tests_githubstats_test_setupfetch"
-    },
-    {
-      "label": "renderGithub()",
-      "file_type": "code",
-      "source_file": "portfolio/src/__tests__/GithubStats.test.jsx",
-      "source_location": "L28",
-      "community": 3,
-      "norm_label": "rendergithub()",
-      "id": "tests_githubstats_test_rendergithub"
-    },
-    {
-      "label": "GithubStats.jsx",
-      "file_type": "code",
-      "source_file": "portfolio/src/components/GithubStats.jsx",
-      "source_location": "L1",
-      "community": 3,
-      "norm_label": "githubstats.jsx",
-      "id": "portfolio_src_components_githubstats_jsx"
-    },
-    {
-      "label": "icons",
-      "file_type": "code",
-      "source_file": "portfolio/src/components/GithubStats.jsx",
-      "source_location": "L10",
-      "community": 3,
-      "norm_label": "icons",
-      "id": "components_githubstats_icons"
-    },
-    {
-      "label": "StatValue()",
-      "file_type": "code",
-      "source_file": "portfolio/src/components/GithubStats.jsx",
-      "source_location": "L17",
-      "community": 3,
-      "norm_label": "statvalue()",
-      "id": "components_githubstats_statvalue"
-    },
-    {
-      "label": "OverviewCard()",
-      "file_type": "code",
-      "source_file": "portfolio/src/components/GithubStats.jsx",
-      "source_location": "L24",
-      "community": 3,
-      "norm_label": "overviewcard()",
-      "id": "components_githubstats_overviewcard"
-    },
-    {
-      "label": "TopLangsCard()",
-      "file_type": "code",
-      "source_file": "portfolio/src/components/GithubStats.jsx",
-      "source_location": "L55",
-      "community": 3,
-      "norm_label": "toplangscard()",
-      "id": "components_githubstats_toplangscard"
-    },
-    {
-      "label": "GithubStats()",
-      "file_type": "code",
-      "source_file": "portfolio/src/components/GithubStats.jsx",
-      "source_location": "L105",
-      "community": 3,
-      "norm_label": "githubstats()",
-      "id": "components_githubstats_githubstats"
-    },
-    {
-      "label": "useGithubData.js",
-      "file_type": "code",
-      "source_file": "portfolio/src/hooks/useGithubData.js",
-      "source_location": "L1",
-      "community": 3,
-      "norm_label": "usegithubdata.js",
-      "id": "portfolio_src_hooks_usegithubdata_js"
-    },
-    {
-      "label": "LANG_COLORS",
-      "file_type": "code",
-      "source_file": "portfolio/src/hooks/useGithubData.js",
-      "source_location": "L6",
-      "community": 3,
-      "norm_label": "lang_colors",
-      "id": "hooks_usegithubdata_lang_colors"
-    },
-    {
-      "label": "computeTopLangs()",
-      "file_type": "code",
-      "source_file": "portfolio/src/hooks/useGithubData.js",
-      "source_location": "L23",
-      "community": 3,
-      "norm_label": "computetoplangs()",
-      "id": "hooks_usegithubdata_computetoplangs"
-    },
-    {
-      "label": "fetchAll()",
-      "file_type": "code",
-      "source_file": "portfolio/src/hooks/useGithubData.js",
-      "source_location": "L40",
-      "community": 3,
-      "norm_label": "fetchall()",
-      "id": "hooks_usegithubdata_fetchall"
-    },
-    {
-      "label": "useGithubData()",
-      "file_type": "code",
-      "source_file": "portfolio/src/hooks/useGithubData.js",
-      "source_location": "L72",
-      "community": 3,
-      "norm_label": "usegithubdata()",
-      "id": "hooks_usegithubdata_usegithubdata"
     },
     {
       "label": "Icons.jsx",
@@ -2118,220 +2118,213 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/__tests__/data.test.js",
-      "source_location": "L2",
+      "source_file": "portfolio/src/__tests__/GithubStats.test.jsx",
+      "source_location": "L5",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "portfolio_src_tests_data_test_js",
-      "target": "data_portfolio_about"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/__tests__/data.test.js",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_tests_data_test_js",
-      "target": "data_portfolio_certifications"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/__tests__/data.test.js",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_tests_data_test_js",
-      "target": "data_portfolio_experience"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/__tests__/data.test.js",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_tests_data_test_js",
-      "target": "data_portfolio_hero"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/__tests__/data.test.js",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_tests_data_test_js",
-      "target": "data_portfolio_personal"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/__tests__/data.test.js",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_tests_data_test_js",
-      "target": "data_portfolio_projects"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/__tests__/data.test.js",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_tests_data_test_js",
-      "target": "data_portfolio_skills"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/__tests__/data.test.js",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_tests_data_test_js",
-      "target": "data_portfolio_talks"
+      "source": "portfolio_src_tests_githubstats_test_jsx",
+      "target": "data_portfolio_githubstats"
     },
     {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/__tests__/data.test.js",
-      "source_location": "L2",
+      "source_file": "portfolio/src/__tests__/GithubStats.test.jsx",
+      "source_location": "L4",
       "weight": 1.0,
-      "source": "portfolio_src_tests_data_test_js",
-      "target": "portfolio_src_data_portfolio_js",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "portfolio_src_tests_githubstats_test_jsx",
+      "target": "portfolio_src_components_githubstats_jsx"
     },
     {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/App.jsx",
-      "source_location": "L9",
+      "source_file": "portfolio/src/__tests__/GithubStats.test.jsx",
+      "source_location": "L5",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "portfolio_src_app_jsx",
-      "target": "portfolio_src_components_certifications_jsx"
+      "source": "portfolio_src_tests_githubstats_test_jsx",
+      "target": "portfolio_src_data_portfolio_js"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Certifications.jsx",
-      "source_location": "L4",
+      "source_file": "portfolio/src/__tests__/GithubStats.test.jsx",
+      "source_location": "L8",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "portfolio_src_components_certifications_jsx",
-      "target": "components_certifications_certifications"
+      "source": "portfolio_src_tests_githubstats_test_jsx",
+      "target": "tests_githubstats_test_mockfetch"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/__tests__/GithubStats.test.jsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_tests_githubstats_test_jsx",
+      "target": "tests_githubstats_test_rendergithub"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/__tests__/GithubStats.test.jsx",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_tests_githubstats_test_jsx",
+      "target": "tests_githubstats_test_setupfetch"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/GithubStats.jsx",
+      "source_location": "L19",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_githubstats_jsx",
+      "target": "components_githubstats_githubstats"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/GithubStats.jsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_githubstats_jsx",
+      "target": "components_githubstats_icons"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/GithubStats.jsx",
+      "source_location": "L24",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_githubstats_jsx",
+      "target": "components_githubstats_overviewcard"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/GithubStats.jsx",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_githubstats_jsx",
+      "target": "components_githubstats_statvalue"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/GithubStats.jsx",
+      "source_location": "L55",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_githubstats_jsx",
+      "target": "components_githubstats_toplangscard"
     },
     {
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Certifications.jsx",
-      "source_location": "L2",
+      "source_file": "portfolio/src/components/GithubStats.jsx",
+      "source_location": "L3",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "portfolio_src_components_certifications_jsx",
-      "target": "components_icons_iconexternal"
+      "source": "portfolio_src_components_githubstats_jsx",
+      "target": "components_icons_iconstar"
     },
     {
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Certifications.jsx",
+      "source_file": "portfolio/src/components/GithubStats.jsx",
       "source_location": "L1",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "portfolio_src_components_certifications_jsx",
-      "target": "data_portfolio_certifications"
+      "source": "portfolio_src_components_githubstats_jsx",
+      "target": "data_portfolio_githubstats"
     },
     {
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Certifications.jsx",
+      "source_file": "portfolio/src/components/GithubStats.jsx",
       "source_location": "L1",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "portfolio_src_components_certifications_jsx",
+      "source": "portfolio_src_components_githubstats_jsx",
       "target": "data_portfolio_personal"
     },
     {
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Certifications.jsx",
+      "source_file": "portfolio/src/components/GithubStats.jsx",
       "source_location": "L2",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "portfolio_src_components_certifications_jsx",
-      "target": "hooks_usecreedlydata_usecreedlydata"
+      "source": "portfolio_src_components_githubstats_jsx",
+      "target": "hooks_usegithubdata_usegithubdata"
     },
     {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Certifications.jsx",
-      "source_location": "L2",
+      "source_file": "portfolio/src/components/GithubStats.jsx",
+      "source_location": "L3",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "portfolio_src_components_certifications_jsx",
+      "source": "portfolio_src_components_githubstats_jsx",
       "target": "portfolio_src_components_icons_jsx"
     },
     {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Certifications.jsx",
+      "source_file": "portfolio/src/components/GithubStats.jsx",
       "source_location": "L1",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "portfolio_src_components_certifications_jsx",
+      "source": "portfolio_src_components_githubstats_jsx",
       "target": "portfolio_src_data_portfolio_js"
     },
     {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/Certifications.jsx",
+      "source_file": "portfolio/src/components/GithubStats.jsx",
       "source_location": "L2",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "portfolio_src_components_certifications_jsx",
-      "target": "portfolio_src_hooks_usecreedlydata_js"
+      "source": "portfolio_src_components_githubstats_jsx",
+      "target": "portfolio_src_hooks_usegithubdata_js"
     },
     {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/__tests__/Certifications.test.jsx",
-      "source_location": "L3",
+      "source_file": "portfolio/src/pages/GithubPage.jsx",
+      "source_location": "L1",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "portfolio_src_tests_certifications_test_jsx",
-      "target": "portfolio_src_components_certifications_jsx"
+      "source": "portfolio_src_pages_githubpage_jsx",
+      "target": "portfolio_src_components_githubstats_jsx"
     },
     {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "portfolio/src/components/Certifications.jsx",
-      "source_location": "L6",
+      "source_file": "portfolio/src/components/GithubStats.jsx",
+      "source_location": "L20",
       "weight": 1.0,
-      "source": "components_certifications_certifications",
-      "target": "hooks_usecreedlydata_usecreedlydata"
+      "source": "components_githubstats_githubstats",
+      "target": "hooks_usegithubdata_usegithubdata"
     },
     {
       "relation": "imports_from",
@@ -2353,6 +2346,17 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "portfolio_src_components_avatar_jsx",
+      "target": "portfolio_src_data_portfolio_js"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Certifications.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_certifications_jsx",
       "target": "portfolio_src_data_portfolio_js"
     },
     {
@@ -2386,17 +2390,6 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "portfolio_src_components_footer_jsx",
-      "target": "portfolio_src_data_portfolio_js"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/GithubStats.jsx",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_githubstats_jsx",
       "target": "portfolio_src_data_portfolio_js"
     },
     {
@@ -2591,22 +2584,22 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/__tests__/Experience.test.jsx",
-      "source_location": "L4",
+      "source_file": "portfolio/src/__tests__/data.test.js",
+      "source_location": "L2",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "portfolio_src_tests_experience_test_jsx",
+      "source": "portfolio_src_tests_data_test_js",
       "target": "portfolio_src_data_portfolio_js"
     },
     {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/__tests__/GithubStats.test.jsx",
-      "source_location": "L5",
+      "source_file": "portfolio/src/__tests__/Experience.test.jsx",
+      "source_location": "L4",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "portfolio_src_tests_githubstats_test_jsx",
+      "source": "portfolio_src_tests_experience_test_jsx",
       "target": "portfolio_src_data_portfolio_js"
     },
     {
@@ -2657,6 +2650,17 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Certifications.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_certifications_jsx",
+      "target": "data_portfolio_personal"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "portfolio/src/components/Contact.jsx",
       "source_location": "L1",
       "weight": 1.0,
@@ -2673,17 +2677,6 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "portfolio_src_components_footer_jsx",
-      "target": "data_portfolio_personal"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/GithubStats.jsx",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_githubstats_jsx",
       "target": "data_portfolio_personal"
     },
     {
@@ -2728,6 +2721,17 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "portfolio_src_tests_contact_test_jsx",
+      "target": "data_portfolio_personal"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/__tests__/data.test.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_tests_data_test_js",
       "target": "data_portfolio_personal"
     },
     {
@@ -2789,6 +2793,17 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/__tests__/data.test.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_tests_data_test_js",
+      "target": "data_portfolio_hero"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "portfolio/src/__tests__/Hero.test.jsx",
       "source_location": "L4",
       "weight": 1.0,
@@ -2833,6 +2848,17 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/__tests__/data.test.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_tests_data_test_js",
+      "target": "data_portfolio_about"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "portfolio/src/__tests__/ProfileCard.test.jsx",
       "source_location": "L4",
       "weight": 1.0,
@@ -2855,6 +2881,17 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/__tests__/data.test.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_tests_data_test_js",
+      "target": "data_portfolio_experience"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "portfolio/src/__tests__/Experience.test.jsx",
       "source_location": "L4",
       "weight": 1.0,
@@ -2871,6 +2908,17 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "portfolio_src_components_projects_jsx",
+      "target": "data_portfolio_projects"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/__tests__/data.test.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_tests_data_test_js",
       "target": "data_portfolio_projects"
     },
     {
@@ -2910,12 +2958,34 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/__tests__/data.test.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_tests_data_test_js",
+      "target": "data_portfolio_skills"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "portfolio/src/__tests__/Skills.test.jsx",
       "source_location": "L4",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "portfolio_src_tests_skills_test_jsx",
       "target": "data_portfolio_skills"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Certifications.jsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_certifications_jsx",
+      "target": "data_portfolio_certifications"
     },
     {
       "relation": "imports",
@@ -2943,23 +3013,12 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/GithubStats.jsx",
-      "source_location": "L1",
+      "source_file": "portfolio/src/__tests__/data.test.js",
+      "source_location": "L2",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "portfolio_src_components_githubstats_jsx",
-      "target": "data_portfolio_githubstats"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/__tests__/GithubStats.test.jsx",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_tests_githubstats_test_jsx",
-      "target": "data_portfolio_githubstats"
+      "source": "portfolio_src_tests_data_test_js",
+      "target": "data_portfolio_certifications"
     },
     {
       "relation": "imports",
@@ -2976,12 +3035,161 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/__tests__/data.test.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_tests_data_test_js",
+      "target": "data_portfolio_talks"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "portfolio/src/__tests__/Talks.test.jsx",
       "source_location": "L4",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "portfolio_src_tests_talks_test_jsx",
       "target": "data_portfolio_talks"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/hooks/useGithubData.js",
+      "source_location": "L23",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_hooks_usegithubdata_js",
+      "target": "hooks_usegithubdata_computetoplangs"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/hooks/useGithubData.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_hooks_usegithubdata_js",
+      "target": "hooks_usegithubdata_fetchall"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/hooks/useGithubData.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_hooks_usegithubdata_js",
+      "target": "hooks_usegithubdata_lang_colors"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/hooks/useGithubData.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_hooks_usegithubdata_js",
+      "target": "hooks_usegithubdata_usegithubdata"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/hooks/useGithubData.js",
+      "source_location": "L68",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "hooks_usegithubdata_fetchall",
+      "target": "hooks_usegithubdata_computetoplangs"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/App.jsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_app_jsx",
+      "target": "portfolio_src_components_certifications_jsx"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Certifications.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_certifications_jsx",
+      "target": "components_certifications_certifications"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Certifications.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_certifications_jsx",
+      "target": "components_icons_iconexternal"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Certifications.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_certifications_jsx",
+      "target": "hooks_usecreedlydata_usecreedlydata"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Certifications.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_certifications_jsx",
+      "target": "portfolio_src_components_icons_jsx"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/components/Certifications.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_components_certifications_jsx",
+      "target": "portfolio_src_hooks_usecreedlydata_js"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "portfolio/src/__tests__/Certifications.test.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "portfolio_src_tests_certifications_test_jsx",
+      "target": "portfolio_src_components_certifications_jsx"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "portfolio/src/components/Certifications.jsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "components_certifications_certifications",
+      "target": "hooks_usecreedlydata_usecreedlydata"
     },
     {
       "relation": "contains",
@@ -3668,214 +3876,6 @@
       "confidence_score": 1.0,
       "source": "specs_2026_05_31_contact_redesign_what_changes",
       "target": "specs_2026_05_31_contact_redesign_social_row"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/__tests__/GithubStats.test.jsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_tests_githubstats_test_jsx",
-      "target": "portfolio_src_components_githubstats_jsx"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/__tests__/GithubStats.test.jsx",
-      "source_location": "L8",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_tests_githubstats_test_jsx",
-      "target": "tests_githubstats_test_mockfetch"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/__tests__/GithubStats.test.jsx",
-      "source_location": "L12",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_tests_githubstats_test_jsx",
-      "target": "tests_githubstats_test_rendergithub"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/__tests__/GithubStats.test.jsx",
-      "source_location": "L20",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_tests_githubstats_test_jsx",
-      "target": "tests_githubstats_test_setupfetch"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/GithubStats.jsx",
-      "source_location": "L19",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_githubstats_jsx",
-      "target": "components_githubstats_githubstats"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/GithubStats.jsx",
-      "source_location": "L12",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_githubstats_jsx",
-      "target": "components_githubstats_icons"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/GithubStats.jsx",
-      "source_location": "L24",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_githubstats_jsx",
-      "target": "components_githubstats_overviewcard"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/GithubStats.jsx",
-      "source_location": "L20",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_githubstats_jsx",
-      "target": "components_githubstats_statvalue"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/GithubStats.jsx",
-      "source_location": "L55",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_githubstats_jsx",
-      "target": "components_githubstats_toplangscard"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/GithubStats.jsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_githubstats_jsx",
-      "target": "components_icons_iconstar"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/GithubStats.jsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_githubstats_jsx",
-      "target": "hooks_usegithubdata_usegithubdata"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/GithubStats.jsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_githubstats_jsx",
-      "target": "portfolio_src_components_icons_jsx"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/components/GithubStats.jsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_components_githubstats_jsx",
-      "target": "portfolio_src_hooks_usegithubdata_js"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/pages/GithubPage.jsx",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_pages_githubpage_jsx",
-      "target": "portfolio_src_components_githubstats_jsx"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "portfolio/src/components/GithubStats.jsx",
-      "source_location": "L20",
-      "weight": 1.0,
-      "source": "components_githubstats_githubstats",
-      "target": "hooks_usegithubdata_usegithubdata"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/hooks/useGithubData.js",
-      "source_location": "L23",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_hooks_usegithubdata_js",
-      "target": "hooks_usegithubdata_computetoplangs"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/hooks/useGithubData.js",
-      "source_location": "L6",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_hooks_usegithubdata_js",
-      "target": "hooks_usegithubdata_fetchall"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/hooks/useGithubData.js",
-      "source_location": "L6",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_hooks_usegithubdata_js",
-      "target": "hooks_usegithubdata_lang_colors"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/hooks/useGithubData.js",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "portfolio_src_hooks_usegithubdata_js",
-      "target": "hooks_usegithubdata_usegithubdata"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "portfolio/src/hooks/useGithubData.js",
-      "source_location": "L68",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "hooks_usegithubdata_fetchall",
-      "target": "hooks_usegithubdata_computetoplangs"
     },
     {
       "relation": "imports_from",
@@ -5418,5 +5418,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "efcce8fc1b90ca9c8713969f8b6159b97ffb3beb"
+  "built_at_commit": "09110febd5432450881b121fda97032bbd8f80e1"
 }

@@ -135,8 +135,8 @@
     "semantic_hash": ""
   },
   "/Users/harsha/Apps/projects/Claude/portfolio/src/data/portfolio.js": {
-    "mtime": 1780386220.2732484,
-    "ast_hash": "aca906de8f017309bec3d0d5ca80d873",
+    "mtime": 1780391049.378125,
+    "ast_hash": "61d4df63ca12f3fa4409a7cbb0e4838c",
     "semantic_hash": ""
   },
   "/Users/harsha/Apps/projects/Claude/portfolio/index.html": {
@@ -350,18 +350,18 @@
     "semantic_hash": ""
   },
   "/Users/harsha/Apps/projects/Claude/portfolio/src/components/GithubStats.jsx": {
-    "mtime": 1780222432.0364084,
-    "ast_hash": "74a6114c62f792e9f95165bad8138c6f",
+    "mtime": 1780391068.8001304,
+    "ast_hash": "713a95236305bdf8567d77ee9afb1e77",
     "semantic_hash": ""
   },
   "/Users/harsha/Apps/projects/Claude/portfolio/src/__tests__/GithubStats.test.jsx": {
-    "mtime": 1780222569.3782153,
-    "ast_hash": "c91d7e4650a508069c62dcc8c3afd8fe",
+    "mtime": 1780391179.53941,
+    "ast_hash": "79a18817c4fa65ab424f106b66ded31a",
     "semantic_hash": ""
   },
   "/Users/harsha/Apps/projects/Claude/portfolio/src/hooks/useGithubData.js": {
-    "mtime": 1780222306.6352775,
-    "ast_hash": "6211fb099c9932d8580e7c9c191253e5",
+    "mtime": 1780391035.8034415,
+    "ast_hash": "a621ecde992b7f6029a281a96c1cda4a",
     "semantic_hash": ""
   },
   "/Users/harsha/Apps/projects/Claude/portfolio/src/pages/GithubPage.jsx": {
