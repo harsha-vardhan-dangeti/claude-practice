@@ -1,4 +1,86 @@
+import { useState } from 'react';
 import { skills } from '../data/portfolio';
+
+const DICON = 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons';
+
+/* Skills that have an official Devicon SVG */
+const DEVICON = {
+  'Python':          `${DICON}/python/python-original.svg`,
+  'Ruby':            `${DICON}/ruby/ruby-original.svg`,
+  'TypeScript':      `${DICON}/typescript/typescript-original.svg`,
+  'JavaScript':      `${DICON}/javascript/javascript-original.svg`,
+  'Ruby on Rails':   `${DICON}/rails/rails-original-wordmark.svg`,
+  'FastAPI':         `${DICON}/fastapi/fastapi-original.svg`,
+  'MySQL':           `${DICON}/mysql/mysql-original.svg`,
+  'Redis':           `${DICON}/redis/redis-original.svg`,
+  'Docker':          `${DICON}/docker/docker-original.svg`,
+  'Git':             `${DICON}/git/git-original.svg`,
+  'GitHub Actions':  `${DICON}/github/github-original.svg`,
+};
+
+/* Fallback colored badge for skills without a Devicon */
+const BADGE = {
+  'LangChain':          '#f97316',
+  'LlamaIndex':         '#a855f7',
+  'LangGraph':          '#3b82f6',
+  'RAGAS':              '#22c55e',
+  'HyDE':               '#ec4899',
+  'Graph RAG':          '#f59e0b',
+  'Embeddings':         '#6366f1',
+  'MCP Protocol':       '#14b8a6',
+  'LLM Observability':  '#8b5cf6',
+  'Vector Search':      '#0ea5e9',
+  'Pinecone':           '#10b981',
+  'SQL':                '#64748b',
+  'Google Cloud Services': '#4285f4',
+  'AWS Services':       '#ff9900',
+  'REST APIs':          '#64748b',
+};
+
+/* 2–3 letter abbreviation for badge display */
+function abbr(name) {
+  const words = name.split(/[\s/]+/);
+  if (words.length >= 2) return (words[0][0] + words[1][0]).toUpperCase();
+  return name.slice(0, 3).toUpperCase();
+}
+
+/* Per-category config */
+const CATEGORY_META = {
+  'AI / ML':          { area: 'aiml',    icon: '🤖', featured: true },
+  'Languages':        { area: 'langs',   icon: '💻', featured: false },
+  'Backend':          { area: 'backend', icon: '⚡', featured: false },
+  'Cloud & Data':     { area: 'cloud',   icon: '☁️', featured: false },
+  'Tools & Protocol': { area: 'tools',   icon: '🔧', featured: false },
+};
+
+function TechIcon({ name }) {
+  const src = DEVICON[name];
+  const color = BADGE[name] ?? '#64748b';
+  const [imgFailed, setImgFailed] = useState(false);
+  const showImg = src && !imgFailed;
+
+  return (
+    <div className="tech-icon">
+      {showImg ? (
+        <img
+          src={src}
+          alt={name}
+          loading="lazy"
+          onError={() => setImgFailed(true)}
+        />
+      ) : (
+        <div
+          className="tech-icon-badge"
+          style={{ background: color }}
+          title={name}
+        >
+          {abbr(name)}
+        </div>
+      )}
+      <span className="tech-icon-label">{name}</span>
+    </div>
+  );
+}
 
 export default function Skills() {
   return (
@@ -7,17 +89,35 @@ export default function Skills() {
         <div className="section-eyebrow r">/ skills</div>
         <h2 className="r d1" style={{ marginBottom: '2.5rem' }}>Technical Skills</h2>
 
-        <div className="skills-grid">
-          {skills.map((group, i) => (
-            <div key={i} className={`skill-group r d${(i % 3) + 1}`}>
-              <div className="skill-grp-title">{group.category}</div>
-              <div className="skill-pills">
-                {group.items.map(item => (
-                  <span key={item} className="skill-pill">{item}</span>
-                ))}
+        <div className="spotlight-grid">
+          {skills.map((group, i) => {
+            const meta = CATEGORY_META[group.category] ?? { area: String(i), icon: '📦', featured: false };
+            return (
+              <div
+                key={group.category}
+                className={`spotlight-card r d${(i % 4) + 1}${meta.featured ? ' featured' : ''}`}
+                data-area={meta.area}
+              >
+                {/* Header */}
+                <div className="spotlight-hdr">
+                  <div className="spotlight-cat-icon">{meta.icon}</div>
+                  <div className="spotlight-cat-meta">
+                    <div className="spotlight-cat-name">{group.category}</div>
+                    <div className="spotlight-count">{group.items.length} technologies</div>
+                  </div>
+                </div>
+
+                <div className="spotlight-divider" />
+
+                {/* Icon grid */}
+                <div className="spotlight-icons">
+                  {group.items.map(item => (
+                    <TechIcon key={item} name={item} />
+                  ))}
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
