@@ -1348,6 +1348,12 @@ footer p { font-family: var(--mono); font-size: .725rem; color: var(--txt-3); ma
   flex-shrink: 0;
 }
 
+/* emoji variant: larger glyph, no text */
+.tech-icon-badge--emoji {
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
 .tech-icon-label {
   font-family: var(--mono);
   font-size: .58rem;
