@@ -226,7 +226,9 @@ export const githubStats = {
   highlights: [
     { label: 'Public Repos',    key: 'publicRepos',   icon: 'folder' },
     { label: 'Total Stars',     key: 'totalStars',    icon: 'star'   },
-    { label: 'Recent Commits',  key: 'recentCommits', icon: 'commit' },
+    // Label/value resolved at runtime: accurate "Contributions (1y)" when a
+    // token is configured, else the "Commits (90d)" events-feed proxy.
+    { label: 'Commits (90d)',   key: 'recentCommits', icon: 'commit' },
     { label: 'Followers',       key: 'followers',     icon: 'pr'     },
   ],
 };

@@ -20,14 +20,24 @@ function StatValue({ loading, value }) {
   return <span>{value.toLocaleString()}</span>;
 }
 
+// Prefer the accurate last-year contribution total (token-only) over the
+// events-feed proxy, and label honestly for whichever we actually have.
+function resolveCommitStat(data) {
+  if (data?.totalContributions != null) {
+    return { label: 'Contributions (1y)', value: data.totalContributions };
+  }
+  return { label: 'Commits (90d)', value: data?.recentCommits };
+}
+
 // Native Overview card — no third-party service
 function OverviewCard({ data, loading }) {
+  const commitStat = resolveCommitStat(data);
   const rows = [
-    { label: 'Public Repos',   value: data?.publicRepos,   icon: icons.folder },
-    { label: 'Total Stars',    value: data?.totalStars,    icon: icons.star   },
-    { label: 'Total Forks',    value: data?.totalForks,    icon: icons.pr     },
-    { label: 'Recent Commits', value: data?.recentCommits, icon: icons.commit },
-    { label: 'Followers',      value: data?.followers,
+    { label: 'Public Repos',     value: data?.publicRepos, icon: icons.folder },
+    { label: 'Total Stars',      value: data?.totalStars,  icon: icons.star   },
+    { label: 'Total Forks',      value: data?.totalForks,  icon: icons.pr     },
+    { label: commitStat.label,   value: commitStat.value,  icon: icons.commit },
+    { label: 'Followers',        value: data?.followers,
       icon: <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
     },
   ];
@@ -118,15 +128,22 @@ export default function GithubStats() {
 
         {/* ── Highlight boxes ── */}
         <div className="gh-highlights r d2">
-          {githubStats.highlights.map((h, i) => (
-            <div key={i} className="gh-highlight-card">
-              <div className="gh-highlight-icon">{icons[h.icon]}</div>
-              <div className="gh-highlight-val">
-                <StatValue loading={loading} value={data?.[h.key]} />
+          {githubStats.highlights.map((h, i) => {
+            // Commit count resolves to accurate yearly contributions when a
+            // token is set, otherwise the honest 90-day events proxy.
+            const stat = h.key === 'recentCommits'
+              ? resolveCommitStat(data)
+              : { label: h.label, value: data?.[h.key] };
+            return (
+              <div key={i} className="gh-highlight-card">
+                <div className="gh-highlight-icon">{icons[h.icon]}</div>
+                <div className="gh-highlight-val">
+                  <StatValue loading={loading} value={stat.value} />
+                </div>
+                <div className="gh-highlight-lbl">{stat.label}</div>
               </div>
-              <div className="gh-highlight-lbl">{h.label}</div>
-            </div>
-          ))}
+            );
+          })}
         </div>
 
         {/* ── Native stats cards ── */}

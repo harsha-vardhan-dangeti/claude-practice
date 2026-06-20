@@ -1,5 +1,8 @@
 import { useState, useEffect } from 'react';
 
+const CACHE_KEY = 'hvd-github-stats';
+const CACHE_TTL = 60 * 60 * 1000; // 1 hour
+
 const LANG_COLORS = {
   Ruby:       '#CC342D',
   Python:     '#3572A5',
@@ -34,7 +37,10 @@ function computeTopLangs(repos) {
     }));
 }
 
-async function fetchAll(username) {
+// Direct browser fetch — used as a dev/offline fallback when the serverless
+// proxy (/api/github) is unavailable (e.g. plain `vite dev`). Subject to the
+// 60 req/hour unauthenticated limit, which is why production prefers /api.
+async function fetchDirect(username) {
   const h = { Accept: 'application/vnd.github.v3+json' };
 
   const [userRes, reposRes, eventsRes] = await Promise.all([
@@ -54,26 +60,34 @@ async function fetchAll(username) {
   const repoList  = Array.isArray(repos)  ? repos  : [];
   const eventList = Array.isArray(events) ? events : [];
 
-  const totalStars   = repoList.reduce((s, r) => s + (r.stargazers_count || 0), 0);
-  const totalForks   = repoList.reduce((s, r) => s + (r.forks_count || 0), 0);
+  const totalStars = repoList.reduce((s, r) => s + (r.stargazers_count || 0), 0);
+  const totalForks = repoList.reduce((s, r) => s + (r.forks_count || 0), 0);
 
-  // Count pushes from recent public events as a proxy for commits
   const recentCommits = eventList
     .filter(e => e.type === 'PushEvent')
     .reduce((s, e) => s + (e.payload?.commits?.length || 0), 0);
 
-  // Count PR events
-  const recentPRs = eventList.filter(e => e.type === 'PullRequestEvent').length;
-
   return {
-    publicRepos:   user.public_repos,
-    followers:     user.followers,
+    publicRepos:        user.public_repos,
+    followers:          user.followers,
     totalStars,
     totalForks,
     recentCommits,
-    recentPRs,
-    topLangs:      computeTopLangs(repoList),
+    totalContributions: null,
+    topLangs:           computeTopLangs(repoList),
   };
+}
+
+// Prefer the serverless proxy (token-authed + edge-cached + accurate yearly
+// contributions). Fall back to a direct browser fetch if it isn't there.
+async function fetchStats(username) {
+  try {
+    const res = await fetch(`/api/github?user=${encodeURIComponent(username)}`);
+    if (res.ok) return await res.json();
+  } catch {
+    /* fall through to direct fetch */
+  }
+  return fetchDirect(username);
 }
 
 export function useGithubData(username) {
@@ -85,12 +99,31 @@ export function useGithubData(username) {
     if (!username) return;
     let cancelled = false;
 
+    // Serve from session cache first to avoid refetching on every navigation.
+    try {
+      const raw = sessionStorage.getItem(CACHE_KEY);
+      if (raw) {
+        const { data: cached, ts } = JSON.parse(raw);
+        if (Date.now() - ts < CACHE_TTL) {
+          setData(cached);
+          setLoading(false);
+          return;
+        }
+      }
+    } catch { /* ignore cache errors */ }
+
     setLoading(true);
     setError(null);
 
-    fetchAll(username)
+    fetchStats(username)
       .then(stats => {
-        if (!cancelled) { setData(stats); setLoading(false); }
+        if (cancelled) return;
+        if (stats?.error) throw new Error(stats.error);
+        try {
+          sessionStorage.setItem(CACHE_KEY, JSON.stringify({ data: stats, ts: Date.now() }));
+        } catch { /* ignore quota errors */ }
+        setData(stats);
+        setLoading(false);
       })
       .catch(e => {
         if (!cancelled) { setError(e.message); setLoading(false); }
