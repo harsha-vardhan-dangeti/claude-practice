@@ -16,25 +16,29 @@ function parseBadges(data) {
     }));
 }
 
+// Read cached badges from localStorage, or null if absent/stale/broken.
+// Lets the hook hydrate synchronously on mount instead of setting state
+// inside the effect.
+function readCache() {
+  try {
+    const raw = localStorage.getItem(CACHE_KEY);
+    if (raw) {
+      const { data, ts } = JSON.parse(raw);
+      if (Date.now() - ts < CACHE_TTL) return data;
+    }
+  } catch { /* ignore cache errors */ }
+  return null;
+}
+
 export function useCreedlyData(username) {
-  const [badges,  setBadges]  = useState(staticCerts);
-  const [loading, setLoading] = useState(true);
+  const [badges,  setBadges]  = useState(() => (username && readCache()) || staticCerts);
+  const [loading, setLoading] = useState(() => Boolean(username) && readCache() === null);
   const [error,   setError]   = useState(null);
 
   useEffect(() => {
-    if (!username) { setLoading(false); return; }
+    // No username, or already hydrated from a fresh cache — nothing to fetch.
+    if (!username || readCache() !== null) return;
     let cancelled = false;
-
-    // try cache first
-    try {
-      const raw = localStorage.getItem(CACHE_KEY);
-      if (raw) {
-        const { data, ts } = JSON.parse(raw);
-        if (Date.now() - ts < CACHE_TTL) {
-          setBadges(data); setLoading(false); return;
-        }
-      }
-    } catch (_) {}
 
     // /credly-api is proxied to credly.com in dev (vite.config.js).
     // In production (no proxy) this fetch will fail — we fall back to staticCerts.
@@ -44,7 +48,7 @@ export function useCreedlyData(username) {
         if (cancelled) return;
         const parsed = parseBadges(json);
         if (parsed.length === 0) throw new Error('no badges');
-        try { localStorage.setItem(CACHE_KEY, JSON.stringify({ data: parsed, ts: Date.now() })); } catch (_) {}
+        try { localStorage.setItem(CACHE_KEY, JSON.stringify({ data: parsed, ts: Date.now() })); } catch { /* ignore quota errors */ }
         setBadges(parsed); setLoading(false);
       })
       .catch(e => {

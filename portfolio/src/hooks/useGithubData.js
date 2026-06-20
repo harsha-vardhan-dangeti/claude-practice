@@ -90,31 +90,31 @@ async function fetchStats(username) {
   return fetchDirect(username);
 }
 
+// Read fresh stats from the session cache, or null if absent/stale/broken.
+// Lets the hook hydrate synchronously on mount and skip refetching on every
+// in-app navigation.
+function readCache() {
+  try {
+    const raw = sessionStorage.getItem(CACHE_KEY);
+    if (raw) {
+      const { data, ts } = JSON.parse(raw);
+      if (Date.now() - ts < CACHE_TTL) return data;
+    }
+  } catch { /* ignore cache errors */ }
+  return null;
+}
+
 export function useGithubData(username) {
-  const [data,    setData]    = useState(null);
-  const [loading, setLoading] = useState(true);
+  const [data,    setData]    = useState(readCache);
+  const [loading, setLoading] = useState(() => readCache() === null);
   const [error,   setError]   = useState(null);
 
   useEffect(() => {
     if (!username) return;
+    // Already hydrated from a fresh session cache — no network needed.
+    if (readCache() !== null) return;
+
     let cancelled = false;
-
-    // Serve from session cache first to avoid refetching on every navigation.
-    try {
-      const raw = sessionStorage.getItem(CACHE_KEY);
-      if (raw) {
-        const { data: cached, ts } = JSON.parse(raw);
-        if (Date.now() - ts < CACHE_TTL) {
-          setData(cached);
-          setLoading(false);
-          return;
-        }
-      }
-    } catch { /* ignore cache errors */ }
-
-    setLoading(true);
-    setError(null);
-
     fetchStats(username)
       .then(stats => {
         if (cancelled) return;

@@ -25,7 +25,7 @@ describe('Skills', () => {
   });
 
   it('renders the correct number of skill groups', () => {
-    const groups = document.querySelectorAll('.skill-group');
+    const groups = document.querySelectorAll('.spotlight-card');
     expect(groups.length).toBe(skills.length);
   });
 });
