@@ -4,7 +4,7 @@ export const personal = {
   nameLine2: "Dangeti",
   initials: "HVD",
   brand: "HVD",
-  title: "AI Engineer",
+  title: "Full Stack & AI Engineer",
   email: "harsha.vardhan.422812@gmail.com",
   location: "Gachibowli, Hyderabad, IN",
   locationShort: "Gachibowli, Hyderabad",
@@ -25,7 +25,7 @@ export const personal = {
 };
 
 export const hero = {
-  badge: "Gachibowli, Hyderabad · Open to AI Engineering roles",
+  badge: "Gachibowli, Hyderabad · Open to Full Stack & AI roles · Remote/Hybrid",
   tagline: {
     bold: "3.5 years shipping production Rails.",
     rest: " Now building the systems underneath the LLM — RAG pipelines, schema-aware agents, MCP servers, and the evaluation infrastructure that tells you when they break.",
@@ -41,15 +41,16 @@ export const about = {
   heading: "Background",
   paragraphs: [
     "I've spent 3.5 years building production Ruby on Rails applications — APIs that handle real load, schema migrations under live traffic, and the kind of debugging sessions that teach you more than any tutorial. That track record gave me strong opinions about API contracts, observability, and what it actually means to ship.",
-    "The transition to AI engineering is deliberate, not reactive. I'm building systems with measurable outcomes: RAG pipelines evaluated with RAGAS and G-Eval, a schema-aware BigQuery agent using LangGraph that replaces manual SQL queries, and MCP servers that make internal tools LLM-accessible. I delivered a 45-minute internal workshop on RAG evaluation — live demo, benchmarks, failure modes — and a separate AI Trends 2025–2026 presentation to the engineering org.",
+    "The transition to AI engineering is deliberate, not reactive. I'm building systems with measurable outcomes: RAG pipelines evaluated with RAGAS and G-Eval, a schema-aware BigQuery agent using LangGraph that replaces manual SQL queries, and MCP servers that make internal tools LLM-accessible. I delivered an internal workshop on RAG evaluation — live demo, benchmarks, failure modes — and a separate AI Trends 2025–2026 presentation to the engineering org.",
     "I care about the gap between \"it works in the notebook\" and \"it works in production.\" That gap is where most AI projects fail, and where I spend my time. Python is leveling up alongside the Rails foundation.",
   ],
   facts: [
-    { label: "Location",      value: "Gachibowli, Hyderabad, IN" },
-    { label: "Current role",  value: "Software Developer (Rails)" },
-    { label: "Focus area",    value: "AI Engineering — RAG, Agents, MCP" },
-    { label: "Status",        value: "Open to AI/ML roles", highlight: true },
-    { label: "Outside tech",  value: "Distance running, VO₂ max tracking, meal prep, content creation" },
+    { label: "Location",          value: "Gachibowli, Hyderabad, IN" },
+    { label: "Current role",      value: "Software Developer (Rails)" },
+    { label: "Total experience",  value: "~4.5 yrs (incl. HPE internship)" },
+    { label: "Focus area",        value: "Full Stack & AI Engineering — RAG, Agents, MCP" },
+    { label: "Status",            value: "Open to Full Stack & AI roles · Remote/Hybrid", highlight: true },
+    { label: "Outside tech",      value: "Distance running, VO₂ max tracking, meal prep, content creation" },
   ],
 };
 
@@ -73,8 +74,8 @@ export const experience = [
     current: false,
     bullets: [
       "Built and shipped Rails features end-to-end — database design, API implementation, frontend integration.",
-      "[Add outcome with impact metric]",
-      "[Add outcome with impact metric]",
+      "Wrote and maintained RSpec test coverage for REST APIs, and used RabbitMQ for asynchronous background job processing.",
+      "Used Docker to keep local development environments consistent with production, with Redis for caching and MySQL as the primary datastore.",
     ],
     tags: ["Ruby on Rails", "JavaScript", "MySQL", "Redis", "Rspec", "REST APIs", "RabbitMQ", "Docker"],
   },
@@ -165,8 +166,16 @@ export const skills = [
     items: ["LangChain", "LlamaIndex", "LangGraph", "RAGAS", "HyDE", "Graph RAG", "Embeddings"],
   },
   {
+    category: "Frontend",
+    items: ["React", "React Router", "Vite", "HTML/CSS"],
+  },
+  {
     category: "Backend",
     items: ["Ruby on Rails", "FastAPI", "MySQL", "Redis", "REST APIs"],
+  },
+  {
+    category: "Testing",
+    items: ["RSpec", "Vitest", "React Testing Library"],
   },
   {
     category: "Cloud & Data",
@@ -245,11 +254,13 @@ export const talks = [
     meta: "Internal Engineering Talk · 45 min · Live Demo · Audience: 50+ engineers",
     description: "Covered RAGAS framework, G-Eval, HyDE, and custom evaluation metrics for production RAG systems. Included a live evaluation run on a production pipeline demonstrating retrieval quality measurement, hallucination detection, and regression tracking across model changes.",
     icon: "edit",
+    note: "Internal talk — slides available on request.",
   },
   {
     title: "AI Engineering Trends 2025–2026",
     meta: "Internal Presentation · Engineering Org",
     description: "Surveyed the evolving AI engineering landscape: agentic frameworks, RAG advancements, MCP protocol adoption, LLM observability tooling, and production deployment patterns. Included concrete takeaways and a framework for evaluating new AI tools before adoption.",
     icon: "monitor",
+    note: "Internal talk — slides available on request.",
   },
 ];

@@ -18,6 +18,8 @@ const DEVICON = {
   'GitHub Actions':        `${DICON}/github/github-original.svg`,
   'Google Cloud Services': `${DICON}/googlecloud/googlecloud-original.svg`,
   'AWS Services':          `${DICON}/amazonwebservices/amazonwebservices-plain-wordmark.svg`,
+  'React':                 `${DICON}/react/react-original.svg`,
+  'Vite':                  `${DICON}/vitejs/vitejs-original.svg`,
 };
 
 /* Emoji badges for AI/ML tools and others without a Devicon.
@@ -37,15 +39,22 @@ const EMOJI_BADGE = {
   'Pinecone':          { emoji: '🌲', color: '#10b981' },
   'SQL':               { emoji: '🗄️', color: '#64748b' },
   'REST APIs':         { emoji: '🔌', color: '#64748b' },
+  'React Router':      { emoji: '🧭', color: '#CA4245' },
+  'HTML/CSS':          { emoji: '🎨', color: '#E34C26' },
+  'RSpec':             { emoji: '🧪', color: '#DC143C' },
+  'Vitest':            { emoji: '⚡', color: '#6E9F18' },
+  'React Testing Library': { emoji: '🔬', color: '#E33332' },
 };
 
 /* Per-category config */
 const CATEGORY_META = {
-  'AI / ML':          { area: 'aiml',    icon: '🤖', featured: true },
-  'Languages':        { area: 'langs',   icon: '💻', featured: false },
-  'Backend':          { area: 'backend', icon: '⚡', featured: false },
-  'Cloud & Data':     { area: 'cloud',   icon: '☁️', featured: false },
-  'Tools & Protocol': { area: 'tools',   icon: '🔧', featured: false },
+  'AI / ML':          { icon: '🤖', featured: true },
+  'Languages':        { icon: '💻', featured: false },
+  'Frontend':         { icon: '🖥️', featured: false },
+  'Backend':          { icon: '⚡', featured: false },
+  'Testing':          { icon: '🧪', featured: false },
+  'Cloud & Data':     { icon: '☁️', featured: false },
+  'Tools & Protocol': { icon: '🔧', featured: false },
 };
 
 function TechIcon({ name }) {
@@ -90,12 +99,11 @@ export default function Skills() {
 
         <div className="spotlight-grid">
           {skills.map((group, i) => {
-            const meta = CATEGORY_META[group.category] ?? { area: String(i), icon: '📦', featured: false };
+            const meta = CATEGORY_META[group.category] ?? { icon: '📦', featured: false };
             return (
               <div
                 key={group.category}
                 className={`spotlight-card r d${(i % 4) + 1}${meta.featured ? ' featured' : ''}`}
-                data-area={meta.area}
               >
                 {/* Header */}
                 <div className="spotlight-hdr">

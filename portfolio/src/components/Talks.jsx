@@ -18,6 +18,7 @@ export default function Talks() {
                 <div className="talk-title">{t.title}</div>
                 <div className="talk-meta">{t.meta}</div>
                 <p className="talk-desc">{t.description}</p>
+                {t.note && <p className="talk-note">{t.note}</p>}
               </div>
             </div>
           ))}

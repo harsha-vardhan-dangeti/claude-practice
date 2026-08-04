@@ -870,6 +870,7 @@ section { padding: clamp(4rem, 10vw, 6rem) 0; }
 .talk-title { font-size: 1rem; font-weight: 600; color: var(--txt); margin-bottom: .25rem; }
 .talk-meta { font-family: var(--mono); font-size: .68rem; color: var(--txt-3); letter-spacing: .06em; margin-bottom: .45rem; }
 .talk-desc { font-size: .875rem; color: var(--txt-2); line-height: 1.65; }
+.talk-note { font-size: .75rem; color: var(--txt-3); font-style: italic; margin-top: .5rem; }
 
 /* ─── CONTACT ────────────────────────────────────────────────── */
 .contact-eyebrow {
@@ -1235,9 +1236,6 @@ footer p { font-family: var(--mono); font-size: .725rem; color: var(--txt-3); ma
 .spotlight-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-areas:
-    "aiml aiml langs"
-    "backend cloud tools";
   gap: 1.125rem;
 }
 
@@ -1254,19 +1252,13 @@ footer p { font-family: var(--mono); font-size: .725rem; color: var(--txt-3); ma
   box-shadow: 0 0 0 1px var(--border-hi), 0 16px 36px rgba(0,0,0,.28);
 }
 .spotlight-card.featured {
+  grid-column: span 2;
   border-color: rgba(59,130,246,.2);
   background: linear-gradient(135deg, var(--bg-surface) 0%, rgba(59,130,246,.04) 100%);
 }
 .spotlight-card.featured:hover {
   box-shadow: 0 0 0 1px var(--border-hi), 0 16px 48px rgba(59,130,246,.18);
 }
-
-/* grid-area assignments */
-.spotlight-card[data-area="aiml"]    { grid-area: aiml; }
-.spotlight-card[data-area="langs"]   { grid-area: langs; }
-.spotlight-card[data-area="backend"] { grid-area: backend; }
-.spotlight-card[data-area="cloud"]   { grid-area: cloud; }
-.spotlight-card[data-area="tools"]   { grid-area: tools; }
 
 .spotlight-hdr {
   display: flex;
@@ -1374,9 +1366,7 @@ footer p { font-family: var(--mono); font-size: .725rem; color: var(--txt-3); ma
 @media (max-width: 1024px) {
   .spotlight-grid {
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: none;
   }
-  .spotlight-card[data-area] { grid-area: unset; }
 }
 @media (max-width: 767px) {
   .spotlight-grid { grid-template-columns: 1fr; }

@@ -19,8 +19,9 @@ export default function Contact() {
             maxWidth: '48ch',
           }}
         >
-          Open to senior AI/ML engineering roles — RAG pipelines, schema-aware
-          agents, and production LLM infrastructure.
+          Open to Full Stack & AI engineering roles — RAG pipelines,
+          schema-aware agents, and production LLM infrastructure. Open to
+          remote and hybrid arrangements.
         </p>
 
         <a
