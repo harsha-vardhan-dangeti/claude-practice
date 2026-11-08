@@ -30,9 +30,9 @@ describe('Hero', () => {
     });
   });
 
-  it('View Projects button links to /projects', () => {
-    const btn = screen.getByText('View Projects').closest('a');
-    expect(btn).toHaveAttribute('href', '/projects');
+  it('primary CTA jumps to the live projects section', () => {
+    const btn = screen.getByText('See live projects').closest('a');
+    expect(btn).toHaveAttribute('href', '#work');
   });
 
   it('Resume PDF button links to resume', () => {

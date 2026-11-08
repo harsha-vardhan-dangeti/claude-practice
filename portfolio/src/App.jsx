@@ -1,4 +1,4 @@
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { useTheme } from './hooks/useTheme';
 import { useScrollReveal } from './hooks/useScrollReveal';
 import Nav from './components/Nav';
@@ -14,7 +14,7 @@ import AchievementsPage from './pages/AchievementsPage';
 import GithubPage      from './pages/GithubPage';
 import ContactPage     from './pages/ContactPage';
 
-// Must live inside HashRouter to access useLocation
+// Must live inside the router to access useLocation
 function Inner() {
   const { theme, toggle } = useTheme();
   useScrollReveal();
@@ -42,8 +42,8 @@ function Inner() {
 
 export default function App() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Inner />
-    </HashRouter>
+    </BrowserRouter>
   );
 }

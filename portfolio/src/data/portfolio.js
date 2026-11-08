@@ -10,7 +10,7 @@ export const personal = {
   locationShort: "Gachibowli, Hyderabad",
   resumePdf: "https://drive.google.com/uc?export=download&id=1JFOjrIYu5S6Q3qrWltE_m1WWS5-rcATQ",
   // Set to image path (e.g. "/profile.jpg") to show your photo; null shows initials placeholder
-  avatar: "/profile.png",
+  avatar: "/profile.webp",
   // Tags shown in the home page profile card
   profileStack: ["Python", "Rails", "RAG", "LangGraph", "MCP", "FastAPI", "BigQuery", "RAGAS"],
   linkedin: {
@@ -25,22 +25,22 @@ export const personal = {
 };
 
 export const hero = {
-  badge: "Gachibowli, Hyderabad · Open to Full Stack & AI roles · Remote/Hybrid",
+  badge: "Open to full stack and AI roles, remote or hybrid",
   tagline: {
-    bold: "3.5 years shipping production Rails.",
+    bold: "4 years shipping production Rails at Qualcomm.",
     rest: " Now building the systems underneath the LLM — RAG pipelines, schema-aware agents, MCP servers, and the evaluation infrastructure that tells you when they break.",
   },
   stats: [
-    { value: "3.5", label: "Yrs production Rails" },
-    { value: "45",  label: "Min RAG eval talk" },
-    { value: "5+",  label: "AI projects shipped" },
+    { value: "4+",   label: "Years in production engineering" },
+    { value: "3",    label: "Live apps shipped this year" },
+    { value: "~40%", label: "Fewer hallucinations after my RAG eval work" },
   ],
 };
 
 export const about = {
   heading: "Background",
   paragraphs: [
-    "I've spent 3.5 years building production Ruby on Rails applications — APIs that handle real load, schema migrations under live traffic, and the kind of debugging sessions that teach you more than any tutorial. That track record gave me strong opinions about API contracts, observability, and what it actually means to ship.",
+    "I've spent 4 years building production Ruby on Rails applications — APIs that handle real load, schema migrations under live traffic, and the kind of debugging sessions that teach you more than any tutorial. That track record gave me strong opinions about API contracts, observability, and what it actually means to ship.",
     "The transition to AI engineering is deliberate, not reactive. I'm building systems with measurable outcomes: RAG pipelines evaluated with RAGAS and G-Eval, a schema-aware BigQuery agent using LangGraph that replaces manual SQL queries, and MCP servers that make internal tools LLM-accessible. I delivered an internal workshop on RAG evaluation — live demo, benchmarks, failure modes — and a separate AI Trends 2025–2026 presentation to the engineering org.",
     "I care about the gap between \"it works in the notebook\" and \"it works in production.\" That gap is where most AI projects fail, and where I spend my time. Python is leveling up alongside the Rails foundation.",
   ],
@@ -70,7 +70,7 @@ export const experience = [
   {
     role: "Associate IT Software Developer",
     company: "Qualcomm",
-    dates: "2022 — 2025· ~2.5 yrs",
+    dates: "2022 — 2025 · ~2.5 yrs",
     current: false,
     bullets: [
       "Built and shipped Rails features end-to-end — database design, API implementation, frontend integration.",
@@ -82,11 +82,11 @@ export const experience = [
   {
     role: "Technical Solution Consultant (GRSB Internship)",
     company: "Hewlett Packard Enterprise",
-    dates: "2022 — 2022· ~6 months",
+    dates: "2022 · ~6 months",
     current: false,
     bullets: [
-      "Developed technical solutions that streamlined internal processees, resulting in a 20% increase in team efficiency during project exectuion with the six-month intership period",
-      "collaborated with cross-functional teams to identify bottlenecks and implement automation tools, reducing manual effort by 30% and improving overall project delivery timelines.",
+      "Developed technical solutions that streamlined internal processes, resulting in a 20% increase in team efficiency during project execution over the six-month internship",
+      "Collaborated with cross-functional teams to identify bottlenecks and implement automation tools, reducing manual effort by 30% and improving overall project delivery timelines.",
     ],
     tags: ["Python", "Shell Scripting", "Automation", "Cross-functional Collaboration"],
   },
@@ -101,6 +101,14 @@ export const projects = [
     demo: "https://tally-web-kappa.vercel.app",
     tags: ["React", "TypeScript", "Vite", "Supabase", "PWA"],
     icon: "wallet",
+    featured: true,
+    image: "/projects/tally.webp",
+    imageAlt: "Tally landing page showing a safe-to-spend-today card and a Smart add demo parsing 'lunch 350 at chutneys, split with arjun'",
+    highlights: [
+      "Offline-first: a build step versions every file and precaches the release in a service worker",
+      "Smart add parses free text and receipt photos entirely in the browser (Tesseract WebAssembly)",
+      "Restores are validated, then written in one IndexedDB transaction with an undo point",
+    ],
   },
   {
     title: "Turtle Runners — Club Platform",
@@ -109,6 +117,14 @@ export const projects = [
     demo: "https://turtlerunners.vercel.app",
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase"],
     icon: "users",
+    featured: true,
+    image: "/projects/turtle-runners.webp",
+    imageAlt: "Turtle Runners landing page with the headline 'Swim the lake. Ride the dawn. Run it home.'",
+    highlights: [
+      "Member and admin roles enforced in Postgres with row-level security, not just in the UI",
+      "Admin console for events, members and testimonial moderation",
+      "Runs fully in a seeded demo mode when no Supabase keys are present",
+    ],
   },
   {
     title: "Job Hunt HQ",
@@ -117,6 +133,7 @@ export const projects = [
     demo: "https://job-hunt-hq-pi.vercel.app",
     tags: ["Next.js", "React", "Supabase", "REST API"],
     icon: "briefcase",
+    featured: true,
   },
   {
     title: "RAG Evaluation Suite",

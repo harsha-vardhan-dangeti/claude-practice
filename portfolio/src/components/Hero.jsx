@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { personal, hero } from '../data/portfolio';
 import { IconArrowRight, IconDownload } from './Icons';
 import ProfileCard from './ProfileCard';
@@ -24,9 +23,9 @@ export default function Hero() {
           </p>
 
           <div className="hero-ctas stagger s4">
-            <Link to="/projects" className="btn btn-primary">
-              View Projects <IconArrowRight />
-            </Link>
+            <a href="#work" className="btn btn-primary">
+              See live projects <IconArrowRight />
+            </a>
             <a href={personal.resumePdf} className="btn btn-ghost" target="_blank" rel="noopener">
               Resume PDF <IconDownload />
             </a>

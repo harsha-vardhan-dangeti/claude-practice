@@ -2,14 +2,16 @@ import { projects } from '../data/portfolio';
 import { ProjectIcon, IconGithub, IconExternal } from './Icons';
 
 export default function Projects() {
+  // Everything that isn't a featured live project (those render in FeaturedWork).
+  const otherProjects = projects.filter(p => !p.featured);
+  if (otherProjects.length === 0) return null;
   return (
     <section id="projects" aria-label="Projects">
       <div className="container">
-        <div className="section-eyebrow r">/ projects</div>
-        <h2 className="r d1" style={{ marginBottom: '2.5rem' }}>Selected Work</h2>
+        <h2 className="r d1" style={{ marginBottom: '2.5rem' }}>AI engineering work</h2>
 
         <div className="projects-grid">
-          {projects.map((p, i) => (
+          {otherProjects.map((p, i) => (
             <article key={i} className={`proj-card r d${(i % 3) + 1}`}>
               <div className="proj-top">
                 <div className="proj-icon" aria-hidden="true">

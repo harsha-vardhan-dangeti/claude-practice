@@ -10,7 +10,7 @@ Live at **[www.hvd.works](https://www.hvd.works)**.
 
 | Layer | Choice |
 |---|---|
-| UI | React 19, React Router 7 (`HashRouter`) |
+| UI | React 19, React Router 7 (`BrowserRouter`, clean URLs via a Vercel SPA rewrite) |
 | Build | Vite 8 |
 | Testing | Vitest + React Testing Library, jsdom |
 | Lint | ESLint 10 (flat config) |
@@ -45,7 +45,7 @@ api/
   github.js          Vercel serverless function — proxies GitHub API calls
                       server-side so the dashboard isn't rate-limited per visitor
 src/
-  App.jsx             Route table (HashRouter)
+  App.jsx             Route table (BrowserRouter)
   main.jsx            Entry point
   pages/               One page component per route (Home, About, Experience,
                         Projects, Skills, Achievements, Github, Contact)

@@ -1,13 +1,16 @@
 import { describe, it, expect } from 'vitest';
 import { render, screen } from '@testing-library/react';
 import Projects from '../components/Projects';
-import { projects } from '../data/portfolio';
+import { projects as allProjects } from '../data/portfolio';
+
+// Featured live projects render in FeaturedWork; this grid shows the rest.
+const projects = allProjects.filter(p => !p.featured);
 
 describe('Projects', () => {
   beforeEach(() => render(<Projects />));
 
   it('renders the section heading', () => {
-    expect(screen.getByRole('heading', { name: 'Selected Work' })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: 'AI engineering work' })).toBeInTheDocument();
   });
 
   it('renders every project title', () => {
@@ -50,6 +53,12 @@ describe('Projects', () => {
       p.tags.forEach(tag => {
         expect(screen.getAllByText(tag).length).toBeGreaterThan(0);
       });
+    });
+  });
+
+  it('does not repeat featured projects', () => {
+    allProjects.filter(p => p.featured).forEach(p => {
+      expect(screen.queryByText(p.title)).not.toBeInTheDocument();
     });
   });
 
