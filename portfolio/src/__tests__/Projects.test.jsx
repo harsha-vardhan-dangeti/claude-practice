@@ -22,10 +22,21 @@ describe('Projects', () => {
     });
   });
 
-  it('renders a GitHub link for each project that has one', () => {
-    const githubLinks = screen.getAllByLabelText('GitHub repository');
-    const projectsWithGithub = projects.filter(p => p.github);
+  it('renders a GitHub link for each project that has a real one', () => {
+    const githubLinks = screen.queryAllByLabelText('GitHub repository');
+    const projectsWithGithub = projects.filter(p => p.github && p.github !== '#');
     expect(githubLinks.length).toBe(projectsWithGithub.length);
+  });
+
+  it('does not render placeholder "#" GitHub links', () => {
+    screen.queryAllByLabelText('GitHub repository').forEach(a => {
+      expect(a).not.toHaveAttribute('href', '#');
+    });
+  });
+
+  it('opens project links in a new tab', () => {
+    [...screen.queryAllByLabelText('GitHub repository'), ...screen.queryAllByLabelText('Live demo')]
+      .forEach(a => expect(a).toHaveAttribute('target', '_blank'));
   });
 
   it('renders a demo link only for projects that have one', () => {

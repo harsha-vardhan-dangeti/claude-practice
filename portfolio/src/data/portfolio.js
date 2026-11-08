@@ -95,6 +95,30 @@ export const experience = [
 
 export const projects = [
   {
+    title: "Tally — Expense Tracker",
+    description: "Mobile-first PWA that answers \"what's safe to spend today?\". Works offline through a versioned service worker, syncs phone and laptop via Supabase with Google sign-in, and logs spends from plain text (\"lunch 350, split with arjun\") or receipt photos using in-browser Tesseract OCR.",
+    github: "https://github.com/harsha-vardhan-dangeti/tally-web",
+    demo: "https://tally-web-kappa.vercel.app",
+    tags: ["React", "TypeScript", "Vite", "Supabase", "PWA"],
+    icon: "wallet",
+  },
+  {
+    title: "Turtle Runners — Club Platform",
+    description: "Web app for a Hyderabad triathlon club: public landing page with a live countdown to the next session, member dashboard with RSVPs and training logs, and an admin console for events, members and testimonial moderation. Supabase Postgres with row-level security and Google OAuth.",
+    github: "https://github.com/harsha-vardhan-dangeti/turtle-runners",
+    demo: "https://turtlerunners.vercel.app",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase"],
+    icon: "users",
+  },
+  {
+    title: "Job Hunt HQ",
+    description: "Private job-search tracker on Next.js App Router and Supabase, with a token-authenticated REST API that a scheduled AI agent writes new roles into. Sign-in is restricted to an allow-listed Google account.",
+    github: "https://github.com/harsha-vardhan-dangeti/job-hunt-hq",
+    demo: "https://job-hunt-hq-pi.vercel.app",
+    tags: ["Next.js", "React", "Supabase", "REST API"],
+    icon: "briefcase",
+  },
+  {
     title: "RAG Evaluation Suite",
     description: "End-to-end evaluation pipeline for production RAG systems. Implements RAGAS metrics, HyDE, multi-query expansion, and automated regression testing with a visualization dashboard for retrieval quality over time.",
     github: "#",

@@ -16,8 +16,8 @@ export default function Projects() {
                   <ProjectIcon name={p.icon} />
                 </div>
                 <div className="proj-links">
-                  {p.github && (
-                    <a href={p.github} className="proj-link" aria-label="GitHub repository" title="GitHub">
+                  {p.github && p.github !== '#' && (
+                    <a href={p.github} className="proj-link" aria-label="GitHub repository" title="GitHub" target="_blank" rel="noopener">
                       <IconGithub />
                     </a>
                   )}
