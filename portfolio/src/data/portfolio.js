@@ -134,6 +134,7 @@ export const projects = [
     tags: ["Next.js", "React", "Supabase", "REST API"],
     icon: "briefcase",
     featured: true,
+    demoLocked: true,
   },
   {
     title: "RAG Evaluation Suite",
@@ -197,34 +198,53 @@ export const education = [
   },
 ];
 
-export const skills = [
+// The three areas an interviewer should remember. Shown above the skill explorer.
+export const strengths = [
   {
-    category: "Languages",
-    items: ["Python", "Ruby", "TypeScript", "SQL", "JavaScript"],
+    title: "Production backend",
+    text: "Rails APIs at Qualcomm since 2022: zero-downtime migrations on live databases, RabbitMQ background jobs, Redis caching and RSpec coverage.",
   },
   {
-    category: "AI / ML",
-    items: ["LangChain", "LlamaIndex", "LangGraph", "RAGAS", "HyDE", "Graph RAG", "Embeddings"],
+    title: "RAG and agents",
+    text: "A RAG evaluation pipeline with RAGAS and HyDE that cut hallucinations by about 40%, plus LangGraph agents and MCP servers.",
+  },
+  {
+    title: "Full stack product",
+    text: "Three live apps on React, Next.js and Supabase, with offline support, row-level security and Google sign-in.",
+  },
+];
+
+// This portfolio is evidence too. Used by the skill explorer.
+export const siteBuild = {
+  title: "This portfolio",
+  detail: "React SPA with client-side routing, a serverless GitHub stats API on Vercel and 135 Vitest + React Testing Library tests.",
+  tags: ["React", "React Router", "Vite", "JavaScript", "HTML/CSS", "Vitest", "React Testing Library", "REST APIs", "Git"],
+};
+
+export const skills = [
+  {
+    category: "Backend",
+    items: ["Ruby on Rails", "REST APIs", "FastAPI", "PostgreSQL", "MySQL", "Redis", "RabbitMQ", "Supabase"],
+  },
+  {
+    category: "AI engineering",
+    items: ["RAGAS", "LangChain", "LangGraph", "LlamaIndex", "HyDE", "Graph RAG", "Embeddings", "Vector Search", "MCP Protocol", "LLM Observability", "Pinecone"],
   },
   {
     category: "Frontend",
-    items: ["React", "React Router", "Vite", "HTML/CSS"],
+    items: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Vite", "React Router", "PWA", "HTML/CSS"],
   },
   {
-    category: "Backend",
-    items: ["Ruby on Rails", "FastAPI", "MySQL", "Redis", "REST APIs"],
+    category: "Languages",
+    items: ["Python", "Ruby", "JavaScript", "SQL"],
   },
   {
     category: "Testing",
     items: ["RSpec", "Vitest", "React Testing Library"],
   },
   {
-    category: "Cloud & Data",
-    items: ["Google Cloud Services", "AWS Services", "Vector Search", "Pinecone"],
-  },
-  {
-    category: "Tools & Protocol",
-    items: ["MCP Protocol", "Docker", "Git", "GitHub Actions", "LLM Observability"],
+    category: "Cloud & tooling",
+    items: ["BigQuery", "Google Cloud", "AWS", "Docker", "Git", "GitHub Actions"],
   },
 ];
 

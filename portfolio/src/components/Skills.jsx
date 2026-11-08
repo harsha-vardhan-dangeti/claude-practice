@@ -1,130 +1,151 @@
-import { useState } from 'react';
-import { skills } from '../data/portfolio';
+import { Fragment, useCallback, useMemo, useState, useSyncExternalStore } from 'react';
+import { Link } from 'react-router-dom';
+import { skills, strengths, experience, projects, siteBuild } from '../data/portfolio';
+import { buildSkillIndex, mentionRegex } from '../lib/skillEvidence';
+import { IconExternal, IconGithub } from './Icons';
 
-const DICON = 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons';
+const DEFAULT_SKILL = 'Ruby on Rails';
 
-/* Skills that have an official Devicon SVG */
-const DEVICON = {
-  'Python':                `${DICON}/python/python-original.svg`,
-  'Ruby':                  `${DICON}/ruby/ruby-original.svg`,
-  'TypeScript':            `${DICON}/typescript/typescript-original.svg`,
-  'JavaScript':            `${DICON}/javascript/javascript-original.svg`,
-  'Ruby on Rails':         `${DICON}/rails/rails-original-wordmark.svg`,
-  'FastAPI':               `${DICON}/fastapi/fastapi-original.svg`,
-  'MySQL':                 `${DICON}/mysql/mysql-original.svg`,
-  'Redis':                 `${DICON}/redis/redis-original.svg`,
-  'Docker':                `${DICON}/docker/docker-original.svg`,
-  'Git':                   `${DICON}/git/git-original.svg`,
-  'GitHub Actions':        `${DICON}/github/github-original.svg`,
-  'Google Cloud Services': `${DICON}/googlecloud/googlecloud-original.svg`,
-  'AWS Services':          `${DICON}/amazonwebservices/amazonwebservices-plain-wordmark.svg`,
-  'React':                 `${DICON}/react/react-original.svg`,
-  'Vite':                  `${DICON}/vitejs/vitejs-original.svg`,
+const KIND_LABEL = {
+  role: 'Work',
+  live: 'Live app',
+  site: 'This site',
+  project: 'Project',
 };
 
-/* Emoji badges for AI/ML tools and others without a Devicon.
-   Emoji renders at full size inside the colored badge square —
-   much more recognisable than 2-letter abbreviations. */
-const EMOJI_BADGE = {
-  'LangChain':         { emoji: '🦜', color: '#f97316' },
-  'LlamaIndex':        { emoji: '🦙', color: '#a855f7' },
-  'LangGraph':         { emoji: '🔗', color: '#3b82f6' },
-  'RAGAS':             { emoji: '📊', color: '#22c55e' },
-  'HyDE':              { emoji: '💡', color: '#ec4899' },
-  'Graph RAG':         { emoji: '🕸️', color: '#f59e0b' },
-  'Embeddings':        { emoji: '🔮', color: '#6366f1' },
-  'MCP Protocol':      { emoji: '⚙️', color: '#14b8a6' },
-  'LLM Observability': { emoji: '🔭', color: '#8b5cf6' },
-  'Vector Search':     { emoji: '🔍', color: '#0ea5e9' },
-  'Pinecone':          { emoji: '🌲', color: '#10b981' },
-  'SQL':               { emoji: '🗄️', color: '#64748b' },
-  'REST APIs':         { emoji: '🔌', color: '#64748b' },
-  'React Router':      { emoji: '🧭', color: '#CA4245' },
-  'HTML/CSS':          { emoji: '🎨', color: '#E34C26' },
-  'RSpec':             { emoji: '🧪', color: '#DC143C' },
-  'Vitest':            { emoji: '⚡', color: '#6E9F18' },
-  'React Testing Library': { emoji: '🔬', color: '#E33332' },
-};
+function useMediaQuery(query) {
+  const subscribe = useCallback(cb => {
+    if (typeof window.matchMedia !== 'function') return () => {};
+    const mql = window.matchMedia(query);
+    mql.addEventListener('change', cb);
+    return () => mql.removeEventListener('change', cb);
+  }, [query]);
+  return useSyncExternalStore(
+    subscribe,
+    () => typeof window.matchMedia === 'function' && window.matchMedia(query).matches,
+    () => false,
+  );
+}
 
-/* Per-category config */
-const CATEGORY_META = {
-  'AI / ML':          { icon: '🤖', featured: true },
-  'Languages':        { icon: '💻', featured: false },
-  'Frontend':         { icon: '🖥️', featured: false },
-  'Backend':          { icon: '⚡', featured: false },
-  'Testing':          { icon: '🧪', featured: false },
-  'Cloud & Data':     { icon: '☁️', featured: false },
-  'Tools & Protocol': { icon: '🔧', featured: false },
-};
+/** Wraps mentions of the skill in <mark> so the proof is easy to spot. */
+function Highlighted({ text, skill }) {
+  const parts = text.split(new RegExp(`(${mentionRegex(skill).source})`, 'gi'));
+  return parts.map((part, i) =>
+    i % 2 === 1 ? <mark key={i}>{part}</mark> : <Fragment key={i}>{part}</Fragment>,
+  );
+}
 
-function TechIcon({ name }) {
-  const src = DEVICON[name];
-  const emoji = EMOJI_BADGE[name];
-  const [imgFailed, setImgFailed] = useState(false);
-  const showImg = src && !imgFailed;
-
+function ProofItem({ item, skill }) {
   return (
-    <div className="tech-icon">
-      {showImg ? (
-        <img
-          src={src}
-          alt={name}
-          loading="lazy"
-          onError={() => setImgFailed(true)}
-        />
-      ) : emoji ? (
-        <div
-          className="tech-icon-badge tech-icon-badge--emoji"
-          style={{ background: emoji.color }}
-          title={name}
-        >
-          {emoji.emoji}
-        </div>
-      ) : (
-        <div className="tech-icon-badge" style={{ background: '#64748b' }} title={name}>
-          {name.slice(0, 3).toUpperCase()}
-        </div>
+    <li className={`sk-proof-item sk-proof-item--${item.kind}`}>
+      <span className="sk-kind">{KIND_LABEL[item.kind]}</span>
+      <div className="sk-proof-title">{item.title}</div>
+      {item.sub && <div className="sk-proof-sub">{item.sub}</div>}
+      {item.detail && (
+        <p className="sk-proof-detail"><Highlighted text={item.detail} skill={skill} /></p>
       )}
-      <span className="tech-icon-label">{name}</span>
+      <div className="sk-proof-links">
+        {item.kind === 'role' && <Link to={item.to}>Full role</Link>}
+        {item.kind === 'project' && <Link to={item.to}>See project</Link>}
+        {item.demo && (
+          <a href={item.demo} target="_blank" rel="noopener">
+            {item.demoLocked ? 'Live (sign-in required)' : 'Open live site'} <IconExternal />
+          </a>
+        )}
+        {item.github && (
+          <a href={item.github} target="_blank" rel="noopener">
+            Code <IconGithub />
+          </a>
+        )}
+      </div>
+    </li>
+  );
+}
+
+function ProofPanel({ skill, evidence, inline = false }) {
+  const { items, count, since } = evidence;
+  return (
+    <div
+      className={`sk-panel${inline ? ' sk-panel--inline' : ''}`}
+      aria-live="polite"
+      aria-label={`Where I've used ${skill}`}
+    >
+      <div key={skill} className="sk-panel-inner">
+        <h3 className="sk-panel-title">{skill}</h3>
+        <p className="sk-panel-meta">
+          {count === 0
+            ? <span>Not in a public project yet. Happy to talk through how I&apos;ve used it.</span>
+            : <span>Used in {count} {count === 1 ? 'place' : 'places'}</span>}
+          {since && <span>In production since {since}</span>}
+        </p>
+        {count > 0 && (
+          <ul className="sk-proof">
+            {items.map((item, i) => <ProofItem key={i} item={item} skill={skill} />)}
+          </ul>
+        )}
+      </div>
     </div>
   );
 }
 
 export default function Skills() {
+  const index = useMemo(
+    () => buildSkillIndex(skills, { experience, projects, site: siteBuild }),
+    [],
+  );
+  const firstSkill = skills[0]?.items[0];
+  const [selected, setSelected] = useState(index[DEFAULT_SKILL] ? DEFAULT_SKILL : firstSkill);
+  const narrow = useMediaQuery('(max-width: 860px)');
+
+  const panel = selected && (
+    <ProofPanel skill={selected} evidence={index[selected]} inline={narrow} />
+  );
+
   return (
     <section id="skills" aria-label="Technical skills">
       <div className="container">
-        <div className="section-eyebrow r">/ skills</div>
-        <h2 className="r d1" style={{ marginBottom: '2.5rem' }}>Technical Skills</h2>
+        <h2 className="sk-heading r d1">Skills and where I&apos;ve used them</h2>
+        <p className="sk-intro r d2">
+          Pick any skill to see the role or project behind it, with links you can check.
+        </p>
 
-        <div className="spotlight-grid">
-          {skills.map((group, i) => {
-            const meta = CATEGORY_META[group.category] ?? { icon: '📦', featured: false };
-            return (
-              <div
-                key={group.category}
-                className={`spotlight-card r d${(i % 4) + 1}${meta.featured ? ' featured' : ''}`}
-              >
-                {/* Header */}
-                <div className="spotlight-hdr">
-                  <div className="spotlight-cat-icon">{meta.icon}</div>
-                  <div className="spotlight-cat-meta">
-                    <div className="spotlight-cat-name">{group.category}</div>
-                    <div className="spotlight-count">{group.items.length} technologies</div>
+        <div className="sk-strengths r d2">
+          {strengths.map(s => (
+            <div key={s.title} className="sk-strength">
+              <h3>{s.title}</h3>
+              <p>{s.text}</p>
+            </div>
+          ))}
+        </div>
+
+        <div className="sk-explorer">
+          <div className="sk-groups">
+            <p className="sk-hint">Brighter skills show up in more of my work, and work counts double.</p>
+            {skills.map(group => {
+              const id = `sk-cat-${group.category.replace(/\W+/g, '-').toLowerCase()}`;
+              return (
+                <div key={group.category} className="sk-group" role="group" aria-labelledby={id}>
+                  <h3 id={id} className="sk-cat">{group.category}</h3>
+                  <div className="sk-chips">
+                    {group.items.map(skill => (
+                      <button
+                        key={skill}
+                        type="button"
+                        className={`sk-chip sk-chip--${index[skill].tier}`}
+                        aria-pressed={selected === skill}
+                        onClick={() => setSelected(skill)}
+                      >
+                        {skill}
+                      </button>
+                    ))}
                   </div>
+                  {narrow && group.items.includes(selected) && panel}
                 </div>
+              );
+            })}
+          </div>
 
-                <div className="spotlight-divider" />
-
-                {/* Icon grid */}
-                <div className="spotlight-icons">
-                  {group.items.map(item => (
-                    <TechIcon key={item} name={item} />
-                  ))}
-                </div>
-              </div>
-            );
-          })}
+          {!narrow && <aside className="sk-aside">{panel}</aside>}
         </div>
       </div>
     </section>
