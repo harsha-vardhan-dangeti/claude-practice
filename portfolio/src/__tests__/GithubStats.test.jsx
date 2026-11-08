@@ -18,7 +18,7 @@ const apiPayload = {
   followers:          5,
   totalStars:         8,   // 3 + 5 + 0
   totalForks:         3,   // 1 + 2 + 0
-  recentCommits:      4,   // 3 + 1 push-event commits
+  recentCommits:      42,  // commit search total_count
   totalContributions: null,
   topLangs: [
     { lang: 'Ruby',   pct: 67, color: '#CC342D' },
@@ -37,11 +37,8 @@ const setupFetch = () => {
         { stargazers_count: 5, forks_count: 2, language: 'Python' },
         { stargazers_count: 0, forks_count: 0, language: 'Ruby' },
       ]});
-    if (url.includes('/events'))
-      return Promise.resolve({ ok: true, json: async () => [
-        { type: 'PushEvent', payload: { commits: [1, 2, 3] } },
-        { type: 'PushEvent', payload: { commits: [1] } },
-      ]});
+    if (url.includes('/search/commits'))
+      return Promise.resolve({ ok: true, json: async () => ({ total_count: 42 }) });
     return Promise.resolve({ ok: true, json: async () => ({ public_repos: 17, followers: 5 }) });
   });
 };
@@ -76,7 +73,7 @@ describe('GithubStats', () => {
   it('shows live commit count from the proxy', async () => {
     setupFetch();
     renderGithub();
-    await waitFor(() => expect(screen.getAllByText('4').length).toBeGreaterThan(0));
+    await waitFor(() => expect(screen.getAllByText('42').length).toBeGreaterThan(0));
   });
 
   it('fetches the serverless proxy, not GitHub directly', async () => {
@@ -143,14 +140,28 @@ describe('GithubStats', () => {
         return Promise.resolve({ ok: true, json: async () => [
           { stargazers_count: 3, forks_count: 1, language: 'Ruby' },
         ]});
-      if (url.includes('/events'))
-        return Promise.resolve({ ok: true, json: async () => [
-          { type: 'PushEvent', payload: { commits: [1, 2] } },
-        ]});
+      if (url.includes('/search/commits'))
+        return Promise.resolve({ ok: true, json: async () => ({ total_count: 69 }) });
       return Promise.resolve({ ok: true, json: async () => ({ public_repos: 17, followers: 5 }) });
     });
     renderGithub();
     await waitFor(() => expect(screen.getAllByText('17').length).toBeGreaterThan(0));
+    // Commit count comes from the search API, not the (commit-less) events feed.
+    expect(screen.getAllByText('69').length).toBeGreaterThan(0);
+  });
+
+  it('falls back to direct fetch when the proxy returns an error status', async () => {
+    mockFetch.mockImplementation(url => {
+      if (url.includes('/api/github'))
+        return Promise.resolve({ ok: false, status: 504, json: async () => ({ error: 'GitHub API timeout' }) });
+      if (url.includes('/repos')) return Promise.resolve({ ok: true, json: async () => [] });
+      if (url.includes('/search/commits'))
+        return Promise.resolve({ ok: true, json: async () => ({ total_count: 69 }) });
+      return Promise.resolve({ ok: true, json: async () => ({ public_repos: 17, followers: 5 }) });
+    });
+    renderGithub();
+    await waitFor(() => expect(screen.getAllByText('17').length).toBeGreaterThan(0));
+    expect(screen.queryByText(/could not fetch live data/i)).not.toBeInTheDocument();
   });
 
   it('shows error notice when everything fails', async () => {
