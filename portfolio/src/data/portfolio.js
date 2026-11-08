@@ -248,9 +248,10 @@ export const skills = [
   },
 ];
 
-// Fallback static data — shown in production (Credly API is CORS-restricted).
-// The hook in useCreedlyData.js updates this live in development via Vite proxy.
-// Run `node scripts/sync-credly.js` to refresh this list from Credly anytime.
+// Credly badges also load live on the site (api/credly.js), so new badges
+// appear automatically; the Credly entries here are the offline fallback.
+// Add certificates that aren't on Credly or LinkedIn here by hand.
+// LinkedIn courses: `npm run import:linkedin -- <LinkedIn export .zip or Certifications.csv>`.
 export const certifications = [
   {
     issuer: "Google for Developers · Hack2skill",

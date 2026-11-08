@@ -44,6 +44,9 @@ Opens on **http://localhost:5173**. Vite serves with HMR — edits to
 api/
   github.js          Vercel serverless function — proxies GitHub API calls
                       server-side so the dashboard isn't rate-limited per visitor
+  credly.js          Vercel serverless function — your public Credly badges
+scripts/
+  import-linkedin-certs.js   Imports courses from a LinkedIn data export
 src/
   App.jsx             Route table (BrowserRouter)
   main.jsx            Entry point
@@ -52,7 +55,7 @@ src/
   components/          Presentational building blocks (Hero, Nav, Footer,
                         ProfileCard, GithubStats, Certifications, ...)
   hooks/               useTheme (light/dark), useScrollReveal, useGithubData,
-                        useCreedlyData
+                        useCertifications
   data/portfolio.js    All site content lives here — see below
   styles/index.css     Global styles
   __tests__/           Vitest + RTL specs, one file per component
@@ -86,11 +89,31 @@ the 60 req/hour unauthenticated rate limit per visitor IP. The function:
 Without `GITHUB_TOKEN` set, the page still works via the unauthenticated
 REST API; total-contributions just shows as unavailable.
 
-## Certifications (Credly)
+## Certifications
 
-`src/hooks/useCreedlyData.js` fetches badge data from Credly. In dev, Vite
-proxies `/credly-api/*` → `https://www.credly.com` (see `vite.config.js`) to
-avoid CORS.
+The Achievements page merges three sources, dropping duplicates (same
+credential URL, or same name + issuer) and sorting newest first:
+
+1. **Credly, automatic.** `api/credly.js` fetches your public badges
+   (username: `personal.credly`) and is edge-cached for an hour. Accept a
+   badge on Credly and it appears on the site within about an hour, with no
+   redeploy. In dev, Vite proxies `/credly-api/*` to Credly instead.
+2. **Hand-added**, in `certifications` in `src/data/portfolio.js`. Use this
+   for anything not on Credly or LinkedIn. The Credly entries there are the
+   fallback if Credly is down.
+3. **LinkedIn, one command.** LinkedIn has no public API for reading your
+   certifications, so use its official export: LinkedIn → Settings → Data
+   privacy → *Get a copy of your data* → tick *Certifications* → download the
+   .zip (LinkedIn emails you when it's ready, usually within minutes). Then:
+
+   ```bash
+   npm run import:linkedin -- ~/Downloads/Basic_LinkedInDataExport_*.zip --dry-run   # preview
+   npm run import:linkedin -- ~/Downloads/Basic_LinkedInDataExport_*.zip             # write
+   git add src/data/linkedin-certifications.json && git commit -m "Add new certifications" && git push
+   ```
+
+   The script also accepts the unzipped folder or `Certifications.csv`, skips
+   anything already shown from Credly or `portfolio.js`, and is safe to re-run.
 
 ## Testing
 
@@ -106,7 +129,7 @@ with `npm run test:coverage`, don't hand-edit).
 ## Deployment
 
 Deployed on Vercel (`vercel.json`): `npm run build` outputs a static build to
-`dist/`, plus `api/github.js` deploys as a serverless function. Set
+`dist/`, plus `api/github.js` and `api/credly.js` deploy as serverless functions. Set
 `GITHUB_TOKEN` in the Vercel project's environment variables for the higher
 rate limit and accurate contribution counts.
 

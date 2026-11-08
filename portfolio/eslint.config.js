@@ -18,9 +18,9 @@ export default defineConfig([
       parserOptions: { ecmaFeatures: { jsx: true } },
     },
   },
-  // Serverless functions run on Node, not in the browser.
+  // Serverless functions and scripts run on Node, not in the browser.
   {
-    files: ['api/**/*.js'],
+    files: ['api/**/*.js', 'scripts/**/*.js'],
     languageOptions: { globals: globals.node },
   },
   // Vitest test files: jsdom (browser) plus Vitest and Node globals.
